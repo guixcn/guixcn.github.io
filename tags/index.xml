@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Guix中文社區</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Guix中文社區</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2019-2020 Guix China</copyright>
+    <lastBuildDate>Thu, 14 May 2020 12:02:00 +0800</lastBuildDate>
+    
+        <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>blog</title>
+      <link>/tags/blog/</link>
+      <pubDate>Thu, 14 May 2020 12:02:00 +0800</pubDate>
+      
+      <guid>/tags/blog/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>page</title>
+      <link>/tags/page/</link>
+      <pubDate>Thu, 14 May 2020 12:02:00 +0800</pubDate>
+      
+      <guid>/tags/page/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

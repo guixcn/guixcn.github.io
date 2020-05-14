@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>page on Guix中文社區</title>
+    <link>/tags/page/</link>
+    <description>Recent content in page on Guix中文社區</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2019-2020 Guix China</copyright>
+    <lastBuildDate>Thu, 14 May 2020 12:02:00 +0800</lastBuildDate>
+    
+        <atom:link href="/tags/page/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Thu, 14 May 2020 12:01:00 +0800</pubDate>
+      
+      <guid>/about/</guid>
+      <description>這裏是Guix中文社區。爲了推廣Guix在華人中的使用，並爲了方便Guix中文用戶之間的交流而成立。</description>
+      
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>/contact/</link>
+      <pubDate>Thu, 14 May 2020 12:02:00 +0800</pubDate>
+      
+      <guid>/contact/</guid>
+      <description> Telegram: https://t.me/guix_china  </description>
+      
+    </item>
+    
+  </channel>
+</rss>
