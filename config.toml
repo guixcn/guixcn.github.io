@@ -1,0 +1,65 @@
+baseURL = "https://guix-china.github.io/"
+title = "Guix中文社區"
+theme = "hugo-notepadium"
+copyright = "© 2019-2020 Guix China"
+
+disableHugoGeneratorInject = true
+languageCode = "zh-cn"
+hasCJKLanguage = true
+
+[menu]
+  # Main menu
+  [[menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+
+  # About
+  [[menu.main]]
+    url = "/about/"
+    name = "About"
+    weight = 1
+
+  # Contact
+  [[menu.main]]
+    url = "/contact/"
+    name = "Contact"
+    weight = 1
+
+  # Blog
+  [[menu.main]]
+    url = "/blog/"
+    name = "Blog"
+    weight = 1
+
+  # Footer menu 1
+  [[menu.footer1]]
+    url = "/"
+    name = "Home"
+    weight = 1
+
+[params]
+    style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
+    logo = "/images/guix-logo.svg"
+    slogan = "Gnu Guix"
+
+[params.syntax]
+    use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
+    theme = "dracula"
+    darkTheme = "xcode-dark"  # apply this theme in dark mode
+
+[params.nav]
+    showCategories = false
+    showTags = true
+
+[[params.nav.custom]]
+    title = "About"
+    url = "/about/"
+
+[[params.nav.custom]]
+    title = "Contact"
+    url = "/contact/"
+
+[[params.nav.custom]]
+    title = "Blog"
+    url = "/blog/"

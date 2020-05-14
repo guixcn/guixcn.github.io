@@ -1,2 +1,8 @@
 #+Title: Guix China Community
 #+License: GPLv3
+
+* Build GitHub Pages
+  - Configure Emacs with ox-hugo.
+  - Open org/site.org in Emacs.
+  - Execute ~C-c C-e H A~ in Emacs.
+  - Exit Emacs and run ~hugo~ from command line.
