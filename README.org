@@ -81,3 +81,12 @@
          git push origin master:master
      fi
    #+end_src
+
+* License
+
+  Unless otherwise noted, then:
+  - The Org files in ~org~ directory and the derived files in ~content~ and
+    ~public~ directory are released under [[https://creativecommons.org/licenses/by-nc/4.0/legalcode][CC BY-NC v4.0 License]].
+  - The Guix logo is designed by Luis Felipe López Acevedo and released under CC
+    BY-SA v4.0 License. See https://guix.gnu.org/graphics/.
+  - The other files are released under [[https://www.gnu.org/licenses/gpl-3.0.en.html][GPLv3 License]].
