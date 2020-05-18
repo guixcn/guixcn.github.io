@@ -10,7 +10,7 @@
   :EXPORT_HUGO_WEIGHT: auto
   :END:
 
-** DONE About
+** DONE 簡介
    CLOSED: [2020-05-14 Thu 12:01]
    :PROPERTIES:
    :EXPORT_FILE_NAME: about
@@ -22,7 +22,7 @@
 這裏是Guix中文社區。爲了推廣Guix在華人中的使用，並爲了方便Guix中文用戶之間的交流
 而成立。
 
-** DONE Contact
+** DONE 聯繫我們
    CLOSED: [2020-05-14 Thu 12:02]
    :PROPERTIES:
    :EXPORT_FILE_NAME: contact

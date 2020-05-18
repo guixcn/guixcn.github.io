@@ -1,47 +1,42 @@
 baseURL = "https://guix-china.github.io/"
 title = "Guix中文社區"
 theme = "hugo-notepadium"
-copyright = "© 2019-2020 Guix China"
+copyright = "© 2019-2020 Guix China Community"
 
 disableHugoGeneratorInject = true
 languageCode = "zh-cn"
 hasCJKLanguage = true
 
 [menu]
-  # Main menu
   [[menu.main]]
     url = "/"
-    name = "Home"
+    name = "首頁"
     weight = 1
 
-  # About
   [[menu.main]]
     url = "/about/"
-    name = "About"
+    name = "簡介"
     weight = 1
 
-  # Contact
   [[menu.main]]
     url = "/contact/"
-    name = "Contact"
+    name = "聯繫我們"
     weight = 1
 
-  # Blog
   [[menu.main]]
     url = "/blog/"
-    name = "Blog"
+    name = "文章"
     weight = 1
 
-  # Footer menu 1
   [[menu.footer1]]
     url = "/"
-    name = "Home"
+    name = "首頁"
     weight = 1
 
 [params]
     style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
     logo = "/images/guix-logo.svg"
-    slogan = "Gnu Guix"
+    slogan = "Guix China Community"
 
 [params.syntax]
     use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
@@ -50,16 +45,16 @@ hasCJKLanguage = true
 
 [params.nav]
     showCategories = false
-    showTags = true
+    showTags = false
 
 [[params.nav.custom]]
-    title = "About"
+    title = "簡介"
     url = "/about/"
 
 [[params.nav.custom]]
-    title = "Contact"
+    title = "聯繫我們"
     url = "/contact/"
 
 [[params.nav.custom]]
-    title = "Blog"
+    title = "文章"
     url = "/blog/"
