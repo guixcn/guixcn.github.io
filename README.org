@@ -1,2 +1,0 @@
-#+Title: Guix China Community
-#+License: GPLv3
