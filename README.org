@@ -82,6 +82,12 @@
      fi
    #+end_src
 
+* Contribute
+
+  - You must accept the License.
+  - Clone this project, modify files in the ~src~ branch, and send your changes
+    to upstream.
+
 * License
 
   Unless otherwise noted, then:
