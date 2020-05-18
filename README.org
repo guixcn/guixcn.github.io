@@ -1,8 +1,83 @@
 #+Title: Guix China Community
 #+License: GPLv3
 
-* Build GitHub Pages
-  - Configure Emacs with ox-hugo.
-  - Open org/site.org in Emacs.
-  - Execute ~C-c C-e H A~ in Emacs.
-  - Exit Emacs and run ~hugo~ from command line.
+* README
+
+  This project is made with [[https://orgmode.org/][org-mode]], [[https://ox-hugo.scripter.co/][ox-hugo]] and [[https://gohugo.io/][Hugo]].  The org files are in
+  ~org~ directory.  Org files are converted into Hugo compatible Markdown files
+  using ox-hugo.  These Markdown files are then converted into HTML using Hugo.
+
+* Build And Publish This Project
+
+** Preparation
+
+   - Configure Emacs with org-mode and ox-hugo.
+   - Install Hugo.
+   - Clone the ~src~ branch.  This branch contains the source code for the
+     website.
+     #+begin_src sh
+       git clone git@github.com:guix-china/guix-china.github.io.git -b src
+     #+end_src
+   - Change into the project directory:
+     #+begin_src sh
+       cd guix-china.github.io
+     #+end_src
+   - Update git submodules:
+     #+begin_src sh
+       git submodule update --init
+     #+end_src
+   - Clone the master branch into the ~public~ directory. This branch contains
+     the compiled result for the website:
+     #+begin_src sh
+       git clone git@github.com:guix-china/guix-china.github.io.git -b master public
+     #+end_src
+
+** Build
+   - Open this file with Emacs.
+   - Execute this code block in Emacs (Hit ~C-c C-c~):
+
+   #+name: build-project
+   #+begin_src emacs-lisp :results output silent
+     (org-babel-goto-named-src-block "clean-up-hugo-project")
+     (org-babel-execute-src-block)
+
+     (org-babel-goto-named-src-block "convert-org-into-hugo")
+     (org-babel-execute-src-block)
+
+     (org-babel-goto-named-src-block "build-hugo-project")
+     (org-babel-execute-src-block)
+   #+end_src
+
+   Clean up Hugo project.
+   #+name: clean-up-hugo-project
+   #+begin_src sh :results output silent
+     rm -rf content/* public/*
+   #+end_src
+
+   Convert Org files into Markdown files.
+   #+name: convert-org-into-hugo
+   #+begin_src emacs-lisp :results silent
+     (save-window-excursion
+       (find-file "org/site.org")
+       (org-hugo-export-wim-to-md t))
+   #+end_src
+
+   Build Hugo project.
+   #+name: build-hugo-project
+   #+begin_src sh :results output silent
+     hugo
+   #+end_src
+
+** Publish
+
+   Publish the result to GitHub Pages.
+   #+name: publish-github-pages
+   #+begin_src sh :results output silent
+     cd public
+     s=$(git status -s)
+     if [ -n "$s" ]; then
+         git add -A
+         git commit -m $(date -Iseconds)
+         git push origin master:master
+     fi
+   #+end_src
