@@ -31,6 +31,7 @@
    - State "DONE"       from "TODO"       [2020-05-14 Thu 12:02]
    :END:
 
+   - GitHub: https://github.com/guix-china
    - Telegram: [[https://t.me/guix_china][https://t.me/guix_china]]
    - QQ羣：379287300
 
