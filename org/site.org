@@ -35,6 +35,54 @@
    - Telegram: [[https://t.me/guix_china][https://t.me/guix_china]]
    - QQ羣：379287300
 
+** DONE 捐赠
+   CLOSED: [2020-06-12 Fri 16:26]
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: donate
+   :END:
+
+國內的服務器和電信資費是國際水平的數倍，維護國內Guix鏡像服務的成本高昂。諸位用戶
+若覺得此網站的服務爲您提供了便利，歡迎提供捐助。
+
+支付寶：
+#+ATTR_HTML: :width 200px
+[[../static/images/alipay.png]]
+
+微信支付：
+#+ATTR_HTML: :width 200px
+[[../static/images/wechat-pay.png]]
+
+*** 匯總
+
+| 項目     | 金額 |
+|----------+------|
+| 捐贈總額 |  504 |
+| 支出總額 |  504 |
+| 餘額     |    0 |
+#+TBLFM: @1$2=vsum(remote(donations,@I$3..@>$3))::@2$2=vsum(remote(expenses,@I$3..@>$3))::@3$2=@1$2-@2$2
+
+*** 捐贈列表
+
+| 捐贈總額 | 504 |
+#+TBLFM: @1$2=vsum(remote(donations,@I$3..@>$3))
+
+#+NAME: donations
+| 日期             | 來源   | 金額￥ | 備註       |
+|------------------+--------+--------+------------|
+| <2020-05-27 Wed> | 彭美玉 |    488 | 購買服務器 |
+| <2020-05-20 Wed> | 彭美玉 |     16 | 購買域名   |
+
+*** 支出列表
+
+| 支出總額 | 504 |
+#+TBLFM: @1$2=vsum(remote(expenses,@I$3..@>$3))
+
+#+NAME: expenses
+| 日期             | 項目                | 金額￥ | 備註                   |
+|------------------+---------------------+--------+------------------------|
+| <2020-05-27 Wed> | 購買騰訊雲服務器    |    488 | 新用戶優惠，原價3222元 |
+| <2020-05-20 Wed> | 購買guix.org.cn域名 |     16 | 一年有效期             |
+
 * Blog                                                                    :blog:
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: blog
