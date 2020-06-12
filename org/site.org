@@ -44,13 +44,9 @@
 國內的服務器和電信資費是國際水平的數倍，維護國內Guix鏡像服務的成本高昂。諸位用戶
 若覺得此網站的服務爲您提供了便利，歡迎提供捐助。
 
-支付寶：
-#+ATTR_HTML: :width 200px
-[[../static/images/alipay.png]]
-
-微信支付：
-#+ATTR_HTML: :width 200px
-[[../static/images/wechat-pay.png]]
+| 支付寶                      | 微信支付                        |
+|-----------------------------+---------------------------------|
+| [[../static/images/alipay.png]] | [[../static/images/wechat-pay.png]] |
 
 *** 匯總
 
