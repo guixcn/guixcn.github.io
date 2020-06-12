@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Wikis on Guix中文社區</title>
+    <link>/wiki/</link>
+    <description>Recent content in Wikis on Guix中文社區</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2019-2020 Guix China Community</copyright>
+    
+        <atom:link href="/wiki/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Guix中國鏡像</title>
+      <link>/wiki/mirror/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wiki/mirror/</guid>
+      <description>Guix中文社區提供的鏡像服務地址是： https://mirror.guix.org.cn/ 。此鏡像位於騰訊雲的南京機房，帶寬是5Mbps。歡迎捐贈資金和服務器，以提升服務質量。</description>
+      
+    </item>
+    
+    <item>
+      <title>社區CI</title>
+      <link>/wiki/ci/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wiki/ci/</guid>
+      <description>社區構建服務器地址： https://ci.guix.org.cn/ 。 若使用此服務器，你需要先信任它的公鑰。 guix archive --authorize &amp;lt;&amp;lt;EOF (public-key (ecc (curve Ed25519) (q #A2E559D78D512DAEDFBBC772136F4BB89F1E57C7B147E15E0784A11664379796#))) EOF 目前此服務器沒有提供特殊的軟件包。</description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -22,5 +22,15 @@
       
     </item>
     
+    <item>
+      <title>Guix中國鏡像上線啦</title>
+      <link>/blog/guix-china-mirror-is-online-now/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/guix-china-mirror-is-online-now/</guid>
+      <description>經過一個月的籌備，Guix中國鏡像上線啦。我們購買了 guix.org.cn 域名和一個服務器，並完成了域名備案。此服務器用於提供Guix軟件鏡像服務。 服務器配置如</description>
+      
+    </item>
+    
   </channel>
 </rss>
