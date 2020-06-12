@@ -83,6 +83,39 @@
 | <2020-05-27 Wed> | 購買騰訊雲服務器    |    488 | 新用戶優惠，原價3222元 |
 | <2020-05-20 Wed> | 購買guix.org.cn域名 |     16 | 一年有效期             |
 
+* Wiki                                                                    :wiki:
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: wiki
+  :EXPORT_HUGO_WEIGHT: 0
+  :END:
+
+** Guix中國鏡像
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: mirror
+   :END:
+
+Guix中文社區提供的鏡像服務地址是： =https://mirror.guix.org.cn/= 。此鏡像位於騰
+訊雲的南京機房，帶寬是5Mbps。歡迎捐贈資金和服務器，以提升服務質量。
+
+** 社區CI
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: ci
+   :END:
+
+社區構建服務器地址： =https://ci.guix.org.cn/= 。
+
+若使用此服務器，你需要先信任它的公鑰。
+#+begin_src sh
+  guix archive --authorize <<EOF
+  (public-key
+   (ecc
+    (curve Ed25519)
+    (q #A2E559D78D512DAEDFBBC772136F4BB89F1E57C7B147E15E0784A11664379796#)))
+  EOF
+#+end_src
+
+目前此服務器沒有提供特殊的軟件包。
+
 * Blog                                                                    :blog:
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: blog
