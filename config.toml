@@ -56,5 +56,13 @@ hasCJKLanguage = true
     url = "/contact/"
 
 [[params.nav.custom]]
+    title = "捐贈"
+    url = "/donate/"
+
+[[params.nav.custom]]
+    title = "Wiki"
+    url = "/wiki/"
+
+[[params.nav.custom]]
     title = "文章"
     url = "/blog/"
