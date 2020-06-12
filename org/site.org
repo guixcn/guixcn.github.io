@@ -59,3 +59,21 @@ bug多，對初學者不友好，同時爲了慶祝Guix中文用戶即將從一�
 
 【2020年5月18日更新】：因部分國內用戶不便使用Telegram，現決定增設一個QQ羣。羣號：
 379287300。
+
+** DONE Guix中國鏡像上線啦
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: guix-china-mirror-is-online-now
+   :END:
+
+經過一個月的籌備，Guix中國鏡像上線啦。我們購買了 ~guix.org.cn~ 域名和一個服務器，
+並完成了域名備案。此服務器用於提供Guix軟件鏡像服務。
+
+服務器配置如下：
+- 處理器：2核
+- 內存：4GB
+- 硬盤：50GB
+- 上行帶寬：5Mbps
+
+服務器的軟件配置可在 [[https://github.com/guix-china/guix-china-maintenance][GitHub]] 查看。
+
+Guix鏡像服務的地址是 =https://mirror.guix.org.cn/= 。欢迎测试。
