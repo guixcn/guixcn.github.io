@@ -6,7 +6,31 @@
     <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/images/guix-logo.svg" alt /><span class="site name">Guix中文社區</span></a></span>
         <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/about/">簡介</a><a class="nav item" href="/contact/">聯繫我們</a><a class="nav item" href="/donate/">捐贈</a><a class="nav item" href="/wiki/">Wiki</a><a class="nav item" href="/blog/">文章</a></nav></div></span></div><div class="site slogan"><span class="title">Guix China Community</span></div></section><section id="content"><div class="article-container"><section class="article header">
     <h1 class="article title">Guix中國鏡像</h1></section><article class="article markdown-body"><p>Guix中文社區提供的鏡像服務地址是： <code>https://mirror.guix.org.cn/</code> 。此鏡像位於騰訊雲的南京機房，帶寬是5Mbps。歡迎捐贈資金和服務器，以提升服務質量。</p>
-</article><section class="article labels"><a class="tag" href=/tags/wiki/>wiki</a></section></div>
+<h2 id="git鏡像">Git鏡像</h2>
+<p>Git鏡像地址： <code>https://mirror.guix.org.cn/git/guix.git</code></p>
+<h3 id="讓-guix-pull-使用這個鏡像">讓 <code>guix pull</code> 使用這個鏡像</h3>
+<p>修改 <code>~/.config/guix/channels.scm</code> 文件：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scheme" data-lang="scheme">(list (<span style="color:#a6e22e">channel</span>
+       (<span style="color:#a6e22e">name</span> <span style="color:#e6db74">&#39;guix</span>)
+       (<span style="color:#a6e22e">url</span> <span style="color:#e6db74">&#34;https://mirror.guix.org.cn/git/guix.git&#34;</span>)))
+</code></pre></div><h2 id="substitute鏡像">Substitute鏡像</h2>
+<p>Substitute鏡像地址： <code>https://mirror.guix.org.cn/</code></p>
+<h3 id="使用方法">使用方法</h3>
+<p>修改 <code>guix-daemon</code> 的substitute-url參數爲 <code>https://mirror.guix.org.cn/</code> 。</p>
+<h4 id="guix-system">Guix system</h4>
+<p>修改 <code>/etc/config.scm</code> ：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scheme" data-lang="scheme">(<span style="color:#a6e22e">operating-system</span>
+  (<span style="color:#a6e22e">services</span> (<span style="color:#a6e22e">modify-services</span> %desktop-services
+              (<span style="color:#a6e22e">guix-service-type</span>
+               config <span style="color:#66d9ef">=&gt; </span>(<span style="color:#a6e22e">guix-configuration</span>
+                          (<span style="color:#a6e22e">inherit</span> config)
+                          (<span style="color:#a6e22e">substitute-urls</span> <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;https://mirror.guix.org.cn&#34;</span>))))))
+  <span style="color:#f92672">...</span>
+  )
+</code></pre></div><h4 id="systemd">Systemd</h4>
+<p>修改 <code>guix-daemon.service</code> ：</p>
+<pre><code class="language-conf" data-lang="conf">ExecStart=/var/guix/profiles/per-user/root/current-guix/bin/guix-daemon --build-users-group=guixbuild --substitute-urls=&quot;https://mirror.guix.org.cn&quot;
+</code></pre></article><section class="article labels"><a class="tag" href=/tags/wiki/>wiki</a></section></div>
 <div class="article bottom"><section class="article navigation"><p><a class="link" href="/wiki/ci/"><span class="li iconfont icon-article"></span>社區CI</a></p></section></div></section><section id="footer"><div class="footer-wrap">
     <p class="copyright">© 2019-2020 Guix China Community</p>
     <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
