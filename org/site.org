@@ -44,8 +44,8 @@
 國內的服務器和電信資費是國際水平的數倍，維護國內Guix鏡像服務的成本高昂。諸位用戶
 若覺得此網站的服務爲您提供了便利，歡迎提供捐助。
 
-捐贈時請備註“Guix捐贈”，並通過[[https://github.com/guix-china/guix-china.github.io/issues][GitHub]]、[[https://guix-china.github.io/contact/][Telegram]]、[[https://guix-china.github.io/contact/][QQ]]等任意渠道聯繫管理員更新此頁面。
-如您未提供姓名，則下面列表的“姓名”一欄默認使用捐贈帳號的用戶名。
+捐贈時請備註“Guix捐贈”，並通過[[https://github.com/guix-china/guix-china.github.io/issues/1][GitHub]]、[[https://guix-china.github.io/contact/][Telegram]]等任意渠道聯繫管理員更新此頁面。如
+您未提供姓名，則下面列表的“姓名”一欄默認使用捐贈帳號的用戶名。
 
 | 支付寶                      | 微信支付                        |
 |-----------------------------+---------------------------------|
