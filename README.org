@@ -60,6 +60,12 @@
      (save-window-excursion
        (find-file "org/site.org")
        (org-hugo-export-wim-to-md t))
+     (save-window-excursion
+       (find-file "org/blog.org")
+       (org-hugo-export-wim-to-md t))
+     (save-window-excursion
+       (find-file "org/wiki.org")
+       (org-hugo-export-wim-to-md t))
    #+end_src
 
    Build Hugo project.
