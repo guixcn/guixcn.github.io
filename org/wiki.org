@@ -5,19 +5,19 @@
 #+seq_todo: TODO DRAFT DONE
 #+property: header-args :eval no
 
-* Guix中國鏡像
+* Guix中国镜像
    :PROPERTIES:
    :EXPORT_FILE_NAME: mirror
    :END:
 
-Guix中文社區提供的鏡像服務地址是： =https://mirror.guix.org.cn/= 。此鏡像位於騰
-訊雲的南京機房，帶寬是5Mbps。歡迎捐贈資金和服務器，以提升服務質量。
+Guix中文社区提供的镜像服务地址是： =https://mirror.guix.org.cn/= 。此镜像位于腾
+讯云的南京机房，带宽是5Mbps。欢迎捐赠资金和服务器，以提升服务质量。
 
-*** Git鏡像
+*** Git镜像
 
-Git鏡像地址： =https://mirror.guix.org.cn/git/guix.git=
+Git镜像地址： =https://mirror.guix.org.cn/git/guix.git=
 
-**** 讓 ~guix pull~ 使用這個鏡像
+**** 让 ~guix pull~ 使用这个镜像
 
 修改 =~/.config/guix/channels.scm= 文件：
 #+begin_src scheme
@@ -26,13 +26,13 @@ Git鏡像地址： =https://mirror.guix.org.cn/git/guix.git=
          (url "https://mirror.guix.org.cn/git/guix.git")))
 #+end_src
 
-*** Substitute鏡像
+*** Substitute镜像
 
-Substitute鏡像地址： =https://mirror.guix.org.cn/=
+Substitute镜像地址： =https://mirror.guix.org.cn/=
 
 **** 使用方法
 
-修改 ~guix-daemon~ 的substitute-url參數爲 =https://mirror.guix.org.cn/= 。
+修改 ~guix-daemon~ 的substitute-url参数为 =https://mirror.guix.org.cn/= 。
 
 ***** Guix system
 
@@ -55,14 +55,14 @@ Substitute鏡像地址： =https://mirror.guix.org.cn/=
   ExecStart=/var/guix/profiles/per-user/root/current-guix/bin/guix-daemon --build-users-group=guixbuild --substitute-urls="https://mirror.guix.org.cn"
 #+end_src
 
-* 社區CI
+* 社区CI
    :PROPERTIES:
    :EXPORT_FILE_NAME: ci
    :END:
 
-社區構建服務器地址： =https://ci.guix.org.cn/= 。
+社区构建服务器地址： =https://ci.guix.org.cn/= 。
 
-若使用此服務器，你需要先信任它的公鑰。
+若使用此服务器，你需要先信任它的公钥。
 #+begin_src sh
   guix archive --authorize <<EOF
   (public-key
@@ -72,7 +72,7 @@ Substitute鏡像地址： =https://mirror.guix.org.cn/=
   EOF
 #+end_src
 
-目前此服務器沒有提供特殊的軟件包。
+目前此服务器没有提供特殊的软件包。
 
 * 设置输入法
    :PROPERTIES:

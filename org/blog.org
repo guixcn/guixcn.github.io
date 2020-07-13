@@ -5,7 +5,7 @@
 #+seq_todo: TODO DRAFT DONE
 #+property: header-args :eval no
 
-* DONE Guix中文社區討論組成立啦
+* DONE Guix中文社区讨论组成立啦
    CLOSED: [2020-05-14 Thu 12:02]
    :PROPERTIES:
    :EXPORT_FILE_NAME: chat-rooms-for-guix-china
@@ -14,30 +14,30 @@
    - State "DONE"       from              [2020-05-14 Thu 12:02]
    :END:
 
-鑑於當前網上的Guix中文資源匱乏，且Guix項目處於快速發展的初始階段，本身文檔匱乏，
-bug多，對初學者不友好，同時爲了慶祝Guix中文用戶即將從一位數突破到兩位數，Guix中
-文社區團隊決定建立Guix中文社區交流渠道，方便Guix中文用戶之間的交流。
+鉴于当前网上的Guix中文资源匮乏，且Guix项目处于快速发展的初始阶段，本身文档匮乏，
+bug多，对初学者不友好，同时为了庆祝Guix中文用户即将从一位数突破到两位数，Guix中
+文社区团队决定建立Guix中文社区交流渠道，方便Guix中文用户之间的交流。
 
-當前僅有一個Telegram討論組：[[https://t.me/guix_china][https://t.me/guix_china]]。以後視社區發展規模再決定是
+当前仅有一个Telegram讨论组：[[https://t.me/guix_china][https://t.me/guix_china]]。以后视社区发展规模再决定是
 否建立其它的交流渠道。
 
-【2020年5月18日更新】：因部分國內用戶不便使用Telegram，現決定增設一個QQ羣。羣號：
+【2020年5月18日更新】：因部分国内用户不便使用Telegram，现决定增设一个QQ群。群号：
 379287300。
 
-* DONE Guix中國鏡像上線啦
+* DONE Guix中国镜像上线啦
    :PROPERTIES:
    :EXPORT_FILE_NAME: guix-china-mirror-is-online-now
    :END:
 
-經過一個月的籌備，Guix中國鏡像上線啦。我們購買了 ~guix.org.cn~ 域名和一個服務器，
-並完成了域名備案。此服務器用於提供Guix軟件鏡像服務。
+经过一个月的筹备，Guix中国镜像上线啦。我们购买了 ~guix.org.cn~ 域名和一个服务器，
+并完成了域名备案。此服务器用于提供Guix软件镜像服务。
 
-服務器配置如下：
-- 處理器：2核
-- 內存：4GB
-- 硬盤：50GB
-- 上行帶寬：5Mbps
+服务器配置如下：
+- 处理器：2核
+- 内存：4GB
+- 硬盘：50GB
+- 上行带宽：5Mbps
 
-服務器的軟件配置可在 [[https://github.com/guix-china/guix-china-maintenance][GitHub]] 查看。
+服务器的软件配置可在 [[https://github.com/guix-china/guix-china-maintenance][GitHub]] 查看。
 
-Guix鏡像服務的地址是 =https://mirror.guix.org.cn/= 。欢迎测试。
+Guix镜像服务的地址是 =https://mirror.guix.org.cn/= 。欢迎测试。

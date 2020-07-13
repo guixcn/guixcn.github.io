@@ -1,4 +1,4 @@
-#+TITLE: Guix中文社區
+#+TITLE: Guix中文社区
 
 #+HUGO_BASE_DIR: ..
 #+seq_todo: TODO DRAFT DONE
@@ -10,7 +10,7 @@
   :EXPORT_HUGO_WEIGHT: auto
   :END:
 
-** DONE 簡介
+** DONE 简介
    CLOSED: [2020-05-14 Thu 12:01]
    :PROPERTIES:
    :EXPORT_FILE_NAME: about
@@ -19,10 +19,10 @@
    - State "DONE"       from "TODO"       [2020-05-14 Thu 12:01]
    :END:
 
-這裏是Guix中文社區。爲了推廣Guix在華人中的使用，並爲了方便Guix中文用戶之間的交流
+这里是Guix中文社区。为了推广Guix在华人中的使用，并为了方便Guix中文用户之间的交流
 而成立。
 
-** DONE 聯繫我們
+** DONE 联系我们
    CLOSED: [2020-05-14 Thu 12:02]
    :PROPERTIES:
    :EXPORT_FILE_NAME: contact
@@ -33,7 +33,7 @@
 
    - GitHub: https://github.com/guix-china
    - Telegram: [[https://t.me/guix_china][https://t.me/guix_china]]
-   - QQ羣：379287300
+   - QQ群：379287300
 
 ** DONE 捐赠
    CLOSED: [2020-06-12 Fri 16:26]
@@ -41,44 +41,44 @@
    :EXPORT_FILE_NAME: donate
    :END:
 
-國內的服務器和電信資費是國際水平的數倍，維護國內Guix鏡像服務的成本高昂。諸位用戶
-若覺得此網站的服務爲您提供了便利，歡迎提供捐助。
+国内的服务器和电信资费是国际水平的数倍，维护国内Guix镜像服务的成本高昂。诸位用户
+若觉得此网站的服务为您提供了便利，欢迎提供捐助。
 
-捐贈時請備註“Guix捐贈”，並通過[[https://github.com/guix-china/guix-china.github.io/issues/1][GitHub]]、[[https://guix-china.github.io/contact/][Telegram]]等任意渠道聯繫管理員更新此頁面。如
-您未提供姓名，則下面列表的“姓名”一欄默認使用捐贈帳號的用戶名。
+捐赠时请备注“Guix捐赠”，并通过[[https://github.com/guix-china/guix-china.github.io/issues/1][GitHub]]、[[https://guix-china.github.io/contact/][Telegram]]等任意渠道联系管理员更新此页面。如
+您未提供姓名，则下面列表的“姓名”一栏默认使用捐赠帐号的用户名。
 
-| 支付寶                      | 微信支付                        |
+| 支付宝                      | 微信支付                        |
 |-----------------------------+---------------------------------|
 | [[../static/images/alipay.png]] | [[../static/images/wechat-pay.png]] |
 
-*** 匯總
+*** 汇总
 
-| 項目     |     |
+| 项目     |     |
 |----------+-----|
-| 捐贈總額 | 554 |
-| 支出總額 | 504 |
-| 餘額     |  50 |
+| 捐赠总额 | 554 |
+| 支出总额 | 504 |
+| 余额     |  50 |
 #+TBLFM: @2$2=vsum(remote(donations,@I$3..@>$3))::@3$2=vsum(remote(expenses,@I$3..@>$3))::@4$2=@2$2-@3$2
 
-*** 捐贈列表
+*** 捐赠列表
 
-| 捐贈總額 | 554 |
+| 捐赠总额 | 554 |
 #+TBLFM: @1$2=vsum(remote(donations,@I$3..@>$3))
 
 #+NAME: donations
-| 日期             | 姓名   | 金額￥ | 渠道     | 備註       |
+| 日期             | 姓名   | 金额￥ | 渠道     | 备注       |
 |------------------+--------+--------+----------+------------|
 | <2020-06-23 Tue> | *幻    |     50 | 微信支付 |            |
-| <2020-05-27 Wed> | 彭美玉 |    488 |          | 購買服務器 |
-| <2020-05-20 Wed> | 彭美玉 |     16 |          | 購買域名   |
+| <2020-05-27 Wed> | 彭美玉 |    488 |          | 购买服务器 |
+| <2020-05-20 Wed> | 彭美玉 |     16 |          | 购买域名   |
 
 *** 支出列表
 
-| 支出總額 | 504 |
+| 支出总额 | 504 |
 #+TBLFM: @1$2=vsum(remote(expenses,@I$3..@>$3))
 
 #+NAME: expenses
-| 日期             | 項目                | 金額￥ | 備註                   |
+| 日期             | 项目                | 金额￥ | 备注                   |
 |------------------+---------------------+--------+------------------------|
-| <2020-05-27 Wed> | 購買騰訊雲服務器    |    488 | 新用戶優惠，原價3222元 |
-| <2020-05-20 Wed> | 購買guix.org.cn域名 |     16 | 一年有效期             |
+| <2020-05-27 Wed> | 购买腾讯云服务器    |    488 | 新用户优惠，原价3222元 |
+| <2020-05-20 Wed> | 购买guix.org.cn域名 |     16 | 一年有效期             |
