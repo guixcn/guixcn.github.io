@@ -73,3 +73,91 @@ Substitute鏡像地址： =https://mirror.guix.org.cn/=
 #+end_src
 
 目前此服務器沒有提供特殊的軟件包。
+
+* 设置输入法
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: input-method
+   :END:
+
+你可以选择使用 ~ibus~ 或者 ~fcitx~ 。
+
+** 设置 ~ibus~
+1. 安装 ~ibus~ 和 ~ibus-libpinyin~ （或 ~ibus-rime~ ）。 由于 ~ibus-setup~ 在运
+   行时依赖 ~dconf~ ，所以你需要同时安装 ~dconf~ 。
+
+   例： /etc/config.scm
+   #+BEGIN_SRC scheme
+     (operating-system
+       (packages (cons* ibus ibus-libpinyin dconf
+                        %base-packages))
+       ...
+       )
+   #+END_SRC
+
+2. 设置环境变量。
+
+   如果你使用GDM、SDDM等登录管理器（Login Manager/Display Manager），建议通过
+   =~/.pam_environment= 文件设置用户的环境变量。
+
+   例： =~/.pam_environment=
+   #+begin_src conf
+     GTK_IM_MODULE DEFAULT=ibus
+     QT_IM_MODULE DEFAULT=ibus
+     XMODIFIERS DEFAULT=@im=ibus
+
+     GUIX_GTK2_IM_MODULE_FILE DEFAULT=/run/current-system/profile/lib/gtk-2.0/2.10.0/immodules-gtk2.cache
+     GUIX_GTK3_IM_MODULE_FILE DEFAULT=/run/current-system/profile/lib/gtk-3.0/3.0.0/immodules-gtk3.cache
+   #+end_src
+
+   如果把 ~ibus~ 安装到user profile里，与上面类似，请替换这两个环境变量（但是作
+   者没验证过是否可行）：
+   #+BEGIN_SRC sh
+     GUIX_GTK2_IM_MODULE_FILE DEFAULT=${HOME}/.guix-profile/lib/gtk-2.0/2.10.0/immodules-gtk2.cache
+     GUIX_GTK3_IM_MODULE_FILE DEFAULT=${HOME}/.guix-profile/lib/gtk-3.0/3.0.0/immodules-gtk3.cache
+   #+END_SRC
+
+   如果你想使用传统的login shell配置文件方式设置环境变量，请修改对应login shell
+   的配置文件。bash用户修改 =~/.profile= 文件，zsh用户修改 =~/.zprofile= 文件。
+
+   注意：
+   #+begin_quote
+     Guix里的GDM不会自动执行用户的login shell，所以 =~/.profile= 文件里的环境变
+     量在登录之后不会生效。推荐使用SDDM。
+   #+end_quote
+
+   例：
+   #+BEGIN_SRC sh
+     export GTK_IM_MODULE="ibus"
+     export QT_IM_MODULE="ibus"
+     export XMODIFIERS="@im=ibus"
+
+     export GUIX_GTK2_IM_MODULE_FILE=/run/current-system/profile/lib/gtk-2.0/2.10.0/immodules-gtk2.cache
+     export GUIX_GTK3_IM_MODULE_FILE=/run/current-system/profile/lib/gtk-3.0/3.0.0/immodules-gtk3.cache
+   #+END_SRC
+
+3. 如果你曾经安装过 ~ibus~ ，请删除 =~/.cache/ibus= 这个文件夹。不匹配的
+   =~/.cache/ibus= 可能导致 ~ibus~ 无法启动。这是一个已知的bug。
+   #+BEGIN_SRC shell
+     rm -r ~/.cache/ibus
+   #+END_SRC
+
+4. 运行 ~ibus-daemon --xim --replace --daemonize~ 以启动 ~ibus-daemon~ 。
+   #+BEGIN_SRC shell
+     ibus-daemon --xim --replace --daemonize
+   #+END_SRC
+
+5. 运行 ~ibus-setup~ 进入设置界面，添加和设置输入法。
+   #+BEGIN_SRC shell
+     ibus-setup
+   #+END_SRC
+
+6. 好了，你可以使用 ~ibus~ 来输入中文了。
+
+*重要：*
+#+begin_quote
+  如果 ~ibus~ 无法正常启动，请删除 =~/.cache/ibus= 之后再尝试一次。如果你更新了
+  ~ibus~ 软件包，也需要删除 =~/.cache/ibus= 。这是一个已知的bug。
+#+end_quote
+
+** 设置 ~fcitx~
+@pmeiyu 不使用fcitx，此段略。
