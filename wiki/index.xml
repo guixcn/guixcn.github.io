@@ -31,5 +31,15 @@
       
     </item>
     
+    <item>
+      <title>设置输入法</title>
+      <link>/wiki/input-method/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wiki/input-method/</guid>
+      <description>你可以选择使用 ibus 或者 fcitx 。 设置 ibus 安装 ibus 和 ibus-libpinyin （或 ibus-rime ）。 由于 ibus-setup 在运 行时依赖 dconf ，所以你需要同时安装 dconf 。 例： /etc/config.scm (operating-system (packages (cons* ibus ibus-libpinyin dconf %base-packages)) ... ) 设置环境变量。 如果你使</description>
+      
+    </item>
+    
   </channel>
 </rss>
