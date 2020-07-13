@@ -12,22 +12,22 @@
     
     
     <item>
-      <title>Guix中國鏡像</title>
+      <title>Guix中国镜像</title>
       <link>/wiki/mirror/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/wiki/mirror/</guid>
-      <description>Guix中文社區提供的鏡像服務地址是： https://mirror.guix.org.cn/ 。此鏡像位於騰訊雲的南京機房，帶寬是5Mbps。歡迎捐贈資金和服務器，以提升服務質量。 Git鏡像 Gi</description>
+      <description>Guix中文社区提供的镜像服务地址是： https://mirror.guix.org.cn/ 。此镜像位于腾讯云的南京机房，带宽是5Mbps。欢迎捐赠资金和服务器，以提升服务质量。 Git镜像 Gi</description>
       
     </item>
     
     <item>
-      <title>社區CI</title>
+      <title>社区CI</title>
       <link>/wiki/ci/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/wiki/ci/</guid>
-      <description>社區構建服務器地址： https://ci.guix.org.cn/ 。 若使用此服務器，你需要先信任它的公鑰。 guix archive --authorize &amp;lt;&amp;lt;EOF (public-key (ecc (curve Ed25519) (q #A2E559D78D512DAEDFBBC772136F4BB89F1E57C7B147E15E0784A11664379796#))) EOF 目前此服務器沒有提供特殊的軟件包。</description>
+      <description>社区构建服务器地址： https://ci.guix.org.cn/ 。 若使用此服务器，你需要先信任它的公钥。 guix archive --authorize &amp;lt;&amp;lt;EOF (public-key (ecc (curve Ed25519) (q #A2E559D78D512DAEDFBBC772136F4BB89F1E57C7B147E15E0784A11664379796#))) EOF 目前此服务器没有提供特殊的软件包。</description>
       
     </item>
     

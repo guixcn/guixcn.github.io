@@ -13,22 +13,22 @@
     
     
     <item>
-      <title>簡介</title>
+      <title>简介</title>
       <link>/about/</link>
       <pubDate>Thu, 14 May 2020 12:01:00 +0800</pubDate>
       
       <guid>/about/</guid>
-      <description>這裏是Guix中文社區。爲了推廣Guix在華人中的使用，並爲了方便Guix中文用戶之間的交流而成立。</description>
+      <description>这里是Guix中文社区。为了推广Guix在华人中的使用，并为了方便Guix中文用户之间的交流而成立。</description>
       
     </item>
     
     <item>
-      <title>聯繫我們</title>
+      <title>联系我们</title>
       <link>/contact/</link>
       <pubDate>Thu, 14 May 2020 12:02:00 +0800</pubDate>
       
       <guid>/contact/</guid>
-      <description>GitHub: https://github.com/guix-china Telegram: https://t.me/guix_china QQ羣：379287300</description>
+      <description>GitHub: https://github.com/guix-china Telegram: https://t.me/guix_china QQ群：379287300</description>
       
     </item>
     
@@ -38,7 +38,7 @@
       <pubDate>Fri, 12 Jun 2020 16:26:00 +0800</pubDate>
       
       <guid>/donate/</guid>
-      <description>國內的服務器和電信資費是國際水平的數倍，維護國內Guix鏡像服務的成本高昂。諸位用戶若覺得此網站的服務爲您提供了便利，歡迎提供捐助。 捐贈時請</description>
+      <description>国内的服务器和电信资费是国际水平的数倍，维护国内Guix镜像服务的成本高昂。诸位用户若觉得此网站的服务为您提供了便利，欢迎提供捐助。 捐赠时请</description>
       
     </item>
     
