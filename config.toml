@@ -1,5 +1,5 @@
 baseURL = "https://guix-china.github.io/"
-title = "Guix中文社區"
+title = "Guix中文社区"
 theme = "hugo-notepadium"
 copyright = "© 2019-2020 Guix China Community"
 
@@ -10,17 +10,17 @@ hasCJKLanguage = true
 [menu]
   [[menu.main]]
     url = "/"
-    name = "首頁"
+    name = "首页"
     weight = 1
 
   [[menu.main]]
     url = "/about/"
-    name = "簡介"
+    name = "简介"
     weight = 1
 
   [[menu.main]]
     url = "/contact/"
-    name = "聯繫我們"
+    name = "联系我们"
     weight = 1
 
   [[menu.main]]
@@ -30,7 +30,7 @@ hasCJKLanguage = true
 
   [[menu.footer1]]
     url = "/"
-    name = "首頁"
+    name = "首页"
     weight = 1
 
 [params]
@@ -48,15 +48,15 @@ hasCJKLanguage = true
     showTags = false
 
 [[params.nav.custom]]
-    title = "簡介"
+    title = "简介"
     url = "/about/"
 
 [[params.nav.custom]]
-    title = "聯繫我們"
+    title = "联系我们"
     url = "/contact/"
 
 [[params.nav.custom]]
-    title = "捐贈"
+    title = "捐赠"
     url = "/donate/"
 
 [[params.nav.custom]]
