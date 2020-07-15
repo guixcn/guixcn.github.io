@@ -22,7 +22,7 @@ Git镜像地址： =https://mirror.guix.org.cn/git/guix.git=
 修改 =~/.config/guix/channels.scm= 文件：
 #+begin_src scheme
   (list (channel
-         (name 'guix)
+         (inherit (car %default-channels))
          (url "https://mirror.guix.org.cn/git/guix.git")))
 #+end_src
 
