@@ -11,7 +11,7 @@
 <h3 id="让-guix-pull-使用这个镜像">让 <code>guix pull</code> 使用这个镜像</h3>
 <p>修改 <code>~/.config/guix/channels.scm</code> 文件：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scheme" data-lang="scheme">(list (<span style="color:#a6e22e">channel</span>
-       (<span style="color:#a6e22e">name</span> <span style="color:#e6db74">&#39;guix</span>)
+       (<span style="color:#a6e22e">inherit</span> (car %default-channels))
        (<span style="color:#a6e22e">url</span> <span style="color:#e6db74">&#34;https://mirror.guix.org.cn/git/guix.git&#34;</span>)))
 </code></pre></div><h2 id="substitute镜像">Substitute镜像</h2>
 <p>Substitute镜像地址： <code>https://mirror.guix.org.cn/</code></p>
