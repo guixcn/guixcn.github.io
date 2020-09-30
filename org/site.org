@@ -45,7 +45,15 @@
 若觉得此网站的服务为您提供了便利，欢迎提供捐赠。
 
 捐赠时请备注“Guix捐赠”，并通过[[https://github.com/guix-china/guix-china.github.io/issues/1][GitHub]]、[[https://guix-china.github.io/contact/][Telegram]]等任意渠道联系管理员更新此页面。如
-您未提供姓名，则下面列表的“姓名”一栏默认使用捐赠帐号的用户名。
+果您未提供姓名，那么下面列表的“姓名”一栏默认使用捐赠帐号的用户名。
+
+#+begin_quote
+我们承诺您捐赠的资金将全部用于帮助Guix项目发展，包括但不限于维护Guix中国镜像服务，
+在中国推广Guix软件，游说自由软件社区支持Guix。万一我们的社区倒闭了，我们会把剩余
+资金全部捐赠给GNU/Guix项目。万一GNU/Guix项目也倒闭了，我们会把剩余资金全部捐赠给
+GNU项目。万一GNU项目也倒闭了，我们会按照[[https://en.wikipedia.org/wiki/Cy-pr%C3%A8s_doctrine][Cy-près]]原则把剩余资金捐赠给合适的公益组
+织。
+#+end_quote
 
 | 支付宝                      | 微信支付                        |
 |-----------------------------+---------------------------------|
