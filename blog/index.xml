@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2019-2020 Guix China Community</copyright>
-    <lastBuildDate>Thu, 14 May 2020 12:02:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2020 12:04:00 +0800</lastBuildDate>
     
         <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>双十一购物节添置新服务器</title>
+      <link>/blog/bought-new-server-2020-11-11/</link>
+      <pubDate>Mon, 16 Nov 2020 12:04:00 +0800</pubDate>
+      
+      <guid>/blog/bought-new-server-2020-11-11/</guid>
+      <description>Guix中国镜像服务上线至今已半年，为无数 1 中国大陆用户顺畅使用Guix软件提供了稳定的保障。众多新用户在社区的帮助下加入Guix大家庭，耳</description>
+      
+    </item>
+    
+    <item>
+      <title>Guix中国镜像上线啦</title>
+      <link>/blog/guix-china-mirror-is-online-now/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0800</pubDate>
+      
+      <guid>/blog/guix-china-mirror-is-online-now/</guid>
+      <description>经过一个月的筹备，Guix中国镜像上线啦。我们购买了 guix.org.cn 域名和一个服务器，并完成了域名备案。此服务器用于提供Guix软件镜像服务。 服务器配置如</description>
+      
+    </item>
     
     <item>
       <title>Guix中文社区讨论组成立啦</title>
@@ -19,16 +39,6 @@
       
       <guid>/blog/chat-rooms-for-guix-china/</guid>
       <description>鉴于当前网上的Guix中文资源匮乏，且Guix项目处于快速发展的初始阶段，本身文档匮乏， bug多，对初学者不友好，同时为了庆祝Guix中文用</description>
-      
-    </item>
-    
-    <item>
-      <title>Guix中国镜像上线啦</title>
-      <link>/blog/guix-china-mirror-is-online-now/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/guix-china-mirror-is-online-now/</guid>
-      <description>经过一个月的筹备，Guix中国镜像上线啦。我们购买了 guix.org.cn 域名和一个服务器，并完成了域名备案。此服务器用于提供Guix软件镜像服务。 服务器配置如</description>
       
     </item>
     
