@@ -39,7 +39,7 @@ bug多，对初学者不友好，同时为了庆祝Guix中文用户即将从一�
 - 硬盘：50GB
 - 上行带宽：5Mbps
 
-服务器的软件配置可在 [[https://github.com/guix-china/guix-china-maintenance][GitHub]] 查看。
+服务器的软件配置可在 [[https://github.com/guix-china/maintenance][GitHub]] 查看。
 
 Guix镜像服务的地址是 =https://mirror.guix.org.cn/= 。欢迎测试。
 
