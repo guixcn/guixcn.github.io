@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2019-2020 Guix China Community</copyright>
-    <lastBuildDate>Mon, 16 Nov 2020 12:04:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Dec 2020 16:55:00 +0800</lastBuildDate>
     
         <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>上海交通大学的Guix镜像上线啦</title>
+      <link>/blog/sjtug-guix-mirror-is-online-now/</link>
+      <pubDate>Mon, 21 Dec 2020 16:55:00 +0800</pubDate>
+      
+      <guid>/blog/sjtug-guix-mirror-is-online-now/</guid>
+      <description>经过Guix中文社区与上海交通大学Linux用户组（SJTUG）长达两周的合作，SJTUG的Guix镜像于2020年12月21日正式上线 1。</description>
+      
+    </item>
     
     <item>
       <title>双十一购物节添置新服务器</title>
