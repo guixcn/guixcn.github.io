@@ -89,3 +89,14 @@ Guix中国镜像镜像服务关系到无数中国大陆Guix用户的日常使用
 
 最后，感谢众多支持者在过去的半年内参与到社区的建设，并为我们捐赠资金。我们将在未
 来的时间里尽自己的能力继续为大家提供稳定可靠的服务。
+
+* DONE 上海交通大学的Guix镜像上线啦
+  CLOSED: [2020-12-21 Mon 16:55]
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: sjtug-guix-mirror-is-online-now
+   :END:
+
+经过Guix中文社区与上海交通大学Linux用户组（SJTUG）长达两周的合作，SJTUG的Guix镜
+像于2020年12月21日正式上线
+[fn::https://sjtug.org/post/mirror-news/2020-12-21-release-guix/]。欢迎大家前去
+测试。感谢SJTUG对Guix社区的大力支持。
