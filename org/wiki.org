@@ -43,7 +43,8 @@ Substitute镜像地址： =https://mirror.guix.org.cn/=
                 (guix-service-type
                  config => (guix-configuration
                             (inherit config)
-                            (substitute-urls '("https://mirror.guix.org.cn"))))))
+                            (substitute-urls '("https://mirror.guix.org.cn"
+                                               "https://ci.guix.gnu.org"))))))
     ...
     )
 #+end_src
@@ -52,7 +53,7 @@ Substitute镜像地址： =https://mirror.guix.org.cn/=
 
 修改 ~guix-daemon.service~ ：
 #+begin_src conf
-  ExecStart=/var/guix/profiles/per-user/root/current-guix/bin/guix-daemon --build-users-group=guixbuild --substitute-urls="https://mirror.guix.org.cn"
+  ExecStart=/var/guix/profiles/per-user/root/current-guix/bin/guix-daemon --build-users-group=guixbuild --substitute-urls="https://mirror.guix.org.cn https://ci.guix.gnu.org"
 #+end_src
 
 * 社区CI
