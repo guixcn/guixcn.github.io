@@ -10,9 +10,6 @@
    :EXPORT_FILE_NAME: mirror
    :END:
 
-Guix中文社区提供的镜像服务地址是： =https://mirror.guix.org.cn/= 。此镜像位于腾
-讯云的南京机房，带宽是5Mbps。欢迎捐赠资金和服务器，以提升服务质量。
-
 *** Git镜像
 
 - Git镜像地址： =https://mirror.guix.org.cn/git/guix.git= （每十分钟同步一次）
