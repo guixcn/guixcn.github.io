@@ -164,3 +164,55 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
 
 ** 设置 ~fcitx~
 @pmeiyu 不使用fcitx，此段略。
+* 在Guix System使用带有PAM支持的密码锁
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: locker-with-pam
+   :END:
+
+由於Guix System使用 ~guix system~ 來管理 ~/etc/pam.d~ 所以帶有pam支持的程序需要
+另外设置以生成 ~/etc/pam.d~ 下的文件。
+
+1. 在系统配置文件中 ~services~ 字段加入 ~screen-locker-service~ 服务
+   比如下面例子中的vlock终端密码锁，其他带有pam验证的锁屏工具等同。
+
+   例： /etc/config.scm
+   #+BEGIN_SRC scheme
+     (operating-system
+       (services (append
+                  (list
+                   (screen-locker-service kbd "vlock"))
+                  %base-services))
+       ...
+       )
+   #+END_SRC
+* 在不带有登录管理器的Guix System启动wayland会话
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: wayland-without-login-manager
+   :END:
+
+由於Guix System使用 ~elogind~ 來替代了 ~systemd-logind~ ，所以在tty下启动wayland会话
+需要在系统配置文件中另外加入 ~elogind~ ~dbus-system(elogind依赖)~  服务。
+
+1. 在系统配置文件中 ~services~ 字段加入 ~elogind-service~ ~dbus-service~ 服务
+
+   例： /etc/config.scm
+   #+BEGIN_SRC scheme
+     (operating-system
+       (services (append
+                  (list
+                   (elogind-service)
+                   (dbus-service))
+                  %base-services))
+       ...
+       )
+   #+END_SRC
+
+2. 在tty登录用户并启动wayland会话。
+
+   例:
+   #+BEGIN_SRC shell
+   $ tty
+   /dev/tty1
+   $ sway
+   ...
+   #+END_SRC
