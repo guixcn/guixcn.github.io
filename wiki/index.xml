@@ -22,6 +22,26 @@
     </item>
     
     <item>
+      <title>在Guix System使用带有PAM支持的密码锁</title>
+      <link>/wiki/locker-with-pam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wiki/locker-with-pam/</guid>
+      <description>由於Guix System使用 guix system 來管理 /etc/pam.d 所以帶有pam支持的程序需要另外设置以生成 /etc/pam.d 下的文件。 在系统配置文件中 services 字段加入 screen-locker-service 服务 比如下面例子中</description>
+      
+    </item>
+    
+    <item>
+      <title>在不带有登录管理器的Guix System启动wayland会话</title>
+      <link>/wiki/wayland-without-login-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wiki/wayland-without-login-manager/</guid>
+      <description>由於Guix System使用 elogind 來替代了 systemd-logind ，所以在tty下启动wayland会话需要在系统配置文件中另外加入 elogind dbus-system(elog</description>
+      
+    </item>
+    
+    <item>
       <title>社区CI</title>
       <link>/wiki/ci/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
