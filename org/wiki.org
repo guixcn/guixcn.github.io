@@ -216,3 +216,121 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
    $ sway
    ...
    #+END_SRC
+* Guix中使用 ~guix environment --container~ 容器化应用程序会遇到的问题
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: guix-environment-container-setup
+   :END:
+
+~guix environment --container~ 是一个可以随时手搓容器环境的强大功能。
+在使用中会遇到以下问题，并附带解决方案，如果有多种解决方案请补充。
+
+** 容器内 ~glibc~ 的 ~locale~ 问题
+
+1. 在~guix environment --container~ 中加入以下选项:
+
+   例：
+   #+BEGIN_SRC shell
+     guix environment --container\
+          ...
+          -E^LANG$\
+          -E^GUIX_LOCPATH$\
+          --ad-hoc glibc-utf8-locales\
+          ...
+   #+END_SRC
+
+** 容器内 ~tls~ 的证书问题
+
+1. 在~guix environment --container~ 中加入以下选项:
+
+   例：
+   #+BEGIN_SRC shell
+     guix environment --container\
+          ...
+          --expose=/etc/ssl \
+          --ad-hoc nss-certs curl\
+          ...
+   #+END_SRC
+
+*提示：*
+#+begin_quote
+  加入curl包的原因是它会提供许多tls应用使用的环境变量
+#+end_quote
+** 容器内访问容器外部的 ~wayland~ 会话
+1. 在~guix environment --container~ 中加入以下选项:
+
+   例：
+   #+BEGIN_SRC shell
+     guix environment --container\
+          ...
+          -E^XDG_RUNTIME_DIR$\
+          -E^WAYLAND_DISPLAY$\
+          --share=${XDG_RUNTIME_DIR}/${WAYLAND_DISPLAY}\
+          ...
+   #+END_SRC
+** 容器内的字体问题
+1. 在~guix environment --container~ 中加入以下选项:
+
+   例：
+   #+BEGIN_SRC shell
+     guix environment --container\
+          ...
+          --ad-hoc fontconfig\
+          --ad-hoc font1\
+          --ad-hoc font2\
+          ...
+   #+END_SRC
+
+2. 创建一个脚本用来在容器内更新字体缓存:
+
+   例： start.sh
+   #+BEGIN_SRC shell
+    #!/bin/sh
+
+    ln -s ${GUIX_ENVIRONMENT} ${HOME}/.guix-profile
+    fc-cache -rvf
+    bash # 如有需指定其他程序请自行替换
+
+   #+END_SRC
+
+*警告：*
+#+begin_quote
+  请确保容器没有包括容器外的${HOME}/.guix-profile
+#+end_quote
+
+*提示：*
+#+begin_quote
+  请为脚本添加可执行权限
+#+end_quote
+
+3. 在~guix environment --container~ 中加入以下选项:
+
+   例：
+   #+BEGIN_SRC shell
+     guix environment --container\
+          ...
+          --expose=/path/xxx/start.sh\
+          ...
+          -- /path/xxx/start.sh
+   #+END_SRC
+
+*提示：*
+#+begin_quote
+  请自行指定脚本存放位置
+#+end_quote
+** 容器内的gtk主题
+
+1. 在~guix environment --container~ 中加入以下选项:
+
+   例：
+   #+BEGIN_SRC shell
+     guix environment --container\
+          ...
+          --expose=${HOME}/.gtkrc-2.0\
+          --expose=${HOME}/.config/gtk-3.0/settings.ini\
+          --ad-hoc gtk-theme1\
+          --ad-hoc gtk-theme2\
+          ...
+          --ad-hoc icon-theme1\
+          --ad-hoc icon-theme2\
+          ...
+   #+END_SRC
