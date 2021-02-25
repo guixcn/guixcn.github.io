@@ -1,7 +1,7 @@
 baseURL = "https://guix-china.github.io/"
 title = "Guix中文社区"
 theme = "hugo-notepadium"
-copyright = "© 2019-2020 Guix China Community"
+copyright = "© 2019-2021 Guix China Community"
 
 disableHugoGeneratorInject = true
 languageCode = "zh-cn"
