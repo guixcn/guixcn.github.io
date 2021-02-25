@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.80.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<meta name="supported-color-schemes" content="light dark"><title>Guix中文社区&nbsp;&ndash;&nbsp;Guix China Community</title><link rel="stylesheet" href="/css/core.min.85c33644bcd01a983f09dfa5d7a72f9212089ca86dc7368a2f9d9edb1e803a3dc55d104c8e099c48a36d148567888df6.css" integrity="sha384-hcM2RLzQGpg/Cd&#43;l16cvkhIInKhtxzaKL52e2x6AOj3FXRBMjgmcSKNtFIVniI32"><link rel="alternate" type="application/rss+xml" href="/index.xml" title="Guix中文社区" /><meta name="twitter:card" content="summary" />
+<meta name="supported-color-schemes" content="light dark"><title>Guix中文社区&nbsp;&ndash;&nbsp;Guix China Community</title><link rel="stylesheet" href="/css/core.min.3342bd5e61c1ccc81deea941dd05d92f43db75a108067612513e0d48741d86d83a329180f50e3235035a637650a33375.css" integrity="sha384-M0K9XmHBzMgd7qlB3QXZL0PbdaEIBnYSUT4NSHQdhtg6MpGA9Q4yNQNaY3ZQozN1"><link rel="alternate" type="application/rss+xml" href="/index.xml" title="Guix中文社区" /><meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Guix中文社区" /><body><section id="header">
     <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/images/guix-logo.svg" alt /><span class="site name">Guix中文社区</span></a></span>
-        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/about/">简介</a><a class="nav item" href="/contact/">联系我们</a><a class="nav item" href="/donate/">捐赠</a><a class="nav item" href="/wiki/">Wiki</a><a class="nav item" href="/blog/">文章</a></nav></div></span></div><div class="site slogan"><span class="title">Guix China Community</span></div></section><section id="content"><ul class="note list"><li class="item"><a class="note" href="/wiki/mirror/">
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/about/">简介</a><a class="nav item" href="/contact/">联系我们</a><a class="nav item" href="/donate/">捐赠</a><a class="nav item" href="/wiki/">Wiki</a><a class="nav item" href="/blog/">文章</a></nav></div></span></div><div class="site slogan"><span class="title">Guix China Community</span></div></section><section id="content"><ul class="note list"><li class="item"><a class="note" href="/wiki/guix-environment-container-setup/">
+            <p class="note title">Guix中使用 guix environment –container 容器化应用程序会遇到的问题</p><p class="note content">guix environment --container 是一个可以随时手搓容器环境的强大功能。在使用中会遇到以下问题，并附带解决方案，如果有多种解决方案请补充。 容器内 glibc 的 locale 问题 在~guix environment<span class="mldr">&mldr;</span></p></a></li><li class="item"><a class="note" href="/wiki/mirror/">
             <p class="note title">Guix中国镜像</p><p class="note content">Git镜像 Git镜像地址： https://mirror.guix.org.cn/git/guix.git （每十分钟同步一次） SJTUG的Git镜像地址： https://git.sjtu.edu.cn/sjtug/guix.git （每小时同步一次） 让 guix pull 使用这个镜像 修改 ~/.config/guix/channels.scm 文件： (list (channel (inherit (car %default-channels)) (url &#34;https://mirror.guix.org.cn/git/guix.git&#34;)))<span class="mldr">&mldr;</span></p></a></li><li class="item"><a class="note" href="/wiki/locker-with-pam/">
             <p class="note title">在Guix System使用带有PAM支持的密码锁</p><p class="note content">由於Guix System使用 guix system 來管理 /etc/pam.d 所以帶有pam支持的程序需要另外设置以生成 /etc/pam.d 下的文件。 在系统配置文件中 services 字段加入 screen-locker-service 服务 比如下面例子中<span class="mldr">&mldr;</span></p></a></li><li class="item"><a class="note" href="/wiki/wayland-without-login-manager/">
             <p class="note title">在不带有登录管理器的Guix System启动wayland会话</p><p class="note content">由於Guix System使用 elogind 來替代了 systemd-logind ，所以在tty下启动wayland会话需要在系统配置文件中另外加入 elogind dbus-system(elog<span class="mldr">&mldr;</span></p></a></li><li class="item"><a class="note" href="/wiki/ci/">
             <p class="note title">社区CI</p><p class="note content">社区构建服务器地址： https://ci.guix.org.cn/ 。 若使用此服务器，你需要先信任它的公钥。 guix archive --authorize &lt;&lt;EOF (public-key (ecc (curve Ed25519) (q #A2E559D78D512DAEDFBBC772136F4BB89F1E57C7B147E15E0784A11664379796#))) EOF 目前此服务器没有提供特殊的软件包。</p></a></li><li class="item"><a class="note" href="/wiki/input-method/">
             <p class="note title">设置输入法</p><p class="note content">你可以选择使用 ibus 或者 fcitx 。 设置 ibus 安装 ibus 和 ibus-libpinyin （或 ibus-rime ）。 由于 ibus-setup 在运 行时依赖 dconf ，所以你需要同时安装 dconf 。 例： /etc/config.scm (operating-system (packages (cons* ibus ibus-libpinyin dconf %base-packages)) ... ) 设置环境变量。 如果你使<span class="mldr">&mldr;</span></p></a></li></ul></section><section id="footer"><div class="footer-wrap">
-    <p class="copyright">© 2019-2020 Guix China Community</p>
-    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
-        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
-        target="_blank">Notepadium</a></p>
-</div></section></body>
+    <p class="copyright">© 2019-2021 Guix China Community</p>
+    <p class="powerby"><span>Powered&nbsp;by&nbsp;</span><a href="https://gohugo.io" 
+        target="_blank" rel="noopener noreferrer">Hugo</a><span>&nbsp;&amp;&nbsp;</span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank" rel="noopener noreferrer">Notepadium</a></p></div>
+</section></body>
 
 </html>

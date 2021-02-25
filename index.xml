@@ -1,65 +1,501 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Guix中文社区</title>
-    <link>/</link>
+    <link>https://guix-china.github.io/</link>
     <description>Recent content on Guix中文社区</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>© 2019-2020 Guix China Community</copyright>
+    <copyright>© 2019-2021 Guix China Community</copyright>
     <lastBuildDate>Mon, 21 Dec 2020 16:55:00 +0800</lastBuildDate>
     
-        <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://guix-china.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>简介</title>
-      <link>/about/</link>
+      <link>https://guix-china.github.io/about/</link>
       <pubDate>Thu, 14 May 2020 12:01:00 +0800</pubDate>
       
-      <guid>/about/</guid>
-      <description>这里是Guix中文社区。为了推广Guix在华人中的使用，并为了方便Guix中文用户之间的交流而成立。</description>
-      
+      <guid>https://guix-china.github.io/about/</guid>
+      <description>&lt;p&gt;这里是Guix中文社区。为了推广Guix在华人中的使用，并为了方便Guix中文用户之间的交流而成立。&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>联系我们</title>
-      <link>/contact/</link>
+      <link>https://guix-china.github.io/contact/</link>
       <pubDate>Thu, 14 May 2020 12:02:00 +0800</pubDate>
       
-      <guid>/contact/</guid>
-      <description>GitHub: https://github.com/guix-china Telegram: https://t.me/guix_china 【人多，活跃】 QQ群：379287300 【人少，不活跃】</description>
-      
+      <guid>https://guix-china.github.io/contact/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/guix-china&#34;&gt;https://github.com/guix-china&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Telegram: &lt;a href=&#34;https://t.me/guix%5Fchina&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://t.me/guix_china&lt;/a&gt;
+ 【人多，活跃】&lt;/li&gt;
+&lt;li&gt;QQ群：379287300 【人少，不活跃】&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
       <title>捐赠</title>
-      <link>/donate/</link>
+      <link>https://guix-china.github.io/donate/</link>
       <pubDate>Fri, 12 Jun 2020 16:26:00 +0800</pubDate>
       
-      <guid>/donate/</guid>
-      <description>SJTUG的Guix镜像已经正式上线，我们计划在2021年停止维护自己的Guix镜像，暂时不要因为维护Guix镜像而给我们捐钱啦。如果您希望</description>
-      
+      <guid>https://guix-china.github.io/donate/</guid>
+      <description>&lt;p&gt;SJTUG的Guix镜像已经正式上线，我们计划在2021年停止维护自己的Guix镜像，暂时不要因为维护Guix镜像而给我们捐钱啦。如果您希望赞助社区开展其它活动，比如支持我们订做贴纸和文化衫，还是欢迎继续捐赠的。&lt;/p&gt;
+&lt;p&gt;捐赠时请备注“Guix捐赠”，并通过&lt;a href=&#34;https://github.com/guix-china/guix-china.github.io/issues/1&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;GitHub&lt;/a&gt;
+、&lt;a href=&#34;https://guix-china.github.io/contact/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Telegram&lt;/a&gt;
+等任意渠道联系管理员更新此页面。如果您未提供姓名，那么下面列表的“姓名”一栏默认使用捐赠帐号的用户名。您可以在捐赠时注明资金的详细用途，我们将尽力尊重您的意愿。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你们不要偷偷的捐钱啊。之前捐钱不留名的人可以联系管理员登记，未来如果有订做贴纸和
+文化衫的活动，优先给您发货。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我们承诺您捐赠的资金将全部用于帮助Guix项目发展，包括但不限于维护Guix中国镜像服务，
+在中国推广Guix软件，游说自由软件社区支持Guix。万一我们的社区倒闭了，我们会把剩余
+资金全部捐赠给GNU/Guix项目。万一GNU/Guix项目也倒闭了，我们会把剩余资金全部捐赠给
+GNU项目。万一GNU项目也倒闭了，我们会按照&lt;a href=&#34;https://en.wikipedia.org/wiki/Cy-pr%C3%A8s%5Fdoctrine&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Cy-près&lt;/a&gt;
+原则把剩余资金捐赠给合适的公益组
+织。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;支付宝&lt;/th&gt;
+&lt;th&gt;微信支付&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img  src=&#34;https://guix-china.github.io/images/alipay.png&#34;
+        alt/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img  src=&#34;https://guix-china.github.io/images/wechat-pay.png&#34;
+        alt/&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;如果您没注册过腾讯云帐号，可以通过这个推广链接注册：
+&lt;a href=&#34;https://curl.qcloud.com/ZZum5ju7&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://curl.qcloud.com/ZZum5ju7&lt;/a&gt;
+ 您消费时产生的推广佣金将记入我们的捐赠收入。&lt;/p&gt;
+&lt;h2 id=&#34;汇总&#34;&gt;汇总&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;项目&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;捐赠总额&lt;/td&gt;
+&lt;td&gt;1456.8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;支出总额&lt;/td&gt;
+&lt;td&gt;1224&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;余额&lt;/td&gt;
+&lt;td&gt;232.8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;捐赠列表&#34;&gt;捐赠列表&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;捐赠总额&lt;/td&gt;
+&lt;td&gt;1456.8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;日期&lt;/th&gt;
+&lt;th&gt;姓名&lt;/th&gt;
+&lt;th&gt;金额￥&lt;/th&gt;
+&lt;th&gt;渠道&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2020-12-08 Tue&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;td&gt;cireu&lt;/td&gt;
+&lt;td&gt;6.8&lt;/td&gt;
+&lt;td&gt;腾讯云推广返佣&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2020-11-19 Thu&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;td&gt;K*c&lt;/td&gt;
+&lt;td&gt;200&lt;/td&gt;
+&lt;td&gt;微信支付&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2020-09-30 Wed&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;td&gt;aeghn&lt;/td&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2020-07-21 Tue&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;td&gt;iyzsong&lt;/td&gt;
+&lt;td&gt;666&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2020-06-23 Tue&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;td&gt;*幻&lt;/td&gt;
+&lt;td&gt;50&lt;/td&gt;
+&lt;td&gt;微信支付&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2020-05-27 Wed&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;td&gt;彭美玉&lt;/td&gt;
+&lt;td&gt;488&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;购买服务器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2020-05-20 Wed&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;td&gt;彭美玉&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;购买域名&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;支出列表&#34;&gt;支出列表&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;支出总额&lt;/td&gt;
+&lt;td&gt;1224&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;日期&lt;/th&gt;
+&lt;th&gt;项目&lt;/th&gt;
+&lt;th&gt;金额￥&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2020-11-12 Thu&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;td&gt;guix.org.cn域名迁入DNSPod并续费一年&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;迁移服务商并续费比直接续费省19元&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2020-11-11 Wed&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;td&gt;购买腾讯云服务器 x 3年&lt;/td&gt;
+&lt;td&gt;700&lt;/td&gt;
+&lt;td&gt;双11新用户优惠，原价10854元&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2020-05-27 Wed&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;td&gt;购买腾讯云服务器 x 1年&lt;/td&gt;
+&lt;td&gt;488&lt;/td&gt;
+&lt;td&gt;新用户优惠，原价3222元&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2020-05-20 Wed&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;td&gt;购买guix.org.cn域名 x 1年&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
     </item>
     
     <item>
-      <title>Blogs</title>
-      <link>/blog/</link>
+      <title>上海交通大学的Guix镜像上线啦</title>
+      <link>https://guix-china.github.io/blog/sjtug-guix-mirror-is-online-now/</link>
       <pubDate>Mon, 21 Dec 2020 16:55:00 +0800</pubDate>
       
-      <guid>/blog/</guid>
-      <description></description>
-      
+      <guid>https://guix-china.github.io/blog/sjtug-guix-mirror-is-online-now/</guid>
+      <description>&lt;p&gt;经过Guix中文社区与上海交通大学Linux用户组（SJTUG）长达两周的合作，SJTUG的Guix镜像于2020年12月21日正式上线
+&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。欢迎大家前去测试。感谢SJTUG对Guix社区的大力支持。&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://sjtug.org/post/mirror-news/2020-12-21-release-guix/&#34;&gt;https://sjtug.org/post/mirror-news/2020-12-21-release-guix/&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
     </item>
     
     <item>
-      <title>Wikis</title>
-      <link>/wiki/</link>
+      <title>双十一购物节添置新服务器</title>
+      <link>https://guix-china.github.io/blog/bought-new-server-2020-11-11/</link>
+      <pubDate>Mon, 16 Nov 2020 12:04:00 +0800</pubDate>
+      
+      <guid>https://guix-china.github.io/blog/bought-new-server-2020-11-11/</guid>
+      <description>&lt;p&gt;Guix中国镜像服务上线至今已半年，为无数 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; 中国大陆用户顺畅使用Guix软件提供了稳定的保障。众多新用户在社区的帮助下加入Guix大家庭，耳濡目染，成为自由软件运动的一员，为推动自由软件运动奉献自己的一份力量。&lt;/p&gt;
+&lt;p&gt;Guix中国镜像镜像服务关系到无数中国大陆Guix用户的日常使用体验，我们深感自身责任重大，兢兢业业，不敢懈怠。在物资匮乏，人手不足，资金紧张，自由软件界同行不支持的艰难险阻下，排除万难，砥砺前行，保证镜像服务达到99.9%的可用率。半年来，我们不仅维护自己的镜像服务，也积极和Guix项目的其他开发者协商Guix二进制软件包下载速度慢的问题，以期简化现有搭建Guix镜像的方案，帮助国内其它拥有充足带宽和硬盘资源的高校自由软件镜像站开展Guix镜像服务，然后我们正式停业。然而此事进展缓慢，我们认为至少在未来的一两年内很难有明显进展。因此我们有必要规划自身未来两年的工作事项，及未来的服务器预算。&lt;/p&gt;
+&lt;p&gt;以前曾经介绍过，中国大陆的电信及服务器资费远高于世界平均值。在全世界服务器运营商普遍提供100+Mbps带宽的今天，中国大陆的运营商仍然标配1Mbps的带宽，且资费更高。我们作为一个收入来源全靠爱心捐赠的组织，对此深感无奈，在预算上也极为谨慎。上次靠着购物节和新注册用户特惠的条件，以1.5折的低价购买了本来难以承担的5Mbps带宽的特价服务器。辗转已过半年，租用的服务器还剩半年有效期。因此这次双十一购物节期间，我们持续两周观察分析多家国内主流运营商的优惠活动，结合社区用户的反馈和目前镜像服务器的资源使用量数据，最终决定以0.7折的优惠价格购买如下的服务器。服务器配置是2核CPU，
+4GB内存，3Mbps带宽，50+100GB硬盘，有效期三年。&lt;/p&gt;
+&lt;span class=&#34;image-container&#34;&gt;&lt;span class=&#34;link&#34; &gt;&lt;a href=&#34;https://guix-china.github.io/images/receipt-2020-11-11.jpg&#34; 
+        target=&#34;_blank&#34;&gt;&lt;img class=&#34;img&#34; src=&#34;https://guix-china.github.io/images/receipt-2020-11-11.jpg&#34;/&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;/span&gt;
+&lt;p&gt;新服务器的硬盘更大了，可以有更多的空间容纳缓存的镜像文件。但是受制于预算，带宽只有3Mbps，比以前的5Mbps降低了一些。未来有更多的捐赠收入时，我们会趁着下次购物节的机会升级带宽。&lt;/p&gt;
+&lt;p&gt;我们本来试图销毁旧服务器并申请部分退款，但是旧服务器属于特价套餐，购买条款里禁止退款。找客服协商之后，客服同意为这个订单恢复退款功能，然而恢复退款功能之后，我们自己试图操作退款时发现按照腾讯云的计算公式，可退金额为0元。「套路啊」。无奈之下，只得放弃退款申请。&lt;/p&gt;
+&lt;span class=&#34;image-container&#34;&gt;&lt;span class=&#34;link&#34; &gt;&lt;a href=&#34;https://guix-china.github.io/images/receipt-2020-05-26.jpg&#34; 
+        target=&#34;_blank&#34;&gt;&lt;img class=&#34;img&#34; src=&#34;https://guix-china.github.io/images/receipt-2020-05-26.jpg&#34;/&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;/span&gt;
+&lt;p&gt;为了充分利用现有的服务器资源，在旧服务器到期之前，镜像服务将会以两级缓存模式运行，以充分利用新服务器的大硬盘和旧服务器的大带宽。&lt;/p&gt;
+&lt;p&gt;最后，感谢众多支持者在过去的半年内参与到社区的建设，并为我们捐赠资金。我们将在未来的时间里尽自己的能力继续为大家提供稳定可靠的服务。&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;十几个 &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Guix中国镜像上线啦</title>
+      <link>https://guix-china.github.io/blog/guix-china-mirror-is-online-now/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://guix-china.github.io/blog/guix-china-mirror-is-online-now/</guid>
+      <description>&lt;p&gt;经过一个月的筹备，Guix中国镜像上线啦。我们购买了 &lt;code&gt;guix.org.cn&lt;/code&gt; 域名和一个服务器，并完成了域名备案。此服务器用于提供Guix软件镜像服务。&lt;/p&gt;
+&lt;p&gt;服务器配置如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;处理器：2核&lt;/li&gt;
+&lt;li&gt;内存：4GB&lt;/li&gt;
+&lt;li&gt;硬盘：50GB&lt;/li&gt;
+&lt;li&gt;上行带宽：5Mbps&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;服务器的软件配置可在 &lt;a href=&#34;https://github.com/guix-china/maintenance&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;GitHub&lt;/a&gt;
+ 查看。&lt;/p&gt;
+&lt;p&gt;Guix镜像服务的地址是 &lt;code&gt;https://mirror.guix.org.cn/&lt;/code&gt; 。欢迎测试。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Guix中文社区讨论组成立啦</title>
+      <link>https://guix-china.github.io/blog/chat-rooms-for-guix-china/</link>
+      <pubDate>Thu, 14 May 2020 12:02:00 +0800</pubDate>
+      
+      <guid>https://guix-china.github.io/blog/chat-rooms-for-guix-china/</guid>
+      <description>&lt;p&gt;鉴于当前网上的Guix中文资源匮乏，且Guix项目处于快速发展的初始阶段，本身文档匮乏，
+bug多，对初学者不友好，同时为了庆祝Guix中文用户即将从一位数突破到两位数，Guix中文社区团队决定建立Guix中文社区交流渠道，方便Guix中文用户之间的交流。&lt;/p&gt;
+&lt;p&gt;当前仅有一个Telegram讨论组：&lt;a href=&#34;https://t.me/guix%5Fchina&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://t.me/guix_china&lt;/a&gt;
+。以后视社区发展规模再决定是否建立其它的交流渠道。&lt;/p&gt;
+&lt;p&gt;【2020年5月18日更新】：因部分国内用户不便使用Telegram，现决定增设一个QQ群。群号：
+379287300。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Guix中使用 guix environment –container 容器化应用程序会遇到的问题</title>
+      <link>https://guix-china.github.io/wiki/guix-environment-container-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wiki/</guid>
-      <description></description>
+      <guid>https://guix-china.github.io/wiki/guix-environment-container-setup/</guid>
+      <description>&lt;p&gt;&lt;code&gt;guix environment --container&lt;/code&gt; 是一个可以随时手搓容器环境的强大功能。在使用中会遇到以下问题，并附带解决方案，如果有多种解决方案请补充。&lt;/p&gt;
+&lt;h2 id=&#34;容器内-glibc-的-locale-问题&#34;&gt;容器内 &lt;code&gt;glibc&lt;/code&gt; 的 &lt;code&gt;locale&lt;/code&gt; 问题&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在~guix environment &amp;ndash;container~ 中加入以下选项:&lt;/p&gt;
+&lt;p&gt;例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+     -E^LANG$&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     -E^GUIX_LOCPATH$&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc glibc-utf8-locales&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;容器内-tls-的证书问题&#34;&gt;容器内 &lt;code&gt;tls&lt;/code&gt; 的证书问题&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在~guix environment &amp;ndash;container~ 中加入以下选项:&lt;/p&gt;
+&lt;p&gt;例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+     --expose&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/etc/ssl &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc nss-certs curl&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;提示：&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;加入curl包的原因是它会提供许多tls应用使用的环境变量&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;容器内访问容器外部的-wayland-会话&#34;&gt;容器内访问容器外部的 &lt;code&gt;wayland&lt;/code&gt; 会话&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在~guix environment &amp;ndash;container~ 中加入以下选项:&lt;/p&gt;
+&lt;p&gt;例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+     -E^XDG_RUNTIME_DIR$&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     -E^WAYLAND_DISPLAY$&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --share&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;XDG_RUNTIME_DIR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;WAYLAND_DISPLAY&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;容器内的字体问题&#34;&gt;容器内的字体问题&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在~guix environment &amp;ndash;container~ 中加入以下选项:&lt;/p&gt;
+&lt;p&gt;例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+     --ad-hoc fontconfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc font1&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc font2&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建一个脚本用来在容器内更新字体缓存:&lt;/p&gt;
+&lt;p&gt;例： start.sh&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/sh
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+ln -s &lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;GUIX_ENVIRONMENT&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;HOME&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/.guix-profile
+fc-cache -rvf
+bash &lt;span style=&#34;color:#75715e&#34;&gt;# 如有需指定其他程序请自行替换&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;警告：&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;请确保容器没有包括容器外的${HOME}/.guix-profile&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;提示：&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;请为脚本添加可执行权限&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在~guix environment &amp;ndash;container~ 中加入以下选项:&lt;/p&gt;
+&lt;p&gt;例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+     --expose&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/path/xxx/start.sh&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+     -- /path/xxx/start.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;提示：&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;请自行指定脚本存放位置&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;容器内的gtk主题&#34;&gt;容器内的gtk主题&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在~guix environment &amp;ndash;container~ 中加入以下选项:&lt;/p&gt;
+&lt;p&gt;例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+     --expose&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;HOME&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/.gtkrc-2.0&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --expose&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;HOME&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/.config/gtk-3.0/settings.ini&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc gtk-theme1&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc gtk-theme2&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+     --ad-hoc icon-theme1&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc icon-theme2&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Guix中国镜像</title>
+      <link>https://guix-china.github.io/wiki/mirror/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
+      <guid>https://guix-china.github.io/wiki/mirror/</guid>
+      <description>&lt;h2 id=&#34;git镜像&#34;&gt;Git镜像&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Git镜像地址： &lt;code&gt;https://mirror.guix.org.cn/git/guix.git&lt;/code&gt; （每十分钟同步一次）&lt;/li&gt;
+&lt;li&gt;SJTUG的Git镜像地址： &lt;code&gt;https://git.sjtu.edu.cn/sjtug/guix.git&lt;/code&gt; （每小时同步一次）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;让-guix-pull-使用这个镜像&#34;&gt;让 &lt;code&gt;guix pull&lt;/code&gt; 使用这个镜像&lt;/h3&gt;
+&lt;p&gt;修改 &lt;code&gt;~/.config/guix/channels.scm&lt;/code&gt; 文件：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(list (&lt;span style=&#34;color:#a6e22e&#34;&gt;channel&lt;/span&gt;
+       (&lt;span style=&#34;color:#a6e22e&#34;&gt;inherit&lt;/span&gt; (car %default-channels))
+       (&lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://mirror.guix.org.cn/git/guix.git&amp;#34;&lt;/span&gt;)))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;substitute镜像&#34;&gt;Substitute镜像&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Substitute镜像地址： &lt;code&gt;https://mirror.guix.org.cn&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;SJTUG的Substitute镜像地址： &lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/guix&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器。如果SJTUG的镜像服务器运营顺利，Guix中文社区的镜像将在2021年5月1日停止维护。&lt;/p&gt;
+&lt;h3 id=&#34;使用方法&#34;&gt;使用方法&lt;/h3&gt;
+&lt;p&gt;将镜像地址添加到 &lt;code&gt;guix-daemon&lt;/code&gt; 的substitute-urls参数里。&lt;/p&gt;
+&lt;h4 id=&#34;guix-system&#34;&gt;Guix system&lt;/h4&gt;
+&lt;p&gt;修改 &lt;code&gt;/etc/config.scm&lt;/code&gt; ：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;operating-system&lt;/span&gt;
+  (&lt;span style=&#34;color:#a6e22e&#34;&gt;services&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;modify-services&lt;/span&gt; %desktop-services
+              (&lt;span style=&#34;color:#a6e22e&#34;&gt;guix-service-type&lt;/span&gt;
+               config &lt;span style=&#34;color:#66d9ef&#34;&gt;=&amp;gt; &lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;guix-configuration&lt;/span&gt;
+                          (&lt;span style=&#34;color:#a6e22e&#34;&gt;inherit&lt;/span&gt; config)
+                          (&lt;span style=&#34;color:#a6e22e&#34;&gt;substitute-urls&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#39;&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://mirrors.sjtug.sjtu.edu.cn/guix&amp;#34;&lt;/span&gt;
+                                             &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://ci.guix.gnu.org&amp;#34;&lt;/span&gt;))))))
+  &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+  )
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;systemd&#34;&gt;Systemd&lt;/h4&gt;
+&lt;p&gt;修改 &lt;code&gt;guix-daemon.service&lt;/code&gt; ：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;ExecStart=/var/guix/profiles/per-user/root/current-guix/bin/guix-daemon --build-users-group=guixbuild --substitute-urls=&amp;quot;https://mirrors.sjtug.sjtu.edu.cn/guix https://ci.guix.gnu.org&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>在Guix System使用带有PAM支持的密码锁</title>
+      <link>https://guix-china.github.io/wiki/locker-with-pam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://guix-china.github.io/wiki/locker-with-pam/</guid>
+      <description>&lt;p&gt;由於Guix System使用 &lt;code&gt;guix system&lt;/code&gt; 來管理 &lt;code&gt;/etc/pam.d&lt;/code&gt; 所以帶有pam支持的程序需要另外设置以生成 &lt;code&gt;/etc/pam.d&lt;/code&gt; 下的文件。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在系统配置文件中 &lt;code&gt;services&lt;/code&gt; 字段加入 &lt;code&gt;screen-locker-service&lt;/code&gt; 服务
+比如下面例子中的vlock终端密码锁，其他带有pam验证的锁屏工具等同。&lt;/p&gt;
+&lt;p&gt;例： /etc/config.scm&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;operating-system&lt;/span&gt;
+  (&lt;span style=&#34;color:#a6e22e&#34;&gt;services&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;append&lt;/span&gt;
+             (&lt;span style=&#34;color:#a6e22e&#34;&gt;list&lt;/span&gt;
+              (&lt;span style=&#34;color:#a6e22e&#34;&gt;screen-locker-service&lt;/span&gt; kbd &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;vlock&amp;#34;&lt;/span&gt;))
+             %base-services))
+  &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+  )
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
     </item>
     
   </channel>

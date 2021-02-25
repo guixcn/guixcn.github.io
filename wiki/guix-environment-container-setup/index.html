@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.80.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>Guix中使用 guix environment –container 容器化应用程序会遇到的问题&nbsp;&ndash;&nbsp;Guix中文社区</title><link rel="stylesheet" href="/css/core.min.3342bd5e61c1ccc81deea941dd05d92f43db75a108067612513e0d48741d86d83a329180f50e3235035a637650a33375.css" integrity="sha384-M0K9XmHBzMgd7qlB3QXZL0PbdaEIBnYSUT4NSHQdhtg6MpGA9Q4yNQNaY3ZQozN1"><meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Guix中使用 guix environment –container 容器化应用程序会遇到的问题" /><body><section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/images/guix-logo.svg" alt /><span class="site name">Guix中文社区</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/about/">简介</a><a class="nav item" href="/contact/">联系我们</a><a class="nav item" href="/donate/">捐赠</a><a class="nav item" href="/wiki/">Wiki</a><a class="nav item" href="/blog/">文章</a></nav></div></span></div><div class="site slogan"><span class="title">Guix China Community</span></div></section><section id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">Guix中使用 guix environment –container 容器化应用程序会遇到的问题</h1></section><article class="article markdown-body"><p><code>guix environment --container</code> 是一个可以随时手搓容器环境的强大功能。在使用中会遇到以下问题，并附带解决方案，如果有多种解决方案请补充。</p>
+<h2 id="容器内-glibc-的-locale-问题">容器内 <code>glibc</code> 的 <code>locale</code> 问题</h2>
+<ol>
+<li>
+<p>在~guix environment &ndash;container~ 中加入以下选项:</p>
+<p>例：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix environment --container<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     ...
+     -E^LANG$<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     -E^GUIX_LOCPATH$<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     --ad-hoc glibc-utf8-locales<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     ...
+</code></pre></div></li>
+</ol>
+<h2 id="容器内-tls-的证书问题">容器内 <code>tls</code> 的证书问题</h2>
+<ol>
+<li>
+<p>在~guix environment &ndash;container~ 中加入以下选项:</p>
+<p>例：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix environment --container<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     ...
+     --expose<span style="color:#f92672">=</span>/etc/ssl <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     --ad-hoc nss-certs curl<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     ...
+</code></pre></div></li>
+</ol>
+<p><strong>提示：</strong></p>
+<blockquote>
+<p>加入curl包的原因是它会提供许多tls应用使用的环境变量</p>
+</blockquote>
+<h2 id="容器内访问容器外部的-wayland-会话">容器内访问容器外部的 <code>wayland</code> 会话</h2>
+<ol>
+<li>
+<p>在~guix environment &ndash;container~ 中加入以下选项:</p>
+<p>例：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix environment --container<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     ...
+     -E^XDG_RUNTIME_DIR$<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     -E^WAYLAND_DISPLAY$<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     --share<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>XDG_RUNTIME_DIR<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>WAYLAND_DISPLAY<span style="color:#e6db74">}</span><span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     ...
+</code></pre></div></li>
+</ol>
+<h2 id="容器内的字体问题">容器内的字体问题</h2>
+<ol>
+<li>
+<p>在~guix environment &ndash;container~ 中加入以下选项:</p>
+<p>例：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix environment --container<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     ...
+     --ad-hoc fontconfig<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     --ad-hoc font1<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     --ad-hoc font2<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     ...
+</code></pre></div></li>
+<li>
+<p>创建一个脚本用来在容器内更新字体缓存:</p>
+<p>例： start.sh</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>
+ln -s <span style="color:#e6db74">${</span>GUIX_ENVIRONMENT<span style="color:#e6db74">}</span> <span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span>/.guix-profile
+fc-cache -rvf
+bash <span style="color:#75715e"># 如有需指定其他程序请自行替换</span>
+</code></pre></div></li>
+</ol>
+<p><strong>警告：</strong></p>
+<blockquote>
+<p>请确保容器没有包括容器外的${HOME}/.guix-profile</p>
+</blockquote>
+<p><strong>提示：</strong></p>
+<blockquote>
+<p>请为脚本添加可执行权限</p>
+</blockquote>
+<ol>
+<li>
+<p>在~guix environment &ndash;container~ 中加入以下选项:</p>
+<p>例：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix environment --container<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     ...
+     --expose<span style="color:#f92672">=</span>/path/xxx/start.sh<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     ...
+     -- /path/xxx/start.sh
+</code></pre></div></li>
+</ol>
+<p><strong>提示：</strong></p>
+<blockquote>
+<p>请自行指定脚本存放位置</p>
+</blockquote>
+<h2 id="容器内的gtk主题">容器内的gtk主题</h2>
+<ol>
+<li>
+<p>在~guix environment &ndash;container~ 中加入以下选项:</p>
+<p>例：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix environment --container<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     ...
+     --expose<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span>/.gtkrc-2.0<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     --expose<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span>/.config/gtk-3.0/settings.ini<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     --ad-hoc gtk-theme1<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     --ad-hoc gtk-theme2<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     ...
+     --ad-hoc icon-theme1<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     --ad-hoc icon-theme2<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>     ...
+</code></pre></div></li>
+</ol>
+</article>
+</div>
+<div class="article bottom"><section class="article navigation"><p><a class="link" href="/wiki/mirror/"><span class="iconfont icon-article"></span>Guix中国镜像</a></p></section></div></section><section id="footer"><div class="footer-wrap">
+    <p class="copyright">© 2019-2021 Guix China Community</p>
+    <p class="powerby"><span>Powered&nbsp;by&nbsp;</span><a href="https://gohugo.io" 
+        target="_blank" rel="noopener noreferrer">Hugo</a><span>&nbsp;&amp;&nbsp;</span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank" rel="noopener noreferrer">Notepadium</a></p></div>
+</section></body>
+
+</html>
