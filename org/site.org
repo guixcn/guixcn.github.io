@@ -32,8 +32,10 @@
    :END:
 
    - GitHub: https://github.com/guix-china
-   - Telegram: [[https://t.me/guix_china][https://t.me/guix_china]] 【人多，活跃】
-   - QQ群：379287300 【人少，不活跃】
+   - IRC: chat.freenode.net #guix_zh 【IRC 和 Telegram 的消息是互通的。有聊天机
+     器人负责转发消息。】
+   - Telegram: [[https://t.me/guix_china][https://t.me/guix_china]] 【人多，活跃。】
+   - QQ群：379287300 【人少，不活跃。】
 
 ** DONE 捐赠
    CLOSED: [2020-06-12 Fri 16:26]
