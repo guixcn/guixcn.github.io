@@ -29,8 +29,12 @@
       <guid>https://guix-china.github.io/contact/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/guix-china&#34;&gt;https://github.com/guix-china&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;IRC: chat.freenode.net #guix_zh 【IRC 和 Telegram 的消息是互通的。有聊天机
-器人负责转发消息。】&lt;/li&gt;
+&lt;li&gt;IRC 【IRC 和 Telegram 的消息是互通的。有聊天机器人自动转发消息。】
+&lt;ul&gt;
+&lt;li&gt;chat.freenode.net #guixcn&lt;/li&gt;
+&lt;li&gt;chat.freenode.net #guixcn-offtopic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Telegram: &lt;a href=&#34;https://t.me/guix%5Fchina&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://t.me/guix_china&lt;/a&gt;
  【人多，活跃。】&lt;/li&gt;
 &lt;li&gt;QQ群：379287300 【人少，不活跃。】&lt;/li&gt;
