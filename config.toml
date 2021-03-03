@@ -1,4 +1,4 @@
-baseURL = "https://guix-china.github.io/"
+baseURL = "https://guixcn.github.io/"
 title = "Guix中文社区"
 theme = "hugo-notepadium"
 copyright = "© 2019-2021 Guix China Community"

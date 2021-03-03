@@ -31,11 +31,11 @@
    - State "DONE"       from "TODO"       [2020-05-14 Thu 12:02]
    :END:
 
-   - GitHub: https://github.com/guix-china
+   - GitHub: https://github.com/guixcn
    - IRC 【IRC 和 Telegram 的消息是互通的。有聊天机器人自动转发消息。】
      - chat.freenode.net #guixcn
      - chat.freenode.net #guixcn-offtopic
-   - Telegram: [[https://t.me/guix_china][https://t.me/guix_china]] 【人多，活跃。】
+   - Telegram: [[https://t.me/guixcn][https://t.me/guixcn]] 【人多，活跃。】
    - QQ群：379287300 【人少，不活跃。】
 
 ** DONE 捐赠
@@ -48,7 +48,7 @@ SJTUG的Guix镜像已经正式上线，我们计划在2021年停止维护自己�
 为维护Guix镜像而给我们捐钱啦。如果您希望赞助社区开展其它活动，比如支持我们订做贴
 纸和文化衫，还是欢迎继续捐赠的。
 
-捐赠时请备注“Guix捐赠”，并通过[[https://github.com/guix-china/guix-china.github.io/issues/1][GitHub]]、[[https://guix-china.github.io/contact/][Telegram]]等任意渠道联系管理员更新此页面。如
+捐赠时请备注“Guix捐赠”，并通过[[https://github.com/guixcn/guixcn.github.io/issues/1][GitHub]]、[[/contact/][Telegram]]等任意渠道联系管理员更新此页面。如
 果您未提供姓名，那么下面列表的“姓名”一栏默认使用捐赠帐号的用户名。您可以在捐赠时
 注明资金的详细用途，我们将尽力尊重您的意愿。
 

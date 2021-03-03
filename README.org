@@ -16,11 +16,11 @@
    - Clone the ~src~ branch.  This branch contains the source code for the
      website.
      #+begin_src sh
-       git clone git@github.com:guix-china/guix-china.github.io.git -b src
+       git clone git@github.com:guixcn/guixcn.github.io.git -b src
      #+end_src
    - Change into the project directory:
      #+begin_src sh
-       cd guix-china.github.io
+       cd guixcn.github.io
      #+end_src
    - Update git submodules:
      #+begin_src sh
@@ -29,7 +29,7 @@
    - Clone the master branch into the ~public~ directory. This branch contains
      the compiled result for the website:
      #+begin_src sh
-       git clone git@github.com:guix-china/guix-china.github.io.git -b master public
+       git clone git@github.com:guixcn/guixcn.github.io.git -b master public
      #+end_src
 
 ** Build
