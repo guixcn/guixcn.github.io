@@ -102,3 +102,9 @@
   - The Guix logo is designed by Luis Felipe López Acevedo and released under CC
     BY-SA v4.0 License. See https://guix.gnu.org/graphics/.
   - The other files are released under [[https://www.gnu.org/licenses/gpl-3.0.en.html][GPLv3 License]].
+
+* Local Variables
+
+# Local Variables:
+# org-confirm-babel-evaluate: nil
+# End:
