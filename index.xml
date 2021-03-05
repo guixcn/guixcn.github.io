@@ -453,28 +453,22 @@ bash &lt;span style=&#34;color:#75715e&#34;&gt;# 如有需指定其他程序请�
       
       <guid>https://guixcn.github.io/wiki/guix-system-vm-setup/</guid>
       <description>&lt;h2 id=&#34;运行的虚拟机无法写入-gnu-store&#34;&gt;运行的虚拟机无法写入 &lt;code&gt;/gnu/store&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;由于虚拟机使用9p文件系统和虚拟机外部主机共享/gnu/store下面的部分内容,
+&lt;p&gt;由于虚拟机使用9p文件系统和虚拟机外部主机只读共享/gnu/store下面的部分内容,
 所以无法写入 &lt;code&gt;/gnu/store&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;如果需要独立的Guix System虚拟机请使用~guix system vm-image~生成虚拟机磁盘镜像,
 并使用qemu载入启动&lt;/p&gt;
 &lt;h2 id=&#34;机器没有图形界面的情况下操纵虚拟机的控制台&#34;&gt;机器没有图形界面的情况下操纵虚拟机的控制台&lt;/h2&gt;
 &lt;p&gt;有两种解决方法&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;使用带有图形的机器使用VNC连接到虚拟机的显示器&lt;/p&gt;
+&lt;h3 id=&#34;使用带有图形的机器使用vnc连接到虚拟机的显示器&#34;&gt;使用带有图形的机器使用VNC连接到虚拟机的显示器&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 运行有虚拟机的服务器&lt;/span&gt;
 /gnu/store/fs....sa-run-vm.sh -vnc :0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 拥有图形和vnc客户端的机器&lt;/span&gt;
 vncviewer &amp;lt;服务器的IP&amp;gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5900&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;警告：&lt;/strong&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;警告：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;VNC使用明文传输数据，请使用加密隧道进行连接&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;禁用虚拟机的图形界面并使用串口连接到机器的控制台&lt;/p&gt;
+&lt;h3 id=&#34;禁用虚拟机的图形界面并使用串口连接到机器的控制台&#34;&gt;禁用虚拟机的图形界面并使用串口连接到机器的控制台&lt;/h3&gt;
 &lt;p&gt;在虚拟机系统配置文件中加入串口getty服务:&lt;/p&gt;
 &lt;p&gt;例： vm-config.scm&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;operating-system&lt;/span&gt;
@@ -488,9 +482,7 @@ vncviewer &amp;lt;服务器的IP&amp;gt; &lt;span style=&#34;color:#ae81ff&#34;&
   )
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在启动命令中加入 &lt;code&gt;-nographic&lt;/code&gt; 选项&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;/gnu/store/fs....sa-run-vm.sh -nographic
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
