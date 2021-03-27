@@ -240,7 +240,7 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
 
 ** 容器内 ~tls~ 的证书问题
 
-1. 在~guix environment --container~ 中加入以下选项:
+1. 在 ~guix environment --container~ 中加入以下选项:
 
    例：
    #+BEGIN_SRC shell
@@ -256,7 +256,7 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
   加入curl包的原因是它会提供许多tls应用使用的环境变量
 #+end_quote
 ** 容器内访问容器外部的 ~wayland~ 会话
-1. 在~guix environment --container~ 中加入以下选项:
+1. 在 ~guix environment --container~ 中加入以下选项:
 
    例：
    #+BEGIN_SRC shell
@@ -274,22 +274,11 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
    #+BEGIN_SRC shell
      guix environment --container\
           ...
+	  --link-profile
           --ad-hoc fontconfig\
           --ad-hoc font1\
           --ad-hoc font2\
           ...
-   #+END_SRC
-
-2. 创建一个脚本用来在容器内更新字体缓存:
-
-   例： start.sh
-   #+BEGIN_SRC shell
-    #!/bin/sh
-
-    ln -s ${GUIX_ENVIRONMENT} ${HOME}/.guix-profile
-    fc-cache -rvf
-    bash # 如有需指定其他程序请自行替换
-
    #+END_SRC
 
 *警告：*
@@ -297,26 +286,6 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
   请确保容器没有包括容器外的${HOME}/.guix-profile
 #+end_quote
 
-*提示：*
-#+begin_quote
-  请为脚本添加可执行权限
-#+end_quote
-
-3. 在~guix environment --container~ 中加入以下选项:
-
-   例：
-   #+BEGIN_SRC shell
-     guix environment --container\
-          ...
-          --expose=/path/xxx/start.sh\
-          ...
-          -- /path/xxx/start.sh
-   #+END_SRC
-
-*提示：*
-#+begin_quote
-  请自行指定脚本存放位置
-#+end_quote
 ** 容器内的gtk主题
 
 1. 在~guix environment --container~ 中加入以下选项:
