@@ -79,11 +79,12 @@
    Publish the result to GitHub Pages.
    #+name: publish-github-pages
    #+begin_src sh :results output silent
+     message=$(git show -s --format='%h %s')
      cd public
      s=$(git status -s)
      if [ -n "$s" ]; then
          git add -A
-         git commit -m $(date -Iseconds)
+         git commit -m "${message}"
          git push origin master:master
      fi
    #+end_src
