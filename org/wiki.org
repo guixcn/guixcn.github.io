@@ -358,3 +358,56 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
    #+BEGIN_SRC shell
    /gnu/store/fs....sa-run-vm.sh -nographic
    #+END_SRC
+
+* Guix中使用纯 ~wayland~ 环境的时候需要设置的
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: guix-pure-wayland-setupe
+   :END:
+
+** ~gtk~ 在纯 ~wayland~ 环境中运行
+
+   1. 需要在环境变量中加入以下内容:
+
+      #+BEGIN_SRC shell
+	export GDK_BACKEND=wayland
+      #+END_SRC
+
+** ~qt~ 在纯 ~wayland~ 环境中运行
+
+   1. 需要在环境变量中加入以下内容:
+
+      #+BEGIN_SRC shell
+	export QT_QPA_PLATFORM=wayland
+      #+END_SRC
+
+   2. 同时需要在qt软件的profile中安装 ~qtwayland~ 拓展
+      以下是启动 ~fcitx5-configtool~ 中的 ~fcitx5-config-qt~ 的示例
+
+      #+BEGIN_SRC shell
+	export QT_QPA_PLATFORM=wayland
+        guix environment --ad-hoc fcitx5-configtool qtwayland -- fcitx5-config-qt
+      #+END_SRC
+
+* Guix中使用 ~guile-studio~ 作为编写 ~guile~ 代码的环境
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: guix-guile-studio
+   :END:
+
+第一次接触Guile可以使用 ~guile-studio~ 来编写 ~guile~ 代码，
+它使用GNU Emacs作为编辑器，并集成了编写 ~guile~ 需要的插件，
+并提供了开包即用的体验。
+
+** 运行
+
+   可以选择不安装它，它可以随时随地在拥有Guix的环境运行:
+
+   #+BEGIN_SRC shell
+     guix environment --ad-hoc guile-studio -- guile-studio your-scm-file.scm
+   #+END_SRC
+
+   也可以安装然后使用它:
+
+   #+BEGIN_SRC shell
+     guix package -i guile-studio
+     guile-studio you-scm-file.scm
+   #+END_SRC
