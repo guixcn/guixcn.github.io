@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
-    <loc>https://guixcn.github.io/about/</loc><lastmod>2020-05-14T12:01:00+08:00</lastmod></url><url>
-    <loc>https://guixcn.github.io/contact/</loc><lastmod>2020-05-14T12:02:00+08:00</lastmod></url><url>
-    <loc>https://guixcn.github.io/donate/</loc><lastmod>2020-06-12T16:26:00+08:00</lastmod></url><url>
-    <loc>https://guixcn.github.io/blog/</loc><lastmod>2020-12-21T16:55:00+08:00</lastmod></url><url>
-    <loc>https://guixcn.github.io/</loc><lastmod>2020-12-21T16:55:00+08:00</lastmod></url><url>
-    <loc>https://guixcn.github.io/blog/sjtug-guix-mirror-is-online-now/</loc><lastmod>2020-12-21T16:55:00+08:00</lastmod></url><url>
-    <loc>https://guixcn.github.io/blog/bought-new-server-2020-11-11/</loc><lastmod>2020-11-16T12:04:00+08:00</lastmod></url><url>
-    <loc>https://guixcn.github.io/tags/page/</loc><lastmod>2020-06-12T16:26:00+08:00</lastmod></url><url>
-    <loc>https://guixcn.github.io/tags/</loc><lastmod>2020-06-12T16:26:00+08:00</lastmod></url><url>
-    <loc>https://guixcn.github.io/blog/guix-china-mirror-is-online-now/</loc><lastmod>2020-06-01T00:00:00+08:00</lastmod></url><url>
-    <loc>https://guixcn.github.io/blog/chat-rooms-for-guix-china/</loc><lastmod>2020-05-14T12:02:00+08:00</lastmod></url><url>
+    <loc>https://guixcn.github.io/about/</loc><lastmod>2020-05-14T12:01:00+00:00</lastmod></url><url>
+    <loc>https://guixcn.github.io/contact/</loc><lastmod>2020-05-14T12:02:00+00:00</lastmod></url><url>
+    <loc>https://guixcn.github.io/donate/</loc><lastmod>2020-06-12T16:26:00+00:00</lastmod></url><url>
+    <loc>https://guixcn.github.io/blog/</loc><lastmod>2020-12-21T16:55:00+00:00</lastmod></url><url>
+    <loc>https://guixcn.github.io/</loc><lastmod>2020-12-21T16:55:00+00:00</lastmod></url><url>
+    <loc>https://guixcn.github.io/blog/sjtug-guix-mirror-is-online-now/</loc><lastmod>2020-12-21T16:55:00+00:00</lastmod></url><url>
+    <loc>https://guixcn.github.io/blog/bought-new-server-2020-11-11/</loc><lastmod>2020-11-16T12:04:00+00:00</lastmod></url><url>
+    <loc>https://guixcn.github.io/tags/page/</loc><lastmod>2020-06-12T16:26:00+00:00</lastmod></url><url>
+    <loc>https://guixcn.github.io/tags/</loc><lastmod>2020-06-12T16:26:00+00:00</lastmod></url><url>
+    <loc>https://guixcn.github.io/blog/guix-china-mirror-is-online-now/</loc><lastmod>2020-06-01T00:00:00+00:00</lastmod></url><url>
+    <loc>https://guixcn.github.io/blog/chat-rooms-for-guix-china/</loc><lastmod>2020-05-14T12:02:00+00:00</lastmod></url><url>
     <loc>https://guixcn.github.io/categories/</loc></url><url>
+    <loc>https://guixcn.github.io/wiki/guix-guile-studio/</loc></url><url>
     <loc>https://guixcn.github.io/wiki/guix-environment-container-setup/</loc></url><url>
     <loc>https://guixcn.github.io/wiki/guix-system-vm-setup/</loc></url><url>
+    <loc>https://guixcn.github.io/wiki/guix-pure-wayland-setupe/</loc></url><url>
     <loc>https://guixcn.github.io/wiki/mirror/</loc></url><url>
     <loc>https://guixcn.github.io/wiki/</loc></url><url>
     <loc>https://guixcn.github.io/wiki/locker-with-pam/</loc></url><url>

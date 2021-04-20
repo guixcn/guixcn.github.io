@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.82.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>Guix中使用 guile-studio 作为编写 guile 代码的环境&nbsp;&ndash;&nbsp;Guix中文社区</title><link rel="stylesheet" href="/css/core.min.bc812630cd6bf0a8a824184829a10c4c62812c52a52e448b051225daa0c2dbebcc34f0b19bebee7e38fc899f924653d4.css" integrity="sha384-vIEmMM1r8KioJBhIKaEMTGKBLFKlLkSLBRIl2qDC2&#43;vMNPCxm&#43;vufjj8iZ&#43;SRlPU"><meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Guix中使用 guile-studio 作为编写 guile 代码的环境" /><body><section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/images/guix-logo.svg" alt /><span class="site name">Guix中文社区</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/about/">简介</a><a class="nav item" href="/contact/">联系我们</a><a class="nav item" href="/donate/">捐赠</a><a class="nav item" href="/wiki/">Wiki</a><a class="nav item" href="/blog/">文章</a></nav></div></span></div><div class="site slogan"><span class="title">Guix China Community</span></div></section><section id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">Guix中使用 guile-studio 作为编写 guile 代码的环境</h1></section><article class="article markdown-body"><p>第一次接触Guile可以使用 <code>guile-studio</code> 来编写 <code>guile</code> 代码，
+它使用GNU Emacs作为编辑器，并集成了编写 <code>guile</code> 需要的插件，
+并提供了开包即用的体验。</p>
+<h2 id="运行">运行</h2>
+<p>可以选择不安装它，它可以随时随地在拥有Guix的环境运行:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix environment --ad-hoc guile-studio -- guile-studio your-scm-file.scm
+</code></pre></div><p>也可以安装然后使用它:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix package -i guile-studio
+guile-studio you-scm-file.scm
+</code></pre></div></article>
+</div>
+<div class="article bottom"><section class="article navigation"><p><a class="link" href="/wiki/guix-environment-container-setup/"><span class="iconfont icon-article"></span>Guix中使用 guix environment –ontainer 容器化应用程序会遇到的问题</a></p></section></div></section><section id="footer"><div class="footer-wrap">
+    <p class="copyright">© 2019-2021 Guix China Community</p>
+    <p class="powerby"><span>Powered&nbsp;by&nbsp;</span><a href="https://gohugo.io" 
+        target="_blank" rel="noopener noreferrer">Hugo</a><span>&nbsp;&amp;&nbsp;</span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank" rel="noopener noreferrer">Notepadium</a></p></div>
+</section></body>
+
+</html>

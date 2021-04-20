@@ -6,7 +6,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2019-2021 Guix China Community</copyright>
-    <lastBuildDate>Mon, 21 Dec 2020 16:55:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Dec 2020 16:55:00 +0000</lastBuildDate>
     
         <atom:link href="https://guixcn.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>简介</title>
       <link>https://guixcn.github.io/about/</link>
-      <pubDate>Thu, 14 May 2020 12:01:00 +0800</pubDate>
+      <pubDate>Thu, 14 May 2020 12:01:00 +0000</pubDate>
       
       <guid>https://guixcn.github.io/about/</guid>
       <description>&lt;p&gt;这里是Guix中文社区。为了推广Guix在华人中的使用，并为了方便Guix中文用户之间的交流
@@ -25,7 +25,7 @@
     <item>
       <title>联系我们</title>
       <link>https://guixcn.github.io/contact/</link>
-      <pubDate>Thu, 14 May 2020 12:02:00 +0800</pubDate>
+      <pubDate>Thu, 14 May 2020 12:02:00 +0000</pubDate>
       
       <guid>https://guixcn.github.io/contact/</guid>
       <description>&lt;ul&gt;
@@ -46,7 +46,7 @@
     <item>
       <title>捐赠</title>
       <link>https://guixcn.github.io/donate/</link>
-      <pubDate>Fri, 12 Jun 2020 16:26:00 +0800</pubDate>
+      <pubDate>Fri, 12 Jun 2020 16:26:00 +0000</pubDate>
       
       <guid>https://guixcn.github.io/donate/</guid>
       <description>&lt;p&gt;SJTUG的Guix镜像已经正式上线，我们计划在2021年停止维护自己的Guix镜像，暂时不要因
@@ -257,7 +257,7 @@ GNU项目。万一GNU项目也倒闭了，我们会按照&lt;a href=&#34;https:/
     <item>
       <title>上海交通大学的Guix镜像上线啦</title>
       <link>https://guixcn.github.io/blog/sjtug-guix-mirror-is-online-now/</link>
-      <pubDate>Mon, 21 Dec 2020 16:55:00 +0800</pubDate>
+      <pubDate>Mon, 21 Dec 2020 16:55:00 +0000</pubDate>
       
       <guid>https://guixcn.github.io/blog/sjtug-guix-mirror-is-online-now/</guid>
       <description>&lt;p&gt;经过Guix中文社区与上海交通大学Linux用户组（SJTUG）长达两周的合作，SJTUG的Guix镜
@@ -278,7 +278,7 @@ GNU项目。万一GNU项目也倒闭了，我们会按照&lt;a href=&#34;https:/
     <item>
       <title>双十一购物节添置新服务器</title>
       <link>https://guixcn.github.io/blog/bought-new-server-2020-11-11/</link>
-      <pubDate>Mon, 16 Nov 2020 12:04:00 +0800</pubDate>
+      <pubDate>Mon, 16 Nov 2020 12:04:00 +0000</pubDate>
       
       <guid>https://guixcn.github.io/blog/bought-new-server-2020-11-11/</guid>
       <description>&lt;p&gt;Guix中国镜像服务上线至今已半年，为无数 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; 中国大陆用户顺畅使用Guix软件
@@ -331,7 +331,7 @@ GNU项目。万一GNU项目也倒闭了，我们会按照&lt;a href=&#34;https:/
     <item>
       <title>Guix中国镜像上线啦</title>
       <link>https://guixcn.github.io/blog/guix-china-mirror-is-online-now/</link>
-      <pubDate>Mon, 01 Jun 2020 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://guixcn.github.io/blog/guix-china-mirror-is-online-now/</guid>
       <description>&lt;p&gt;经过一个月的筹备，Guix中国镜像上线啦。我们购买了 &lt;code&gt;guix.org.cn&lt;/code&gt; 域名和一个服务器，
@@ -352,7 +352,7 @@ GNU项目。万一GNU项目也倒闭了，我们会按照&lt;a href=&#34;https:/
     <item>
       <title>Guix中文社区讨论组成立啦</title>
       <link>https://guixcn.github.io/blog/chat-rooms-for-guix-china/</link>
-      <pubDate>Thu, 14 May 2020 12:02:00 +0800</pubDate>
+      <pubDate>Thu, 14 May 2020 12:02:00 +0000</pubDate>
       
       <guid>https://guixcn.github.io/blog/chat-rooms-for-guix-china/</guid>
       <description>&lt;p&gt;鉴于当前网上的Guix中文资源匮乏，且Guix项目处于快速发展的初始阶段，本身文档匮乏，
@@ -364,6 +364,24 @@ bug多，对初学者不友好，同时为了庆祝Guix中文用户即将从一�
 &lt;p&gt;【2020年5月18日更新】：因部分国内用户不便使用Telegram，现决定增设一个QQ群。群号：
 379287300。&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Guix中使用 guile-studio 作为编写 guile 代码的环境</title>
+      <link>https://guixcn.github.io/wiki/guix-guile-studio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://guixcn.github.io/wiki/guix-guile-studio/</guid>
+      <description>&lt;p&gt;第一次接触Guile可以使用 &lt;code&gt;guile-studio&lt;/code&gt; 来编写 &lt;code&gt;guile&lt;/code&gt; 代码，
+它使用GNU Emacs作为编辑器，并集成了编写 &lt;code&gt;guile&lt;/code&gt; 需要的插件，
+并提供了开包即用的体验。&lt;/p&gt;
+&lt;h2 id=&#34;运行&#34;&gt;运行&lt;/h2&gt;
+&lt;p&gt;可以选择不安装它，它可以随时随地在拥有Guix的环境运行:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --ad-hoc guile-studio -- guile-studio your-scm-file.scm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;也可以安装然后使用它:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix package -i guile-studio
+guile-studio you-scm-file.scm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -491,48 +509,6 @@ vncviewer &amp;lt;服务器的IP&amp;gt; &lt;span style=&#34;color:#ae81ff&#34;&
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在启动命令中加入 &lt;code&gt;-nographic&lt;/code&gt; 选项&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;/gnu/store/fs....sa-run-vm.sh -nographic
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Guix中国镜像</title>
-      <link>https://guixcn.github.io/wiki/mirror/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://guixcn.github.io/wiki/mirror/</guid>
-      <description>&lt;h2 id=&#34;git镜像&#34;&gt;Git镜像&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Git镜像地址： &lt;code&gt;https://mirror.guix.org.cn/git/guix.git&lt;/code&gt; （每十分钟同步一次）&lt;/li&gt;
-&lt;li&gt;SJTUG的Git镜像地址： &lt;code&gt;https://git.sjtu.edu.cn/sjtug/guix.git&lt;/code&gt; （每小时同步一次）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;让-guix-pull-使用这个镜像&#34;&gt;让 &lt;code&gt;guix pull&lt;/code&gt; 使用这个镜像&lt;/h3&gt;
-&lt;p&gt;修改 &lt;code&gt;~/.config/guix/channels.scm&lt;/code&gt; 文件：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(list (&lt;span style=&#34;color:#a6e22e&#34;&gt;channel&lt;/span&gt;
-       (&lt;span style=&#34;color:#a6e22e&#34;&gt;inherit&lt;/span&gt; (car %default-channels))
-       (&lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://mirror.guix.org.cn/git/guix.git&amp;#34;&lt;/span&gt;)))
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;substitute镜像&#34;&gt;Substitute镜像&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Substitute镜像地址： &lt;code&gt;https://mirror.guix.org.cn&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;SJTUG的Substitute镜像地址： &lt;code&gt;https://mirrors.sjtug.sjtu.edu.cn/guix&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器。如果SJTUG的镜像服务器
-运营顺利，Guix中文社区的镜像将在2021年5月1日停止维护。&lt;/p&gt;
-&lt;h3 id=&#34;使用方法&#34;&gt;使用方法&lt;/h3&gt;
-&lt;p&gt;将镜像地址添加到 &lt;code&gt;guix-daemon&lt;/code&gt; 的substitute-urls参数里。&lt;/p&gt;
-&lt;h4 id=&#34;guix-system&#34;&gt;Guix system&lt;/h4&gt;
-&lt;p&gt;修改 &lt;code&gt;/etc/config.scm&lt;/code&gt; ：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;operating-system&lt;/span&gt;
-  (&lt;span style=&#34;color:#a6e22e&#34;&gt;services&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;modify-services&lt;/span&gt; %desktop-services
-	      (&lt;span style=&#34;color:#a6e22e&#34;&gt;guix-service-type&lt;/span&gt;
-	       config &lt;span style=&#34;color:#66d9ef&#34;&gt;=&amp;gt; &lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;guix-configuration&lt;/span&gt;
-			  (&lt;span style=&#34;color:#a6e22e&#34;&gt;inherit&lt;/span&gt; config)
-			  (&lt;span style=&#34;color:#a6e22e&#34;&gt;substitute-urls&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#39;&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://mirrors.sjtug.sjtu.edu.cn/guix&amp;#34;&lt;/span&gt;
-					     &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://ci.guix.gnu.org&amp;#34;&lt;/span&gt;))))))
-  &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
-  )
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;systemd&#34;&gt;Systemd&lt;/h4&gt;
-&lt;p&gt;修改 &lt;code&gt;guix-daemon.service&lt;/code&gt; ：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;ExecStart=/var/guix/profiles/per-user/root/current-guix/bin/guix-daemon --build-users-group=guixbuild --substitute-urls=&amp;quot;https://mirrors.sjtug.sjtu.edu.cn/guix https://ci.guix.gnu.org&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>
