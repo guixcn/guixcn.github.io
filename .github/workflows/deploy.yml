@@ -25,23 +25,26 @@ jobs:
         with:
           nix_path: nixpkgs=channel:nixos-unstable
 
-      - name: build
+      - name: Setup nix-shell
+        run: nix-shell --run 'true'
+
+      - name: Build
         run: nix-shell --run 'emacs -q --batch --load build.el'
 
-      - name: setup git
+      - name: Setup git
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
 
-      - name: deploy github pages
+      - name: Deploy to github pages
         run: nix-shell --run 'emacs -q --batch --load deploy.el'
 
-      - name: install SSH key
+      - name: Install SSH key
         uses: shimataro/ssh-key-action@v2
         with:
           name: id_ed25519
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
 
-      - name: deploy to guix.org.cn
+      - name: Deploy to guix.org.cn
         run: nix-shell --run 'rsync -rhP --delete public/* github@guix.org.cn:/srv/www/guix.org.cn'

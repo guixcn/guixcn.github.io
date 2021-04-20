@@ -85,7 +85,7 @@
      if [ -n "$s" ]; then
          git add -A
          git commit -m "${message}"
-         git push origin master:master
+         git push
      fi
    #+end_src
 
