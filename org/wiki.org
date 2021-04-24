@@ -402,12 +402,234 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
    可以选择不安装它，它可以随时随地在拥有Guix的环境运行:
 
    #+BEGIN_SRC shell
-     guix environment --ad-hoc guile-studio -- guile-studio your-scm-file.scm
+     guix environment --ad-hoc emacs-no-x guile-studio -- guile-studio
    #+END_SRC
 
    也可以安装然后使用它:
 
    #+BEGIN_SRC shell
-     guix package -i guile-studio
-     guile-studio you-scm-file.scm
+     guix package -i guile-studio emacs-no-x
+     guile-studio
    #+END_SRC
+
+** 使用
+
+   可以使用方向键来移动光标进行编辑
+
+   以下是一些经常会用到的快捷键:
+
+   概念:
+
+   快捷键: Ctrl = C, Alt/Meta = M
+   窗口: ~guile-studio~ 启动的时候会默认创建两个窗口
+
+   如果是新手建议先使用菜单提供的功能进行 ~打开/编辑/保存/保存~ 文件
+
+   | 快捷键  | 功能                                  |
+   |---------+---------------------------------------|
+   | F10     | 打开菜单                              |
+   | C+x o   | 切换到屏幕上的其他窗口                |
+   | C+x 1   | 关闭当前窗口                          |
+   | C+x 2   | 横向分割出一个窗口                    |
+   | C+x 3   | 竖向分割出一个窗口                    |
+   | C+Space | 开始选中内容                          |
+   | Tab     | 选中内容并按下Tab，可以进行代码格式化 |
+   | C+g     | 取消选中的内容                        |
+
+   更多请查阅 GNU Emacs 的文档
+
+* 在GuixSystem使用 ~kmscon~ 显示中文内容
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: guix-system-use-kmscon
+   :END:
+
+   对于不需要图形环境的机器，可以选择 ~kmscon~ 服务来显示中文内容
+
+   1. 在系统配置文件中添加以下内容:
+
+      #+BEGIN_SRC scheme
+	(operating-system
+	 (services (append
+		    (list
+		     (service kmscon-service-type
+		      (kmscon-configuration
+		       (virtual-terminal "tty5"))))  ; 这里更换为需要的tty
+		    %base-services))
+	 ...
+	 )
+      #+END_SRC
+
+** 更多的字符显示支持
+
+   写此博客的时候 ~kmscon~ 服务并未加入pango的字体选择功能，
+   但是可以使用 ~unifont~ 字体引擎来获得更多字符显示的支持，
+
+   #+BEGIN_SRC scheme
+     (operating-system
+      (services (append
+		 (list
+		  (service kmscon-service-type
+			   (kmscon-configuration
+			    ...
+			    (virtual-terminal "tty5")
+			    (font-engine "unifont")))) ; 使用unifont
+			   %base-services))
+		 ...
+		 )
+   #+END_SRC
+
+* 使用 ~fdm~ ~mutt~ ~msmtp~ 设置简易的邮件环境
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: fdm-mutt-msmtp-mail-env
+   :END:
+
+   作为Guix用户应该懂得如何使用邮件列表进行讨论
+
+   | 软件   | 作用                       |
+   |--------+----------------------------|
+   | fdm    | 收邮件，过滤邮件，分类邮件 |
+   | mutt   | 管理邮件                   |
+   | msmtp  | 发邮件                     |
+   | 编辑器 | 编写邮件                   |
+   | 阅读器 | 阅读邮件                   |
+
+   对于编辑器和阅读器，纯文本邮件并不会有太多的限制，
+   可以自由选择自己喜欢的编辑器或阅读器。
+
+** 安装
+
+   安装软件包:
+   #+BEGIN_SRC shell
+     guix package -i fdm mutt msmtp
+   #+END_SRC
+
+   安装需要的编辑器和阅读器，这个示例使用 ~emacs~:
+   #+BEGIN_SRC shell
+     guix package -i emacs-no-x
+   #+END_SRC
+
+** 配置
+
+   这里的例子有一个约定:
+
+   ~${HOME}/Mail~ 作为本地邮件的存放位置，从远程服务器下载的邮件都会存放在这里。
+
+   1. fdm
+      创建一个配置文件:
+
+      #+BEGIN_SRC shell
+	 umask 077 # 更严格安全的权限
+	 touch ~/.fdm.conf
+      #+END_SRC
+
+      并写入:
+
+      #+BEGIN_SRC text
+	 ## .fdm.conf
+	 # 默认收件箱
+	 action "inbox" maildir "%h/Mail/inbox"
+	 # guix相关邮件收件箱
+	 action "guix" maildir "%h/Mail/guix"
+
+	 # 请取消注释并修改需要的内容
+	 # 账户设置 POP3
+	 #account "账户名" pop3s server "POP3服务器"
+	 # 账户设置 IMAP
+	 #account "账户名" imaps server "IMAP服务器"
+	 # 登录需要的
+	 #user "用户名" pass "密码"
+
+	 # 将带有 guix 内容的邮件放至guix收件箱
+	 match "guix" in headers action "guix"
+	 match "guix" in body action "guix"
+
+	 # 将其他邮件放至inbox
+	 match all action "inbox"
+      #+END_SRC
+
+    2. msmtp
+       创建一个配置文件:
+
+      #+BEGIN_SRC shell
+	 umask 077 # 更严格安全的权限
+	 touch ~/.msmtprc
+      #+END_SRC
+
+      并写入:
+
+      #+BEGIN_SRC text
+	account default
+	host SMTP服务器
+	protocol smtp
+	auth on
+	from 邮箱地址
+	user 登录所需用户名，通常和邮箱地址相同
+	password 密码
+	tls on
+	tls_starttls on
+      #+END_SRC
+
+    3. mutt
+
+       #+BEGIN_SRC shell
+	 umask 077 # 更严格安全的权限
+	 touch ~/.muttrc
+       #+END_SRC
+
+      并写入:
+
+      #+BEGIN_SRC text
+	# 本地邮箱的设置
+	set folder=~/Mail
+	set mbox=+mbox
+	set spoolfile=+inbox
+	set record=+sent
+	set sort=threads # 邮件列表建议的显示方式
+	set postponed=+drafts
+	set mbox_type=Maildir
+	mailboxes +inbox
+
+	# 这里示例使用Emacs作为阅读器和编辑器
+	set editor='emacsclient -nw'
+	set pager='emacsclient -nw'
+
+	# 发送邮件的命令
+	set sendmail="msmtp"
+      #+END_SRC
+
+** 使用
+
+   使用流程如下:
+
+   1. 收邮件
+
+      #+BEGIN_SRC shell
+	fdm -v fetch
+      #+END_SRC
+
+   2. 看邮件
+
+      #+BEGIN_SRC shell
+	mutt
+      #+END_SRC
+
+      使用快捷键 ~c~ 切换邮件的分类。
+      使用 j/k 或者方向键移动光标。
+      使用回车查看邮件邮件编辑器退出后会询问下一步的命令，
+      一般输入 ~q~ 来回到列表，或者 ~j/k~ 来看上一个/下一个邮件。
+      使用快捷键 ~d~ 为邮件添加删除标志，然后使用快捷键 ~$~ 提交更改删除它们。
+
+   3. 发邮件
+
+      #+BEGIN_SRC shell
+	mutt
+      #+END_SRC
+
+      进入 ~mutt~ 之后使用快捷键 ~m~ 按照提示填写信息，之后会调用编辑器打开，
+      保存关闭之后按照提示信息发送
+
+      回复一个邮件时需要移动光标到这个邮件上使用快捷键 ~r~ 进行回复
+
+** 邮件列表注意事项
+
+   发送邮件到邮件列表之前通常需要订阅才可以送达至邮件列表
