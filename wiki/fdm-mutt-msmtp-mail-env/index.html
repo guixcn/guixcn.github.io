@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.82.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>使用 fdm mutt msmtp 设置简易的邮件环境&nbsp;&ndash;&nbsp;Guix中文社区</title><link rel="stylesheet" href="/css/core.min.bc812630cd6bf0a8a824184829a10c4c62812c52a52e448b051225daa0c2dbebcc34f0b19bebee7e38fc899f924653d4.css" integrity="sha384-vIEmMM1r8KioJBhIKaEMTGKBLFKlLkSLBRIl2qDC2&#43;vMNPCxm&#43;vufjj8iZ&#43;SRlPU"><meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="使用 fdm mutt msmtp 设置简易的邮件环境" /><body><section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/images/guix-logo.svg" alt /><span class="site name">Guix中文社区</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/about/">简介</a><a class="nav item" href="/contact/">联系我们</a><a class="nav item" href="/donate/">捐赠</a><a class="nav item" href="/wiki/">Wiki</a><a class="nav item" href="/blog/">文章</a></nav></div></span></div><div class="site slogan"><span class="title">Guix China Community</span></div></section><section id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">使用 fdm mutt msmtp 设置简易的邮件环境</h1></section><article class="article markdown-body"><p>作为Guix用户应该懂得如何使用邮件列表进行讨论</p>
+<table>
+<thead>
+<tr>
+<th>软件</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fdm</td>
+<td>收邮件，过滤邮件，分类邮件</td>
+</tr>
+<tr>
+<td>mutt</td>
+<td>管理邮件</td>
+</tr>
+<tr>
+<td>msmtp</td>
+<td>发邮件</td>
+</tr>
+<tr>
+<td>编辑器</td>
+<td>编写邮件</td>
+</tr>
+<tr>
+<td>阅读器</td>
+<td>阅读邮件</td>
+</tr>
+</tbody>
+</table>
+<p>对于编辑器和阅读器，纯文本邮件并不会有太多的限制，
+可以自由选择自己喜欢的编辑器或阅读器。</p>
+<h2 id="安装">安装</h2>
+<p>安装软件包:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix package -i fdm mutt msmtp
+</code></pre></div><p>安装需要的编辑器和阅读器，这个示例使用 <code>emacs</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix package -i emacs-no-x
+</code></pre></div><h2 id="配置">配置</h2>
+<p>这里的例子有一个约定:</p>
+<p><code>${HOME}/Mail</code> 作为本地邮件的存放位置，从远程服务器下载的邮件都会存放在这里。</p>
+<ol>
+<li>
+<p>fdm
+创建一个配置文件:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">umask <span style="color:#ae81ff">077</span> <span style="color:#75715e"># 更严格安全的权限</span>
+touch ~/.fdm.conf
+</code></pre></div><p>并写入:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">## .fdm.conf
+# 默认收件箱
+action &#34;inbox&#34; maildir &#34;%h/Mail/inbox&#34;
+# guix相关邮件收件箱
+action &#34;guix&#34; maildir &#34;%h/Mail/guix&#34;
+
+# 请取消注释并修改需要的内容
+# 账户设置 POP3
+#account &#34;账户名&#34; pop3s server &#34;POP3服务器&#34;
+# 账户设置 IMAP
+#account &#34;账户名&#34; imaps server &#34;IMAP服务器&#34;
+# 登录需要的
+#user &#34;用户名&#34; pass &#34;密码&#34;
+
+# 将带有 guix 内容的邮件放至guix收件箱
+match &#34;guix&#34; in headers action &#34;guix&#34;
+match &#34;guix&#34; in body action &#34;guix&#34;
+
+# 将其他邮件放至inbox
+match all action &#34;inbox&#34;
+</code></pre></div><ol>
+<li>
+<p>msmtp
+创建一个配置文件:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">umask <span style="color:#ae81ff">077</span> <span style="color:#75715e"># 更严格安全的权限</span>
+touch ~/.msmtprc
+</code></pre></div><p>并写入:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">account default
+host SMTP服务器
+protocol smtp
+auth on
+from 邮箱地址
+user 登录所需用户名，通常和邮箱地址相同
+password 密码
+tls on
+tls_starttls on
+</code></pre></div></li>
+<li>
+<p>mutt</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">umask <span style="color:#ae81ff">077</span> <span style="color:#75715e"># 更严格安全的权限</span>
+touch ~/.muttrc
+</code></pre></div><p>并写入:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text"># 本地邮箱的设置
+set folder=~/Mail
+set mbox=+mbox
+set spoolfile=+inbox
+set record=+sent
+set sort=threads # 邮件列表建议的显示方式
+set postponed=+drafts
+set mbox_type=Maildir
+mailboxes +inbox
+
+# 这里示例使用Emacs作为阅读器和编辑器
+set editor=&#39;emacsclient -nw&#39;
+set pager=&#39;emacsclient -nw&#39;
+
+# 发送邮件的命令
+set sendmail=&#34;msmtp&#34;
+</code></pre></div></li>
+</ol>
+</li>
+</ol>
+<h2 id="使用">使用</h2>
+<p>使用流程如下:</p>
+<ol>
+<li>
+<p>收邮件</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">fdm -v fetch
+</code></pre></div></li>
+<li>
+<p>看邮件</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"> mutt
+</code></pre></div><p>使用快捷键 <code>c</code> 切换邮件的分类。
+使用 j/k 或者方向键移动光标。
+使用回车查看邮件邮件编辑器退出后会询问下一步的命令，
+一般输入 <code>q</code> 来回到列表，或者 <code>j/k</code> 来看上一个/下一个邮件。
+使用快捷键 <code>d</code> 为邮件添加删除标志，然后使用快捷键 <code>$</code> 提交更改删除它们。</p>
+</li>
+<li>
+<p>发邮件</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"> mutt
+</code></pre></div><p>进入 <code>mutt</code> 之后使用快捷键 <code>m</code> 按照提示填写信息，之后会调用编辑器打开，
+保存关闭之后按照提示信息发送</p>
+<p>回复一个邮件时需要移动光标到这个邮件上使用快捷键 <code>r</code> 进行回复</p>
+</li>
+</ol>
+<h2 id="邮件列表注意事项">邮件列表注意事项</h2>
+<p>发送邮件到邮件列表之前通常需要订阅才可以送达至邮件列表</p>
+</article>
+</div>
+<div class="article bottom"><section class="article navigation"><p><a class="link" href="/wiki/mirror/"><span class="iconfont icon-article"></span>Guix中国镜像</a></p><p><a class="link" href="/wiki/locker-with-pam/"><span class="iconfont icon-article"></span>在Guix System使用带有PAM支持的密码锁</a></p></section></div></section><section id="footer"><div class="footer-wrap">
+    <p class="copyright">© 2019-2021 Guix China Community</p>
+    <p class="powerby"><span>Powered&nbsp;by&nbsp;</span><a href="https://gohugo.io" 
+        target="_blank" rel="noopener noreferrer">Hugo</a><span>&nbsp;&amp;&nbsp;</span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank" rel="noopener noreferrer">Notepadium</a></p></div>
+</section></body>
+
+</html>

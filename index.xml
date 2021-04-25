@@ -377,11 +377,61 @@ bug多，对初学者不友好，同时为了庆祝Guix中文用户即将从一�
 并提供了开包即用的体验。&lt;/p&gt;
 &lt;h2 id=&#34;运行&#34;&gt;运行&lt;/h2&gt;
 &lt;p&gt;可以选择不安装它，它可以随时随地在拥有Guix的环境运行:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --ad-hoc guile-studio -- guile-studio your-scm-file.scm
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --ad-hoc emacs-no-x guile-studio -- guile-studio
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;也可以安装然后使用它:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix package -i guile-studio
-guile-studio you-scm-file.scm
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix package -i guile-studio emacs-no-x
+guile-studio
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
+&lt;p&gt;可以使用方向键来移动光标进行编辑&lt;/p&gt;
+&lt;p&gt;以下是一些经常会用到的快捷键:&lt;/p&gt;
+&lt;p&gt;概念:&lt;/p&gt;
+&lt;p&gt;快捷键: Ctrl = C, Alt/Meta = M
+窗口: &lt;code&gt;guile-studio&lt;/code&gt; 启动的时候会默认创建两个窗口&lt;/p&gt;
+&lt;p&gt;如果是新手建议先使用菜单提供的功能进行 &lt;code&gt;打开/编辑/保存/保存&lt;/code&gt; 文件&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;F10&lt;/td&gt;
+&lt;td&gt;打开菜单&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C+x o&lt;/td&gt;
+&lt;td&gt;切换到屏幕上的其他窗口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C+x 1&lt;/td&gt;
+&lt;td&gt;关闭当前窗口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C+x 2&lt;/td&gt;
+&lt;td&gt;横向分割出一个窗口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C+x 3&lt;/td&gt;
+&lt;td&gt;竖向分割出一个窗口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C+Space&lt;/td&gt;
+&lt;td&gt;开始选中内容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Tab&lt;/td&gt;
+&lt;td&gt;选中内容并按下Tab，可以进行代码格式化&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C+g&lt;/td&gt;
+&lt;td&gt;取消选中的内容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;更多请查阅 GNU Emacs 的文档&lt;/p&gt;
+</description>
     </item>
     
     <item>

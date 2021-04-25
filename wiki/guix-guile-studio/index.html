@@ -10,11 +10,61 @@
 并提供了开包即用的体验。</p>
 <h2 id="运行">运行</h2>
 <p>可以选择不安装它，它可以随时随地在拥有Guix的环境运行:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix environment --ad-hoc guile-studio -- guile-studio your-scm-file.scm
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix environment --ad-hoc emacs-no-x guile-studio -- guile-studio
 </code></pre></div><p>也可以安装然后使用它:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix package -i guile-studio
-guile-studio you-scm-file.scm
-</code></pre></div></article>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix package -i guile-studio emacs-no-x
+guile-studio
+</code></pre></div><h2 id="使用">使用</h2>
+<p>可以使用方向键来移动光标进行编辑</p>
+<p>以下是一些经常会用到的快捷键:</p>
+<p>概念:</p>
+<p>快捷键: Ctrl = C, Alt/Meta = M
+窗口: <code>guile-studio</code> 启动的时候会默认创建两个窗口</p>
+<p>如果是新手建议先使用菜单提供的功能进行 <code>打开/编辑/保存/保存</code> 文件</p>
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F10</td>
+<td>打开菜单</td>
+</tr>
+<tr>
+<td>C+x o</td>
+<td>切换到屏幕上的其他窗口</td>
+</tr>
+<tr>
+<td>C+x 1</td>
+<td>关闭当前窗口</td>
+</tr>
+<tr>
+<td>C+x 2</td>
+<td>横向分割出一个窗口</td>
+</tr>
+<tr>
+<td>C+x 3</td>
+<td>竖向分割出一个窗口</td>
+</tr>
+<tr>
+<td>C+Space</td>
+<td>开始选中内容</td>
+</tr>
+<tr>
+<td>Tab</td>
+<td>选中内容并按下Tab，可以进行代码格式化</td>
+</tr>
+<tr>
+<td>C+g</td>
+<td>取消选中的内容</td>
+</tr>
+</tbody>
+</table>
+<p>更多请查阅 GNU Emacs 的文档</p>
+</article>
 </div>
 <div class="article bottom"><section class="article navigation"><p><a class="link" href="/wiki/guix-environment-container-setup/"><span class="iconfont icon-article"></span>Guix中使用 guix environment –ontainer 容器化应用程序会遇到的问题</a></p></section></div></section><section id="footer"><div class="footer-wrap">
     <p class="copyright">© 2019-2021 Guix China Community</p>
