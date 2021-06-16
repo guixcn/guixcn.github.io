@@ -48,3 +48,6 @@ jobs:
 
       - name: Deploy to guix.org.cn
         run: nix-shell --run 'rsync -rhP --delete public/* github@guix.org.cn:/srv/www/guix.org.cn'
+
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
