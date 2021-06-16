@@ -71,7 +71,7 @@
    Build Hugo project.
    #+name: build-hugo-project
    #+begin_src sh :results output silent
-     hugo
+     hugo --debug
    #+end_src
 
 ** Publish
