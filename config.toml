@@ -60,6 +60,10 @@ hasCJKLanguage = true
     url = "/donate/"
 
 [[params.nav.custom]]
+    title = "Free Shell"
+    url = "/free-shell/"
+
+[[params.nav.custom]]
     title = "Wiki"
     url = "/wiki/"
 

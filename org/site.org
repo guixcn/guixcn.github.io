@@ -110,3 +110,75 @@ GNU项目。万一GNU项目也倒闭了，我们会按照[[https://en.wikipedia.
 | <2020-11-11 Wed> | 购买腾讯云服务器 x 3年              |    700 | 双11新用户优惠，原价10854元      |
 | <2020-05-27 Wed> | 购买腾讯云服务器 x 1年              |    488 | 新用户优惠，原价3222元           |
 | <2020-05-20 Wed> | 购买guix.org.cn域名 x 1年           |     16 |                                  |
+
+** DONE Free Shell
+   CLOSED: [2021-06-16 Wed 10:44]
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: free-shell
+   :END:
+
+由于国内已经有SJTUG和USTCLUG两个大学社团提供Guix镜像服务，我们自己不再需要提供
+Guix镜像服务，原先用于镜像服务的资源闲置。镜像服务器的购买资金源于捐赠，依取之于
+民，用之于民的原则，我们决定向公众开放服务器的使用权限。用户注册帐号后可以在服务
+器上提供与Guix相关的服务，也可以用于个人日常用途。
+
+服务器配置：
+- 处理器：2核（Intel Xeon Gold 6148 @ 2.394GHz）
+- 内存：4GB
+- 硬盘：50GB（/） + 100GB（/home，/srv）
+- 带宽：3Mbps
+
+[[../static/images/neofetch-shanghai.png]]
+
+*** 注册流程
+
+- 加入社区聊天群，和大家多交流。
+- Fork [[https://github.com/guixcn/maintenance][这个Github仓库]]，在[[https://github.com/guixcn/maintenance/blob/master/shanghai/monkeys.scm][monkeys.scm]]文件里添加你的信息，然后提交Pull Request。
+- 到社区聊天群里通知大家你提交了Pull Request。
+- 等待管理员处理。
+
+注册后用户可获得SSH帐号和网络文件夹（ =https://user.guix.org.cn/USERNAME= ）。
+
+- SSH登录地址：USERNAME@user.guix.org.cn
+- 网络文件夹对应的硬盘路径：/srv/www/user/USERNAME
+
+请合理使用服务器资源，避免对别的用户造成干扰。
+
+*** 现有的用户
+
+https://github.com/guixcn/maintenance/blob/master/shanghai/monkeys.scm
+
+#+begin_src scheme
+  (define %monkeys
+    (list (monkey
+           (name "meiyu")
+           (comment "Peng Mei Yu")
+           (shell (file-append zsh "/bin/zsh"))
+           (ssh-public-key
+            (plain-file "meiyu.pub"
+                        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICGixg7L7vRFgmxBS2GmI4/UqPw7pERi3qbKFUPaEZIF")))
+          (monkey
+           (name "qblade")
+           (comment "luhux")
+           (ssh-public-key
+            (plain-file "luhux.pub"
+                        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIbLzIHSgPsTHirnDDVteW8gcumLnzizb05syPgLiDve")))
+          (monkey
+           (name "pandagix")
+           (comment "PandaGix")
+           (ssh-public-key
+            (plain-file "pandagix.pub"
+                        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPZ3/HBVQ+t8mtGuYXJUbbKR8yynheYl3RpbIs82ANv2")))
+          (monkey
+           (name "c4droid")
+           (comment "c4droid")
+           (ssh-public-key
+            (plain-file "c4droid.pub"
+                        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKlfAalEYpKNamHSye6fdiQXziKPhh8JI/jgt/ItI8eo")))
+          (monkey
+           (name "Z572")
+           (comment "Z572")
+           (ssh-public-key
+            (plain-file "z572.pub"
+                        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKGGhcSQkHGf5XMWt5iRlrpHvrViHuZ7ApnU88IRETbF")))))
+#+end_src
