@@ -81,9 +81,11 @@
    #+begin_src sh :results output silent
      message=$(git show -s --format='%h %s')
      cd public
+     git status
      s=$(git status -s)
      if [ -n "$s" ]; then
          git add -A
+         git status
          git commit -m "${message}"
          git push
      fi
