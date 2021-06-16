@@ -1,3 +1,6 @@
+;; Change time zone to UTC+8.
+(setenv "TZ" "CST")
+
 (require 'org)
 (org-babel-do-load-languages 'org-babel-load-languages
                              '((shell . t)))
