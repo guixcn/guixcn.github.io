@@ -36,7 +36,6 @@
      - irc.libera.chat #guixcn
      - irc.libera.chat #guixcn-offtopic
    - Telegram: [[https://t.me/guixcn][https://t.me/guixcn]] 【人多，活跃。】
-   - QQ群：379287300 【人少，不活跃。】
 
 ** DONE 捐赠
    CLOSED: [2020-06-12 Fri 16:26]
