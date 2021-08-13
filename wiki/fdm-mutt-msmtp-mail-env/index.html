@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.83.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.87.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<meta name="supported-color-schemes" content="light dark"><title>使用 fdm mutt msmtp 设置简易的邮件环境&nbsp;&ndash;&nbsp;Guix中文社区</title><link rel="stylesheet" href="/css/core.min.27f12af1f2cbf25d1f5f2d1e1d237db2fff9ffcb0da138988662a5cc71c42cc9febaf9fd28bffafa0c4a46ac9affae6d.css" integrity="sha384-J/Eq8fLL8l0fXy0eHSN9sv/5/8sNoTiYhmKlzHHELMn&#43;uvn9KL/6&#43;gxKRqya/65t"><meta name="twitter:card" content="summary" />
+<meta name="supported-color-schemes" content="light dark"><title>使用 fdm mutt msmtp 设置简易的邮件环境&nbsp;&ndash;&nbsp;Guix中文社区</title><link rel="stylesheet" href="/css/core.min.57e7589b93576dc645a743adf94441c77a52821272d21d638fbc98343c73c04651a1cd03f70eac2089abd6dc4ce693ff.css" integrity="sha384-V&#43;dYm5NXbcZFp0Ot&#43;URBx3pSghJy0h1jj7yYNDxzwEZRoc0D9w6sIImr1txM5pP/"><meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="使用 fdm mutt msmtp 设置简易的邮件环境" /><body><section id="header">
     <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/images/guix-logo.svg" alt /><span class="site name">Guix中文社区</span></a></span>
         <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/about/">简介</a><a class="nav item" href="/contact/">联系我们</a><a class="nav item" href="/donate/">捐赠</a><a class="nav item" href="/free-shell/">Free Shell</a><a class="nav item" href="/wiki/">Wiki</a><a class="nav item" href="/blog/">文章</a></nav></div></span></div><div class="site slogan"><span class="title">Guix China Community</span></div></section><section id="content"><div class="article-container"><section class="article header">
@@ -40,9 +40,9 @@
 可以自由选择自己喜欢的编辑器或阅读器。</p>
 <h2 id="安装">安装</h2>
 <p>安装软件包:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix package -i fdm mutt msmtp
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix package -i fdm mutt msmtp
 </code></pre></div><p>安装需要的编辑器和阅读器，这个示例使用 <code>emacs</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix package -i emacs-no-x
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix package -i emacs-no-x
 </code></pre></div><h2 id="配置">配置</h2>
 <p>这里的例子有一个约定:</p>
 <p><code>${HOME}/Mail</code> 作为本地邮件的存放位置，从远程服务器下载的邮件都会存放在这里。</p>
@@ -50,10 +50,10 @@
 <li>
 <p>fdm
 创建一个配置文件:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">umask <span style="color:#ae81ff">077</span> <span style="color:#75715e"># 更严格安全的权限</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">umask <span style="color:#ae81ff">077</span> <span style="color:#75715e"># 更严格安全的权限</span>
 touch ~/.fdm.conf
 </code></pre></div><p>并写入:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">## .fdm.conf
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">## .fdm.conf
 # 默认收件箱
 action &#34;inbox&#34; maildir &#34;%h/Mail/inbox&#34;
 # guix相关邮件收件箱
@@ -77,10 +77,10 @@ match all action &#34;inbox&#34;
 <li>
 <p>msmtp
 创建一个配置文件:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">umask <span style="color:#ae81ff">077</span> <span style="color:#75715e"># 更严格安全的权限</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">umask <span style="color:#ae81ff">077</span> <span style="color:#75715e"># 更严格安全的权限</span>
 touch ~/.msmtprc
 </code></pre></div><p>并写入:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">account default
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">account default
 host SMTP服务器
 protocol smtp
 auth on
@@ -92,10 +92,10 @@ tls_starttls on
 </code></pre></div></li>
 <li>
 <p>mutt</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">umask <span style="color:#ae81ff">077</span> <span style="color:#75715e"># 更严格安全的权限</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">umask <span style="color:#ae81ff">077</span> <span style="color:#75715e"># 更严格安全的权限</span>
 touch ~/.muttrc
 </code></pre></div><p>并写入:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text"># 本地邮箱的设置
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text"># 本地邮箱的设置
 set folder=~/Mail
 set mbox=+mbox
 set spoolfile=+inbox
@@ -120,11 +120,11 @@ set sendmail=&#34;msmtp&#34;
 <ol>
 <li>
 <p>收邮件</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">fdm -v fetch
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">fdm -v fetch
 </code></pre></div></li>
 <li>
 <p>看邮件</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"> mutt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"> mutt
 </code></pre></div><p>使用快捷键 <code>c</code> 切换邮件的分类。
 使用 j/k 或者方向键移动光标。
 使用回车查看邮件邮件编辑器退出后会询问下一步的命令，
@@ -133,7 +133,7 @@ set sendmail=&#34;msmtp&#34;
 </li>
 <li>
 <p>发邮件</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"> mutt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"> mutt
 </code></pre></div><p>进入 <code>mutt</code> 之后使用快捷键 <code>m</code> 按照提示填写信息，之后会调用编辑器打开，
 保存关闭之后按照提示信息发送</p>
 <p>回复一个邮件时需要移动光标到这个邮件上使用快捷键 <code>r</code> 进行回复</p>
@@ -144,10 +144,12 @@ set sendmail=&#34;msmtp&#34;
 </article>
 </div>
 <div class="article bottom"><section class="article navigation"><p><a class="link" href="/wiki/mirror/"><span class="iconfont icon-article"></span>Guix中国镜像</a></p><p><a class="link" href="/wiki/locker-with-pam/"><span class="iconfont icon-article"></span>在Guix System使用带有PAM支持的密码锁</a></p></section></div></section><section id="footer"><div class="footer-wrap">
-    <p class="copyright">© 2019-2021 Guix China Community</p>
-    <p class="powerby"><span>Powered&nbsp;by&nbsp;</span><a href="https://gohugo.io" 
-        target="_blank" rel="noopener noreferrer">Hugo</a><span>&nbsp;&amp;&nbsp;</span><a href="https://themes.gohugo.io/hugo-notepadium/" 
-        target="_blank" rel="noopener noreferrer">Notepadium</a></p></div>
-</section></body>
+  <p class="copyright">© 2019-2021 Guix China Community</p><p>
+    <a rel="nofollow" target="_blank" href="https://beian.miit.gov.cn/">鄂ICP备20009141号-1</a>
+  </p><p class="powerby">
+    <span>Powered by </span><a href="https://gohugo.io" target="_blank">Hugo</a>
+  </p>
+</div>
+</section><script src="/js/prism.min.442843b7ea6eef5105ab77a4c16488edbd8210fcd77efef362770e1bf0c3a47130e20e0553ae0388b6a50e4cd49a315e.js" integrity="sha384-RChDt&#43;pu71EFq3ekwWSI7b2CEPzXfv7zYncOG/DDpHEw4g4FU64DiLalDkzUmjFe"></script></body>
 
 </html>

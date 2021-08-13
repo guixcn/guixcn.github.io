@@ -28,7 +28,8 @@
       
       <guid>https://guixcn.github.io/contact/</guid>
       <description>&lt;ul&gt;
-&lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/guixcn&#34;&gt;https://github.com/guixcn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/guixcn&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/guixcn&lt;/a&gt;
+&lt;/li&gt;
 &lt;li&gt;IRC 【IRC 和 Telegram 的消息是互通的。有聊天机器人自动转发消息。】
 &lt;ul&gt;
 &lt;li&gt;irc.libera.chat #guixcn&lt;/li&gt;
@@ -260,6 +261,79 @@ GNU项目。万一GNU项目也倒闭了，我们会按照&lt;a href=&#34;https:/
     </item>
     
     <item>
+      <title>Free Shell</title>
+      <link>https://guixcn.github.io/free-shell/</link>
+      <pubDate>Wed, 16 Jun 2021 10:44:00 +0000</pubDate>
+      
+      <guid>https://guixcn.github.io/free-shell/</guid>
+      <description>&lt;p&gt;由于国内已经有SJTUG和USTCLUG两个大学社团提供Guix镜像服务，我们自己不再需要提供
+Guix镜像服务，原先用于镜像服务的资源闲置。镜像服务器的购买资金源于捐赠，依取之于
+民，用之于民的原则，我们决定向公众开放服务器的使用权限。用户注册帐号后可以在服务
+器上提供与Guix相关的服务，也可以用于个人日常用途。&lt;/p&gt;
+&lt;p&gt;服务器配置：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;处理器：2核（Intel Xeon Gold 6148 @ 2.394GHz）&lt;/li&gt;
+&lt;li&gt;内存：4GB&lt;/li&gt;
+&lt;li&gt;硬盘：50GB（/） + 100GB（/home，/srv）&lt;/li&gt;
+&lt;li&gt;带宽：3Mbps&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class=&#34;image-container&#34;&gt;&lt;span class=&#34;link&#34; &gt;&lt;a href=&#34;https://guixcn.github.io/images/neofetch-shanghai.png&#34; 
+        target=&#34;_blank&#34;&gt;&lt;img class=&#34;img&#34; src=&#34;https://guixcn.github.io/images/neofetch-shanghai.png&#34;/&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;/span&gt;
+&lt;h2 id=&#34;注册流程&#34;&gt;注册流程&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;加入社区聊天群，和大家多交流。&lt;/li&gt;
+&lt;li&gt;Fork &lt;a href=&#34;https://github.com/guixcn/maintenance&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;这个Github仓库&lt;/a&gt;
+，在&lt;a href=&#34;https://github.com/guixcn/maintenance/blob/master/shanghai/monkeys.scm&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;monkeys.scm&lt;/a&gt;
+文件里添加你的信息，然后提交Pull Request。&lt;/li&gt;
+&lt;li&gt;到社区聊天群里通知大家你提交了Pull Request。&lt;/li&gt;
+&lt;li&gt;等待管理员处理。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;注册后用户可获得SSH帐号和网络文件夹（ &lt;code&gt;https://user.guix.org.cn/USERNAME&lt;/code&gt; ）。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SSH登录地址：USERNAME@user.guix.org.cn&lt;/li&gt;
+&lt;li&gt;网络文件夹对应的硬盘路径：/srv/www/user/USERNAME&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;请合理使用服务器资源，避免对别的用户造成干扰。&lt;/p&gt;
+&lt;h2 id=&#34;现有的用户&#34;&gt;现有的用户&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/guixcn/maintenance/blob/master/shanghai/monkeys.scm&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/guixcn/maintenance/blob/master/shanghai/monkeys.scm&lt;/a&gt;
+&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;define &lt;/span&gt;%monkeys
+  (list (&lt;span style=&#34;color:#a6e22e&#34;&gt;monkey&lt;/span&gt;
+	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;meiyu&amp;#34;&lt;/span&gt;)
+	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;comment&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Peng Mei Yu&amp;#34;&lt;/span&gt;)
+	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;shell&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;file-append&lt;/span&gt; zsh &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/bin/zsh&amp;#34;&lt;/span&gt;))
+	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;ssh-public-key&lt;/span&gt;
+	  (&lt;span style=&#34;color:#a6e22e&#34;&gt;plain-file&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;meiyu.pub&amp;#34;&lt;/span&gt;
+		      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICGixg7L7vRFgmxBS2GmI4/UqPw7pERi3qbKFUPaEZIF&amp;#34;&lt;/span&gt;)))
+	(&lt;span style=&#34;color:#a6e22e&#34;&gt;monkey&lt;/span&gt;
+	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;qblade&amp;#34;&lt;/span&gt;)
+	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;comment&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;luhux&amp;#34;&lt;/span&gt;)
+	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;ssh-public-key&lt;/span&gt;
+	  (&lt;span style=&#34;color:#a6e22e&#34;&gt;plain-file&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;luhux.pub&amp;#34;&lt;/span&gt;
+		      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIbLzIHSgPsTHirnDDVteW8gcumLnzizb05syPgLiDve&amp;#34;&lt;/span&gt;)))
+	(&lt;span style=&#34;color:#a6e22e&#34;&gt;monkey&lt;/span&gt;
+	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pandagix&amp;#34;&lt;/span&gt;)
+	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;comment&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;PandaGix&amp;#34;&lt;/span&gt;)
+	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;ssh-public-key&lt;/span&gt;
+	  (&lt;span style=&#34;color:#a6e22e&#34;&gt;plain-file&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pandagix.pub&amp;#34;&lt;/span&gt;
+		      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPZ3/HBVQ+t8mtGuYXJUbbKR8yynheYl3RpbIs82ANv2&amp;#34;&lt;/span&gt;)))
+	(&lt;span style=&#34;color:#a6e22e&#34;&gt;monkey&lt;/span&gt;
+	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;c4droid&amp;#34;&lt;/span&gt;)
+	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;comment&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;c4droid&amp;#34;&lt;/span&gt;)
+	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;ssh-public-key&lt;/span&gt;
+	  (&lt;span style=&#34;color:#a6e22e&#34;&gt;plain-file&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;c4droid.pub&amp;#34;&lt;/span&gt;
+		      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKlfAalEYpKNamHSye6fdiQXziKPhh8JI/jgt/ItI8eo&amp;#34;&lt;/span&gt;)))
+	(&lt;span style=&#34;color:#a6e22e&#34;&gt;monkey&lt;/span&gt;
+	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Z572&amp;#34;&lt;/span&gt;)
+	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;comment&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Z572&amp;#34;&lt;/span&gt;)
+	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;ssh-public-key&lt;/span&gt;
+	  (&lt;span style=&#34;color:#a6e22e&#34;&gt;plain-file&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;z572.pub&amp;#34;&lt;/span&gt;
+		      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKGGhcSQkHGf5XMWt5iRlrpHvrViHuZ7ApnU88IRETbF&amp;#34;&lt;/span&gt;)))))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
       <title>上海交通大学的Guix镜像上线啦</title>
       <link>https://guixcn.github.io/blog/sjtug-guix-mirror-is-online-now/</link>
       <pubDate>Mon, 21 Dec 2020 16:55:00 +0000</pubDate>
@@ -273,7 +347,8 @@ GNU项目。万一GNU项目也倒闭了，我们会按照&lt;a href=&#34;https:/
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;&lt;a href=&#34;https://sjtug.org/post/mirror-news/2020-12-21-release-guix/&#34;&gt;https://sjtug.org/post/mirror-news/2020-12-21-release-guix/&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sjtug.org/post/mirror-news/2020-12-21-release-guix/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://sjtug.org/post/mirror-news/2020-12-21-release-guix/&lt;/a&gt;
+&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -382,9 +457,9 @@ bug多，对初学者不友好，同时为了庆祝Guix中文用户即将从一�
 并提供了开包即用的体验。&lt;/p&gt;
 &lt;h2 id=&#34;运行&#34;&gt;运行&lt;/h2&gt;
 &lt;p&gt;可以选择不安装它，它可以随时随地在拥有Guix的环境运行:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --ad-hoc emacs-no-x guile-studio -- guile-studio
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --ad-hoc emacs-no-x guile-studio -- guile-studio
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;也可以安装然后使用它:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix package -i guile-studio emacs-no-x
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix package -i guile-studio emacs-no-x
 guile-studio
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
 &lt;p&gt;可以使用方向键来移动光标进行编辑&lt;/p&gt;
@@ -452,7 +527,7 @@ guile-studio
 &lt;li&gt;
 &lt;p&gt;在~guix environment &amp;ndash;container~ 中加入以下选项:&lt;/p&gt;
 &lt;p&gt;例：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
 &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
      -E^LANG$&lt;span style=&#34;color:#ae81ff&#34;&gt;\
 &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     -E^GUIX_LOCPATH$&lt;span style=&#34;color:#ae81ff&#34;&gt;\
@@ -465,7 +540,7 @@ guile-studio
 &lt;li&gt;
 &lt;p&gt;在 &lt;code&gt;guix environment --container&lt;/code&gt; 中加入以下选项:&lt;/p&gt;
 &lt;p&gt;例：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
 &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
      --expose&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/etc/ssl &lt;span style=&#34;color:#ae81ff&#34;&gt;\
 &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc nss-certs curl&lt;span style=&#34;color:#ae81ff&#34;&gt;\
@@ -481,7 +556,7 @@ guile-studio
 &lt;li&gt;
 &lt;p&gt;在 &lt;code&gt;guix environment --container&lt;/code&gt; 中加入以下选项:&lt;/p&gt;
 &lt;p&gt;例：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
 &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
      -E^XDG_RUNTIME_DIR$&lt;span style=&#34;color:#ae81ff&#34;&gt;\
 &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     -E^WAYLAND_DISPLAY$&lt;span style=&#34;color:#ae81ff&#34;&gt;\
@@ -494,7 +569,7 @@ guile-studio
 &lt;li&gt;
 &lt;p&gt;在~guix environment &amp;ndash;container~ 中加入以下选项:&lt;/p&gt;
 &lt;p&gt;例：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
 &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
      --link-profile
      --ad-hoc fontconfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\
@@ -512,7 +587,7 @@ guile-studio
 &lt;li&gt;
 &lt;p&gt;在~guix environment &amp;ndash;container~ 中加入以下选项:&lt;/p&gt;
 &lt;p&gt;例：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
 &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
      --expose&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;HOME&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/.gtkrc-2.0&lt;span style=&#34;color:#ae81ff&#34;&gt;\
 &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --expose&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;HOME&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/.config/gtk-3.0/settings.ini&lt;span style=&#34;color:#ae81ff&#34;&gt;\
@@ -525,45 +600,6 @@ guile-studio
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Guix中使用 guix system vm 会遇到的问题</title>
-      <link>https://guixcn.github.io/wiki/guix-system-vm-setup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://guixcn.github.io/wiki/guix-system-vm-setup/</guid>
-      <description>&lt;h2 id=&#34;运行的虚拟机无法写入-gnu-store&#34;&gt;运行的虚拟机无法写入 &lt;code&gt;/gnu/store&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;由于虚拟机使用9p文件系统和虚拟机外部主机只读共享/gnu/store下面的部分内容,
-所以无法写入 &lt;code&gt;/gnu/store&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;如果需要独立的Guix System虚拟机请使用~guix system vm-image~生成虚拟机磁盘镜像,
-并使用qemu载入启动&lt;/p&gt;
-&lt;h2 id=&#34;机器没有图形界面的情况下操纵虚拟机的控制台&#34;&gt;机器没有图形界面的情况下操纵虚拟机的控制台&lt;/h2&gt;
-&lt;p&gt;有两种解决方法&lt;/p&gt;
-&lt;h3 id=&#34;使用带有图形的机器使用vnc连接到虚拟机的显示器&#34;&gt;使用带有图形的机器使用VNC连接到虚拟机的显示器&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 运行有虚拟机的服务器&lt;/span&gt;
-/gnu/store/fs....sa-run-vm.sh -vnc :0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 拥有图形和vnc客户端的机器&lt;/span&gt;
-vncviewer &amp;lt;服务器的IP&amp;gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5900&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;警告：&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;VNC使用明文传输数据，请使用加密隧道进行连接&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;禁用虚拟机的图形界面并使用串口连接到机器的控制台&#34;&gt;禁用虚拟机的图形界面并使用串口连接到机器的控制台&lt;/h3&gt;
-&lt;p&gt;在虚拟机系统配置文件中加入串口getty服务:&lt;/p&gt;
-&lt;p&gt;例： vm-config.scm&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;operating-system&lt;/span&gt;
-  (&lt;span style=&#34;color:#a6e22e&#34;&gt;services&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;append&lt;/span&gt;
-	     (&lt;span style=&#34;color:#a6e22e&#34;&gt;list&lt;/span&gt;
-	      (&lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt; mingetty-service-type
-		       (&lt;span style=&#34;color:#a6e22e&#34;&gt;mingetty-configuration&lt;/span&gt;
-			(&lt;span style=&#34;color:#a6e22e&#34;&gt;tty&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ttyS0&amp;#34;&lt;/span&gt;)))
-	     %base-services))
-  &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
-  )
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在启动命令中加入 &lt;code&gt;-nographic&lt;/code&gt; 选项&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;/gnu/store/fs....sa-run-vm.sh -nographic
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
   </channel>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.83.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.87.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<meta name="supported-color-schemes" content="light dark"><title>设置输入法&nbsp;&ndash;&nbsp;Guix中文社区</title><link rel="stylesheet" href="/css/core.min.27f12af1f2cbf25d1f5f2d1e1d237db2fff9ffcb0da138988662a5cc71c42cc9febaf9fd28bffafa0c4a46ac9affae6d.css" integrity="sha384-J/Eq8fLL8l0fXy0eHSN9sv/5/8sNoTiYhmKlzHHELMn&#43;uvn9KL/6&#43;gxKRqya/65t"><meta name="twitter:card" content="summary" />
+<meta name="supported-color-schemes" content="light dark"><title>设置输入法&nbsp;&ndash;&nbsp;Guix中文社区</title><link rel="stylesheet" href="/css/core.min.57e7589b93576dc645a743adf94441c77a52821272d21d638fbc98343c73c04651a1cd03f70eac2089abd6dc4ce693ff.css" integrity="sha384-V&#43;dYm5NXbcZFp0Ot&#43;URBx3pSghJy0h1jj7yYNDxzwEZRoc0D9w6sIImr1txM5pP/"><meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="设置输入法" /><body><section id="header">
     <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/images/guix-logo.svg" alt /><span class="site name">Guix中文社区</span></a></span>
         <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/about/">简介</a><a class="nav item" href="/contact/">联系我们</a><a class="nav item" href="/donate/">捐赠</a><a class="nav item" href="/free-shell/">Free Shell</a><a class="nav item" href="/wiki/">Wiki</a><a class="nav item" href="/blog/">文章</a></nav></div></span></div><div class="site slogan"><span class="title">Guix China Community</span></div></section><section id="content"><div class="article-container"><section class="article header">
@@ -12,7 +12,7 @@
 <p>安装 <code>ibus</code> 和 <code>ibus-libpinyin</code> （或 <code>ibus-rime</code> ）。 由于 <code>ibus-setup</code> 在运
 行时依赖 <code>dconf</code> ，所以你需要同时安装 <code>dconf</code> 。</p>
 <p>例： /etc/config.scm</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scheme" data-lang="scheme">(<span style="color:#a6e22e">operating-system</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scheme" data-lang="scheme">(<span style="color:#a6e22e">operating-system</span>
   (<span style="color:#a6e22e">packages</span> (<span style="color:#a6e22e">cons*</span> ibus ibus-libpinyin dconf
            %base-packages))
   <span style="color:#f92672">...</span>
@@ -31,7 +31,7 @@ GUIX_GTK2_IM_MODULE_FILE DEFAULT=/run/current-system/profile/lib/gtk-2.0/2.10.0/
 GUIX_GTK3_IM_MODULE_FILE DEFAULT=/run/current-system/profile/lib/gtk-3.0/3.0.0/immodules-gtk3.cache
 </code></pre><p>如果把 <code>ibus</code> 安装到user profile里，与上面类似，请替换这两个环境变量（但是作
 者没验证过是否可行）：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">GUIX_GTK2_IM_MODULE_FILE DEFAULT<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span>/.guix-profile/lib/gtk-2.0/2.10.0/immodules-gtk2.cache
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">GUIX_GTK2_IM_MODULE_FILE DEFAULT<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span>/.guix-profile/lib/gtk-2.0/2.10.0/immodules-gtk2.cache
 GUIX_GTK3_IM_MODULE_FILE DEFAULT<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span>/.guix-profile/lib/gtk-3.0/3.0.0/immodules-gtk3.cache
 </code></pre></div><p>如果你想使用传统的login shell配置文件方式设置环境变量，请修改对应login shell
 的配置文件。bash用户修改 <code>~/.profile</code> 文件，zsh用户修改 <code>~/.zprofile</code> 文件。</p>
@@ -41,7 +41,7 @@ GUIX_GTK3_IM_MODULE_FILE DEFAULT<span style="color:#f92672">=</span><span style=
 量在登录之后不会生效。推荐使用SDDM。</p>
 </blockquote>
 <p>例：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">export GTK_IM_MODULE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ibus&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">export GTK_IM_MODULE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ibus&#34;</span>
 export QT_IM_MODULE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ibus&#34;</span>
 export XMODIFIERS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;@im=ibus&#34;</span>
 
@@ -51,15 +51,15 @@ export GUIX_GTK3_IM_MODULE_FILE<span style="color:#f92672">=</span>/run/current-
 <li>
 <p>如果你曾经安装过 <code>ibus</code> ，请删除 <code>~/.cache/ibus</code> 这个文件夹。不匹配的
 <code>~/.cache/ibus</code> 可能导致 <code>ibus</code> 无法启动。这是一个已知的bug。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">rm -r ~/.cache/ibus
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">rm -r ~/.cache/ibus
 </code></pre></div></li>
 <li>
 <p>运行 <code>ibus-daemon --xim --replace --daemonize</code> 以启动 <code>ibus-daemon</code> 。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ibus-daemon --xim --replace --daemonize
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ibus-daemon --xim --replace --daemonize
 </code></pre></div></li>
 <li>
 <p>运行 <code>ibus-setup</code> 进入设置界面，添加和设置输入法。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ibus-setup
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ibus-setup
 </code></pre></div></li>
 <li>
 <p>好了，你可以使用 <code>ibus</code> 来输入中文了。</p>
@@ -75,10 +75,12 @@ export GUIX_GTK3_IM_MODULE_FILE<span style="color:#f92672">=</span>/run/current-
 </article>
 </div>
 <div class="article bottom"><section class="article navigation"><p><a class="link" href="/wiki/ci/"><span class="iconfont icon-article"></span>社区CI</a></p></section></div></section><section id="footer"><div class="footer-wrap">
-    <p class="copyright">© 2019-2021 Guix China Community</p>
-    <p class="powerby"><span>Powered&nbsp;by&nbsp;</span><a href="https://gohugo.io" 
-        target="_blank" rel="noopener noreferrer">Hugo</a><span>&nbsp;&amp;&nbsp;</span><a href="https://themes.gohugo.io/hugo-notepadium/" 
-        target="_blank" rel="noopener noreferrer">Notepadium</a></p></div>
-</section></body>
+  <p class="copyright">© 2019-2021 Guix China Community</p><p>
+    <a rel="nofollow" target="_blank" href="https://beian.miit.gov.cn/">鄂ICP备20009141号-1</a>
+  </p><p class="powerby">
+    <span>Powered by </span><a href="https://gohugo.io" target="_blank">Hugo</a>
+  </p>
+</div>
+</section><script src="/js/prism.min.442843b7ea6eef5105ab77a4c16488edbd8210fcd77efef362770e1bf0c3a47130e20e0553ae0388b6a50e4cd49a315e.js" integrity="sha384-RChDt&#43;pu71EFq3ekwWSI7b2CEPzXfv7zYncOG/DDpHEw4g4FU64DiLalDkzUmjFe"></script></body>
 
 </html>
