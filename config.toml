@@ -37,6 +37,7 @@ hasCJKLanguage = true
     style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
     logo = "/images/guix-logo.svg"
     slogan = "Guix China Community"
+    beian = "鄂ICP备20009141号-1"
 
 [params.syntax]
     use = "prismjs"  # builtin: "prismjs", "hljs". "none" means Chroma
