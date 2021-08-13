@@ -39,9 +39,9 @@ hasCJKLanguage = true
     slogan = "Guix China Community"
 
 [params.syntax]
-    use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
+    use = "prismjs"  # builtin: "prismjs", "hljs". "none" means Chroma
     theme = "dracula"
-    darkTheme = "xcode-dark"  # apply this theme in dark mode
+    darkTheme = "dark"
 
 [params.nav]
     showCategories = false
