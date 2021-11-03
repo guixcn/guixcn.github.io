@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.87.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.88.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <meta name="supported-color-schemes" content="light dark"><title>Guix中国镜像&nbsp;&ndash;&nbsp;Guix中文社区</title><link rel="stylesheet" href="/css/core.min.57e7589b93576dc645a743adf94441c77a52821272d21d638fbc98343c73c04651a1cd03f70eac2089abd6dc4ce693ff.css" integrity="sha384-V&#43;dYm5NXbcZFp0Ot&#43;URBx3pSghJy0h1jj7yYNDxzwEZRoc0D9w6sIImr1txM5pP/"><meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Guix中国镜像" /><body><section id="header">
@@ -18,7 +18,7 @@
 </code></pre></div><h2 id="substitute镜像">Substitute镜像</h2>
 <ul>
 <li>Substitute镜像地址： <code>https://mirror.guix.org.cn</code></li>
-<li>SJTUG的Substitute镜像地址： <code>https://mirrors.sjtug.sjtu.edu.cn/guix</code></li>
+<li>SJTUG的Substitute镜像地址： <code>https://mirror.sjtu.edu.cn/guix/</code></li>
 </ul>
 <p>SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器。如果SJTUG的镜像服务器
 运营顺利，Guix中文社区的镜像将在2021年5月1日停止维护。</p>
@@ -31,13 +31,13 @@
 	      (<span style="color:#a6e22e">guix-service-type</span>
 	       config <span style="color:#66d9ef">=&gt; </span>(<span style="color:#a6e22e">guix-configuration</span>
 			  (<span style="color:#a6e22e">inherit</span> config)
-			  (<span style="color:#a6e22e">substitute-urls</span> <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;https://mirrors.sjtug.sjtu.edu.cn/guix&#34;</span>
+			  (<span style="color:#a6e22e">substitute-urls</span> <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;https://mirror.sjtu.edu.cn/guix/&#34;</span>
 					     <span style="color:#e6db74">&#34;https://ci.guix.gnu.org&#34;</span>))))))
   <span style="color:#f92672">...</span>
   )
 </code></pre></div><h4 id="systemd">Systemd</h4>
 <p>修改 <code>guix-daemon.service</code> ：</p>
-<pre><code class="language-conf" data-lang="conf">ExecStart=/var/guix/profiles/per-user/root/current-guix/bin/guix-daemon --build-users-group=guixbuild --substitute-urls=&quot;https://mirrors.sjtug.sjtu.edu.cn/guix https://ci.guix.gnu.org&quot;
+<pre tabindex="0"><code class="language-conf" data-lang="conf">ExecStart=/var/guix/profiles/per-user/root/current-guix/bin/guix-daemon --build-users-group=guixbuild --substitute-urls=&quot;https://mirror.sjtu.edu.cn/guix/ https://ci.guix.gnu.org&quot;
 </code></pre></article>
 </div>
 <div class="article bottom"><section class="article navigation"><p><a class="link" href="/wiki/guix-pure-wayland-setupe/"><span class="iconfont icon-article"></span>Guix中使用纯 wayland 环境的时候需要设置的</a></p><p><a class="link" href="/wiki/fdm-mutt-msmtp-mail-env/"><span class="iconfont icon-article"></span>使用 fdm mutt msmtp 设置简易的邮件环境</a></p></section></div></section><section id="footer"><div class="footer-wrap">
