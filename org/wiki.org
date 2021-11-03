@@ -27,7 +27,7 @@
 *** Substitute镜像
 
 - Substitute镜像地址： =https://mirror.guix.org.cn=
-- SJTUG的Substitute镜像地址： =https://mirrors.sjtug.sjtu.edu.cn/guix=
+- SJTUG的Substitute镜像地址： =https://mirror.sjtu.edu.cn/guix/=
 
 SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器。如果SJTUG的镜像服务器
 运营顺利，Guix中文社区的镜像将在2021年5月1日停止维护。
@@ -45,7 +45,7 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
                 (guix-service-type
                  config => (guix-configuration
                             (inherit config)
-                            (substitute-urls '("https://mirrors.sjtug.sjtu.edu.cn/guix"
+                            (substitute-urls '("https://mirror.sjtu.edu.cn/guix/"
                                                "https://ci.guix.gnu.org"))))))
     ...
     )
@@ -55,7 +55,7 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
 
 修改 ~guix-daemon.service~ ：
 #+begin_src conf
-  ExecStart=/var/guix/profiles/per-user/root/current-guix/bin/guix-daemon --build-users-group=guixbuild --substitute-urls="https://mirrors.sjtug.sjtu.edu.cn/guix https://ci.guix.gnu.org"
+  ExecStart=/var/guix/profiles/per-user/root/current-guix/bin/guix-daemon --build-users-group=guixbuild --substitute-urls="https://mirror.sjtu.edu.cn/guix/ https://ci.guix.gnu.org"
 #+end_src
 
 * 社区CI
