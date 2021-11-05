@@ -293,7 +293,7 @@ Guix镜像服务，原先用于镜像服务的资源闲置。镜像服务器的�
 &lt;p&gt;注册后用户可获得SSH帐号和网络文件夹（ &lt;code&gt;https://user.guix.org.cn/USERNAME&lt;/code&gt; ）。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;SSH登录地址：USERNAME@user.guix.org.cn&lt;/li&gt;
-&lt;li&gt;网络文件夹对应的硬盘路径：/srv/www/user/USERNAME&lt;/li&gt;
+&lt;li&gt;网络文件夹对应的硬盘路径：/srv/http/user/USERNAME&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;请合理使用服务器资源，避免对别的用户造成干扰。&lt;/p&gt;
 &lt;h2 id=&#34;现有的用户&#34;&gt;现有的用户&lt;/h2&gt;
