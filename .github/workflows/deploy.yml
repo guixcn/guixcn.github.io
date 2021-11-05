@@ -47,4 +47,4 @@ jobs:
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
 
       - name: Deploy to guix.org.cn
-        run: nix-shell --run 'rsync -rhP --delete public/* github@guix.org.cn:/srv/www/guix.org.cn'
+        run: nix-shell --run 'rsync -rhP --delete public/* github@guix.org.cn:/srv/http/guix.org.cn'

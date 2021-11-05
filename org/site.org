@@ -140,7 +140,7 @@ Guix镜像服务，原先用于镜像服务的资源闲置。镜像服务器的�
 注册后用户可获得SSH帐号和网络文件夹（ =https://user.guix.org.cn/USERNAME= ）。
 
 - SSH登录地址：USERNAME@user.guix.org.cn
-- 网络文件夹对应的硬盘路径：/srv/www/user/USERNAME
+- 网络文件夹对应的硬盘路径：/srv/http/user/USERNAME
 
 请合理使用服务器资源，避免对别的用户造成干扰。
 
