@@ -31,15 +31,23 @@
       <description>&lt;ul&gt;
 &lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/guixcn&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/guixcn&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;IRC 【IRC 和 Telegram 的消息是互通的。有聊天机器人自动转发消息。】
+&lt;li&gt;IRC
 &lt;ul&gt;
 &lt;li&gt;irc.libera.chat #guixcn&lt;/li&gt;
-&lt;li&gt;irc.libera.chat #guixcn-offtopic&lt;/li&gt;
+&lt;li&gt;irc.libera.chat #guixcn-offtopic 「水群」&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Telegram: &lt;a href=&#34;https://t.me/guixcn&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://t.me/guixcn&lt;/a&gt;
- 【人多，活跃。】&lt;/li&gt;
+&lt;li&gt;Matrix: #guixcn:matrix.org&lt;/li&gt;
+&lt;li&gt;Telegram: 【人多，活跃。】
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://t.me/guixcn&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://t.me/guixcn&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://t.me/nix_lifestyle&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://t.me/nix_lifestyle&lt;/a&gt;
+ 「水群」&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;IRC，Matrix，和Telegram之间是消息互通的，有聊天机器人自动转发消息。&lt;/p&gt;
 </description>
     </item>
     
