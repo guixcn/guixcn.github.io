@@ -32,10 +32,15 @@
    :END:
 
    - GitHub: https://github.com/guixcn
-   - IRC 【IRC 和 Telegram 的消息是互通的。有聊天机器人自动转发消息。】
+   - IRC
      - irc.libera.chat #guixcn
-     - irc.libera.chat #guixcn-offtopic
-   - Telegram: [[https://t.me/guixcn][https://t.me/guixcn]] 【人多，活跃。】
+     - irc.libera.chat #guixcn-offtopic 「水群」
+   - Matrix: #guixcn:matrix.org
+   - Telegram: 【人多，活跃。】
+     - [[https://t.me/guixcn][https://t.me/guixcn]]
+     - https://t.me/nix_lifestyle 「水群」
+
+   IRC，Matrix，和Telegram之间是消息互通的，有聊天机器人自动转发消息。
 
 ** DONE 捐赠
    CLOSED: [2020-06-12 Fri 16:26]
