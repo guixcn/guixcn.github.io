@@ -361,7 +361,7 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
 
 * Guix中使用纯 ~wayland~ 环境的时候需要设置的
    :PROPERTIES:
-   :EXPORT_FILE_NAME: guix-pure-wayland-setupe
+   :EXPORT_FILE_NAME: guix-pure-wayland-setup
    :END:
 
 ** ~gtk~ 在纯 ~wayland~ 环境中运行
