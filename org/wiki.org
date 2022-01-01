@@ -633,3 +633,81 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
 ** 邮件列表注意事项
 
    发送邮件到邮件列表之前通常需要订阅才可以送达至邮件列表
+* 在GuixSystem中设置Gnome桌面和ibus输入法
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: guix-system-gnome-ibus
+   :END:
+
+   让中文用户止步的通常是难以设置的桌面环境和输入法
+
+   下文提供现成的Gnome环境+IBUS输入法的设置
+
+** 设置系统服务
+
+   1. 在系统配置文件中添加以下内容:
+
+      #+BEGIN_SRC scheme
+	(operating-system
+	 (services (append
+		    (list
+		         (service gnome-desktop-service-type)
+		    %desktop-services))
+	 ...
+	 )
+      #+END_SRC
+
+** 设置系统包
+
+   1. 在系统配置文件中添加以下内容:
+
+      #+BEGIN_SRC scheme
+	(operating-system
+	 (packages
+          (append
+           (list
+            ibus ibus-rime dconf ;; 输入法
+            font-gnu-unifont ;; 中文字体
+           %base-packages))
+	 ...
+	 )
+      #+END_SRC
+
+** 用户的设置
+
+    1. 可以使用 ~guix home~ 功能来设置环境
+
+       在 ~guix home~ 配置文件加入以下内容:
+
+       #+BEGIN_SRC scheme
+       (home-environment
+        (services
+	 (list
+          (service home-bash-service-type
+	       (home-bash-configuration
+		 (guix-defaults? #t)
+		 (environment-variables
+		   `(
+		     ;; IBUS 输入法
+		     ("GTK_IM_MODULE" . "ibus")
+		     ("QT_IM_MODULE" . "ibus")
+		     ("XMODIFILERS" . "@im=ibus")
+		     ("GUIX_GTK2_IM_MODULE_FILE" .  "/run/current-system/profile/lib/gtk-2.0/2.10.0/immodules-gtk2.cache")
+		     ("GUIX_GTK3_IM_MODULE_FILE" .  "/run/current-system/profile/lib/gtk-3.0/3.0.0/immodules-gtk3.cache")
+		     ))))
+               ...
+              ))
+          ...
+       )
+       #+END_SRC
+
+** 结束
+
+   1. 使用 ~guix system reconfigure~ 命令重新配置系统
+
+   2. 使用 ~guix home reconfigure~ 命令重新配置HOME
+
+   3. 登出，然后重新登入
+
+   4. 进入 Gnome 的 Settings 添加 rime 输入法方案
+
+   5. 使用 Super+Space 激活输入法，输入中文
