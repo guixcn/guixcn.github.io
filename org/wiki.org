@@ -211,10 +211,10 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
 
    例:
    #+BEGIN_SRC shell
-   $ tty
-   /dev/tty1
-   $ sway
-   ...
+     $ tty
+     /dev/tty1
+     $ sway
+     ...
    #+END_SRC
 * Guix中使用 ~guix environment --container~ 容器化应用程序会遇到的问题
    :PROPERTIES:
@@ -274,7 +274,7 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
    #+BEGIN_SRC shell
      guix environment --container\
           ...
-	  --link-profile
+          --link-profile
           --ad-hoc fontconfig\
           --ad-hoc font1\
           --ad-hoc font2\
@@ -323,13 +323,13 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
 *** 使用带有图形的机器使用VNC连接到虚拟机的显示器
 
    #+BEGIN_SRC shell
-   # 运行有虚拟机的服务器
-   /gnu/store/fs....sa-run-vm.sh -vnc :0
+     # 运行有虚拟机的服务器
+     /gnu/store/fs....sa-run-vm.sh -vnc :0
    #+END_SRC
 
    #+BEGIN_SRC shell
-   # 拥有图形和vnc客户端的机器
-   vncviewer <服务器的IP> 5900
+     # 拥有图形和vnc客户端的机器
+     vncviewer <服务器的IP> 5900
    #+END_SRC
 
 *警告：*
@@ -356,7 +356,7 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
 
    在启动命令中加入 ~-nographic~ 选项
    #+BEGIN_SRC shell
-   /gnu/store/fs....sa-run-vm.sh -nographic
+     /gnu/store/fs....sa-run-vm.sh -nographic
    #+END_SRC
 
 * Guix中使用纯 ~wayland~ 环境的时候需要设置的
@@ -369,7 +369,7 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
    1. 需要在环境变量中加入以下内容:
 
       #+BEGIN_SRC shell
-	export GDK_BACKEND=wayland
+        export GDK_BACKEND=wayland
       #+END_SRC
 
 ** ~qt~ 在纯 ~wayland~ 环境中运行
@@ -377,14 +377,14 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
    1. 需要在环境变量中加入以下内容:
 
       #+BEGIN_SRC shell
-	export QT_QPA_PLATFORM=wayland
+        export QT_QPA_PLATFORM=wayland
       #+END_SRC
 
    2. 同时需要在qt软件的profile中安装 ~qtwayland~ 拓展
       以下是启动 ~fcitx5-configtool~ 中的 ~fcitx5-config-qt~ 的示例
 
       #+BEGIN_SRC shell
-	export QT_QPA_PLATFORM=wayland
+        export QT_QPA_PLATFORM=wayland
         guix environment --ad-hoc fcitx5-configtool qtwayland -- fcitx5-config-qt
       #+END_SRC
 
@@ -448,15 +448,15 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
    1. 在系统配置文件中添加以下内容:
 
       #+BEGIN_SRC scheme
-	(operating-system
-	 (services (append
-		    (list
-		     (service kmscon-service-type
-		      (kmscon-configuration
-		       (virtual-terminal "tty5"))))  ; 这里更换为需要的tty
-		    %base-services))
-	 ...
-	 )
+        (operating-system
+         (services (append
+                    (list
+                     (service kmscon-service-type
+                      (kmscon-configuration
+                       (virtual-terminal "tty5"))))  ; 这里更换为需要的tty
+                    %base-services))
+         ...
+         )
       #+END_SRC
 
 ** 更多的字符显示支持
@@ -467,15 +467,15 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
    #+BEGIN_SRC scheme
      (operating-system
       (services (append
-		 (list
-		  (service kmscon-service-type
-			   (kmscon-configuration
-			    ...
-			    (virtual-terminal "tty5")
-			    (font-engine "unifont")))) ; 使用unifont
-			   %base-services))
-		 ...
-		 )
+                 (list
+                  (service kmscon-service-type
+                           (kmscon-configuration
+                            ...
+                            (virtual-terminal "tty5")
+                            (font-engine "unifont")))) ; 使用unifont
+                           %base-services))
+                 ...
+                 )
    #+END_SRC
 
 * 使用 ~fdm~ ~mutt~ ~msmtp~ 设置简易的邮件环境
@@ -518,83 +518,83 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
       创建一个配置文件:
 
       #+BEGIN_SRC shell
-	 umask 077 # 更严格安全的权限
-	 touch ~/.fdm.conf
+        umask 077 # 更严格安全的权限
+        touch ~/.fdm.conf
       #+END_SRC
 
       并写入:
 
       #+BEGIN_SRC text
-	 ## .fdm.conf
-	 # 默认收件箱
-	 action "inbox" maildir "%h/Mail/inbox"
-	 # guix相关邮件收件箱
-	 action "guix" maildir "%h/Mail/guix"
+        ## .fdm.conf
+        # 默认收件箱
+        action "inbox" maildir "%h/Mail/inbox"
+        # guix相关邮件收件箱
+        action "guix" maildir "%h/Mail/guix"
 
-	 # 请取消注释并修改需要的内容
-	 # 账户设置 POP3
-	 #account "账户名" pop3s server "POP3服务器"
-	 # 账户设置 IMAP
-	 #account "账户名" imaps server "IMAP服务器"
-	 # 登录需要的
-	 #user "用户名" pass "密码"
+        # 请取消注释并修改需要的内容
+        # 账户设置 POP3
+        #account "账户名" pop3s server "POP3服务器"
+        # 账户设置 IMAP
+        #account "账户名" imaps server "IMAP服务器"
+        # 登录需要的
+        #user "用户名" pass "密码"
 
-	 # 将带有 guix 内容的邮件放至guix收件箱
-	 match "guix" in headers action "guix"
-	 match "guix" in body action "guix"
+        # 将带有 guix 内容的邮件放至guix收件箱
+        match "guix" in headers action "guix"
+        match "guix" in body action "guix"
 
-	 # 将其他邮件放至inbox
-	 match all action "inbox"
+        # 将其他邮件放至inbox
+        match all action "inbox"
       #+END_SRC
 
     2. msmtp
        创建一个配置文件:
 
       #+BEGIN_SRC shell
-	 umask 077 # 更严格安全的权限
-	 touch ~/.msmtprc
+        umask 077 # 更严格安全的权限
+        touch ~/.msmtprc
       #+END_SRC
 
       并写入:
 
       #+BEGIN_SRC text
-	account default
-	host SMTP服务器
-	protocol smtp
-	auth on
-	from 邮箱地址
-	user 登录所需用户名，通常和邮箱地址相同
-	password 密码
-	tls on
-	tls_starttls on
+        account default
+        host SMTP服务器
+        protocol smtp
+        auth on
+        from 邮箱地址
+        user 登录所需用户名，通常和邮箱地址相同
+        password 密码
+        tls on
+        tls_starttls on
       #+END_SRC
 
     3. mutt
 
        #+BEGIN_SRC shell
-	 umask 077 # 更严格安全的权限
-	 touch ~/.muttrc
+         umask 077 # 更严格安全的权限
+         touch ~/.muttrc
        #+END_SRC
 
       并写入:
 
       #+BEGIN_SRC text
-	# 本地邮箱的设置
-	set folder=~/Mail
-	set mbox=+mbox
-	set spoolfile=+inbox
-	set record=+sent
-	set sort=threads # 邮件列表建议的显示方式
-	set postponed=+drafts
-	set mbox_type=Maildir
-	mailboxes +inbox
+        # 本地邮箱的设置
+        set folder=~/Mail
+        set mbox=+mbox
+        set spoolfile=+inbox
+        set record=+sent
+        set sort=threads # 邮件列表建议的显示方式
+        set postponed=+drafts
+        set mbox_type=Maildir
+        mailboxes +inbox
 
-	# 这里示例使用Emacs作为阅读器和编辑器
-	set editor='emacsclient -nw'
-	set pager='emacsclient -nw'
+        # 这里示例使用Emacs作为阅读器和编辑器
+        set editor='emacsclient -nw'
+        set pager='emacsclient -nw'
 
-	# 发送邮件的命令
-	set sendmail="msmtp"
+        # 发送邮件的命令
+        set sendmail="msmtp"
       #+END_SRC
 
 ** 使用
@@ -604,13 +604,13 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
    1. 收邮件
 
       #+BEGIN_SRC shell
-	fdm -v fetch
+        fdm -v fetch
       #+END_SRC
 
    2. 看邮件
 
       #+BEGIN_SRC shell
-	mutt
+        mutt
       #+END_SRC
 
       使用快捷键 ~c~ 切换邮件的分类。
@@ -622,7 +622,7 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
    3. 发邮件
 
       #+BEGIN_SRC shell
-	mutt
+        mutt
       #+END_SRC
 
       进入 ~mutt~ 之后使用快捷键 ~m~ 按照提示填写信息，之后会调用编辑器打开，
@@ -647,13 +647,13 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
    1. 在系统配置文件中添加以下内容:
 
       #+BEGIN_SRC scheme
-	(operating-system
-	 (services (append
-		    (list
-		         (service gnome-desktop-service-type)
-		    %desktop-services))
-	 ...
-	 )
+        (operating-system
+         (services (append
+                    (list
+                         (service gnome-desktop-service-type)
+                    %desktop-services))
+         ...
+         )
       #+END_SRC
 
 ** 设置系统包
@@ -661,15 +661,15 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
    1. 在系统配置文件中添加以下内容:
 
       #+BEGIN_SRC scheme
-	(operating-system
-	 (packages
+        (operating-system
+         (packages
           (append
            (list
             ibus ibus-rime dconf ;; 输入法
             font-gnu-unifont ;; 中文字体
            %base-packages))
-	 ...
-	 )
+         ...
+         )
       #+END_SRC
 
 ** 用户的设置
@@ -679,25 +679,25 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
        在 ~guix home~ 配置文件加入以下内容:
 
        #+BEGIN_SRC scheme
-       (home-environment
-        (services
-	 (list
-          (service home-bash-service-type
-	       (home-bash-configuration
-		 (guix-defaults? #t)
-		 (environment-variables
-		   `(
-		     ;; IBUS 输入法
-		     ("GTK_IM_MODULE" . "ibus")
-		     ("QT_IM_MODULE" . "ibus")
-		     ("XMODIFILERS" . "@im=ibus")
-		     ("GUIX_GTK2_IM_MODULE_FILE" .  "/run/current-system/profile/lib/gtk-2.0/2.10.0/immodules-gtk2.cache")
-		     ("GUIX_GTK3_IM_MODULE_FILE" .  "/run/current-system/profile/lib/gtk-3.0/3.0.0/immodules-gtk3.cache")
-		     ))))
-               ...
-              ))
-          ...
-       )
+         (home-environment
+          (services
+           (list
+            (service home-bash-service-type
+                 (home-bash-configuration
+                   (guix-defaults? #t)
+                   (environment-variables
+                     `(
+                       ;; IBUS 输入法
+                       ("GTK_IM_MODULE" . "ibus")
+                       ("QT_IM_MODULE" . "ibus")
+                       ("XMODIFILERS" . "@im=ibus")
+                       ("GUIX_GTK2_IM_MODULE_FILE" .  "/run/current-system/profile/lib/gtk-2.0/2.10.0/immodules-gtk2.cache")
+                       ("GUIX_GTK3_IM_MODULE_FILE" .  "/run/current-system/profile/lib/gtk-3.0/3.0.0/immodules-gtk3.cache")
+                       ))))
+                 ...
+                ))
+            ...
+         )
        #+END_SRC
 
 ** 结束
