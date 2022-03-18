@@ -711,3 +711,69 @@ SJTUG的镜像服务器速度更快，建议大家使用SJTUG的镜像服务器�
    4. 进入 Gnome 的 Settings 添加 rime 输入法方案
 
    5. 使用 Super+Space 激活输入法，输入中文
+
+* 使用 ~GNU Emacs + sdcv~ 阅读外语文档
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: emacs-sdcv-translate
+   :END:
+
+使用Guix通常要阅读大量的外语文档
+
+可以使用 ~GNU Emacs~ 和 ~sdcv~ 来翻译单词
+
+** 安装需要的包
+
+#+BEGIN_SRC shell
+$ guix install emacs emacs-sdcv sdcv
+#+END_SRC
+
+** Emacs需要的设置
+
+在 ~init.el~ 中加入以下内容:
+
+#+BEGIN_SRC lisp
+;; 词典查询
+(global-set-key (kbd "<f8>") 'sdcv-search-pointer)
+#+END_SRC
+
+** 安装词典文件
+
+在 ~$HOME/.stardict/dic/~ 目录下放入stardict词典:
+
+#+BEGIN_SRC shell
+$ cp -r stardict-dictname-version/ $HOME/.stardict/dict/
+#+END_SRC
+
+目前为止Guix中并未打包词典文件，这里列举几个可以下载的地址:
+
+ 1. ECDICT:
+  https://github.com/skywind3000/ECDICT
+
+ 2. 胡正的页面:
+  待补充
+
+** 使用
+
+#+BEGIN_SRC shell
+$ emacs # 启动你的Emacs
+#+END_SRC
+
+1. 使用eww或者info打开你的外文文档
+2. 将光标移动到需要翻译的单词上面
+3. 按下F8
+
+** 效率
+
+你会发现使用纯键盘操作会很累，建议使用鼠标来配合使用:
+
+使用鼠标左键单击将光标移动到需要翻译的单词内
+
+使用F8翻译内容
+
+更方便的方法:
+
+翻译鼠标左键单击的地方
+
+#+BEGIN_SRC lisp
+(global-set-key (kbd "<mouse-1>") 'sdcv-search-pointer)
+#+END_SRC
