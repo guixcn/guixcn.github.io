@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.92.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>使用 GNU Emacs &#43; sdcv 阅读外语文档&nbsp;&ndash;&nbsp;Guix中文社区</title><link rel="stylesheet" href="/css/core.min.57e7589b93576dc645a743adf94441c77a52821272d21d638fbc98343c73c04651a1cd03f70eac2089abd6dc4ce693ff.css" integrity="sha384-V&#43;dYm5NXbcZFp0Ot&#43;URBx3pSghJy0h1jj7yYNDxzwEZRoc0D9w6sIImr1txM5pP/"><meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="使用 GNU Emacs &#43; sdcv 阅读外语文档" /><body><section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/images/guix-logo.svg" alt /><span class="site name">Guix中文社区</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/about/">简介</a><a class="nav item" href="/contact/">联系我们</a><a class="nav item" href="/donate/">捐赠</a><a class="nav item" href="/free-shell/">Free Shell</a><a class="nav item" href="/wiki/">Wiki</a><a class="nav item" href="/blog/">文章</a></nav></div></span></div><div class="site slogan"><span class="title">Guix China Community</span></div></section><section id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">使用 GNU Emacs + sdcv 阅读外语文档</h1></section><article class="article markdown-body"><p>使用Guix通常要阅读大量的外语文档</p>
+<p>可以使用 <code>GNU Emacs</code> 和 <code>sdcv</code> 来翻译单词</p>
+<h2 id="安装需要的包">安装需要的包</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ guix install emacs emacs-sdcv sdcv
+</code></pre></div><h2 id="emacs需要的设置">Emacs需要的设置</h2>
+<p>在 <code>init.el</code> 中加入以下内容:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp"><span style="color:#75715e">;; 词典查询</span>
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f8&gt;&#34;</span>) <span style="color:#e6db74">&#39;sdcv-search-pointer</span>)
+</code></pre></div><h2 id="安装词典文件">安装词典文件</h2>
+<p>在 <code>$HOME/.stardict/dic/</code> 目录下放入stardict词典:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ cp -r stardict-dictname-version/ $HOME/.stardict/dict/
+</code></pre></div><p>目前为止Guix中并未打包词典文件，这里列举几个可以下载的地址:</p>
+<ol>
+<li>
+<p>ECDICT:
+<a href="https://github.com/skywind3000/ECDICT"target="_blank" rel="noopener noreferrer">https://github.com/skywind3000/ECDICT</a>
+</p>
+</li>
+<li>
+<p>胡正的页面:
+待补充</p>
+</li>
+</ol>
+<h2 id="使用">使用</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ emacs <span style="color:#75715e"># 启动你的Emacs</span>
+</code></pre></div><ol>
+<li>使用eww或者info打开你的外文文档</li>
+<li>将光标移动到需要翻译的单词上面</li>
+<li>按下F8</li>
+</ol>
+<h2 id="效率">效率</h2>
+<p>你会发现使用纯键盘操作会很累，建议使用鼠标来配合使用:</p>
+<p>使用鼠标左键单击将光标移动到需要翻译的单词内</p>
+<p>使用F8翻译内容</p>
+<p>更方便的方法:</p>
+<p>翻译鼠标左键单击的地方</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp">(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;mouse-1&gt;&#34;</span>) <span style="color:#e6db74">&#39;sdcv-search-pointer</span>)
+</code></pre></div></article>
+</div>
+<div class="article bottom"><section class="article navigation"><p><a class="link" href="/wiki/fdm-mutt-msmtp-mail-env/"><span class="iconfont icon-article"></span>使用 fdm mutt msmtp 设置简易的邮件环境</a></p><p><a class="link" href="/wiki/locker-with-pam/"><span class="iconfont icon-article"></span>在Guix System使用带有PAM支持的密码锁</a></p></section></div></section><section id="footer"><div class="footer-wrap">
+  <p class="copyright">© 2019-2021 Guix China Community</p><p>
+    <a rel="nofollow" target="_blank" href="https://beian.miit.gov.cn/">鄂ICP备20009141号-1</a>
+  </p><p class="powerby">
+    <span>Powered by </span><a href="https://gohugo.io" target="_blank">Hugo</a>
+  </p>
+</div>
+</section><script src="/js/prism.min.442843b7ea6eef5105ab77a4c16488edbd8210fcd77efef362770e1bf0c3a47130e20e0553ae0388b6a50e4cd49a315e.js" integrity="sha384-RChDt&#43;pu71EFq3ekwWSI7b2CEPzXfv7zYncOG/DDpHEw4g4FU64DiLalDkzUmjFe"></script></body>
+
+</html>
