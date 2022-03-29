@@ -60,11 +60,11 @@
       <description>&lt;p&gt;SJTUG的Guix镜像已经正式上线，我们计划在2021年停止维护自己的Guix镜像，暂时不要因
 为维护Guix镜像而给我们捐钱啦。如果您希望赞助社区开展其它活动，比如支持我们订做贴
 纸和文化衫，还是欢迎继续捐赠的。&lt;/p&gt;
-&lt;p&gt;捐赠时请备注“Guix捐赠”，并通过&lt;a href=&#34;https://github.com/guixcn/guixcn.github.io/issues/1&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;GitHub&lt;/a&gt;
+&lt;p&gt;捐赠时请备注“Guix捐赠”（否则可能会漏登记），并通过&lt;a href=&#34;https://github.com/guixcn/guixcn.github.io/issues/1&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;GitHub&lt;/a&gt;
 、&lt;a href=&#34;https://guixcn.github.io/contact/&#34;&gt;Telegram&lt;/a&gt;
-等任意渠道联系管理员更新此页面。如
-果您未提供姓名，那么下面列表的“姓名”一栏默认使用捐赠帐号的用户名。您可以在捐赠时
-注明资金的详细用途，我们将尽力尊重您的意愿。&lt;/p&gt;
+等任意渠道联系
+管理员更新此页面。如果您未提供姓名，那么下面列表的“姓名”一栏默认使用捐赠帐号的用
+户名。您可以在捐赠时注明资金的详细用途，我们将尽力尊重您的意愿。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;你们不要偷偷的捐钱啊。之前捐钱不留名的人可以联系管理员登记，未来如果有订做贴纸和
 文化衫的活动，优先给您发货。&lt;/p&gt;
@@ -110,7 +110,7 @@ GNU项目。万一GNU项目也倒闭了，我们会按照&lt;a href=&#34;https:/
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;捐赠总额&lt;/td&gt;
-&lt;td&gt;1556.8&lt;/td&gt;
+&lt;td&gt;1576.8&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;支出总额&lt;/td&gt;
@@ -118,7 +118,7 @@ GNU项目。万一GNU项目也倒闭了，我们会按照&lt;a href=&#34;https:/
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;余额&lt;/td&gt;
-&lt;td&gt;332.8&lt;/td&gt;
+&lt;td&gt;352.8&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -133,7 +133,7 @@ GNU项目。万一GNU项目也倒闭了，我们会按照&lt;a href=&#34;https:/
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;捐赠总额&lt;/td&gt;
-&lt;td&gt;1556.8&lt;/td&gt;
+&lt;td&gt;1576.8&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -149,6 +149,13 @@ GNU项目。万一GNU项目也倒闭了，我们会按照&lt;a href=&#34;https:/
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2022-03-29 Tue&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;td&gt;*加&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;微信支付&lt;/td&gt;
+&lt;td&gt;一笔没有备注任何信息的转账，可能是一笔捐款&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2021-05-06 Thu&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
 &lt;td&gt;**磊&lt;/td&gt;
