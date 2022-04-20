@@ -87,12 +87,10 @@ GNU项目。万一GNU项目也倒闭了，我们会按照&lt;a href=&#34;https:/
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;span class=&#34;image-container&#34;&gt;&lt;span class=&#34;link&#34; &gt;&lt;a href=&#34;https://guixcn.github.io/images/alipay.png&#34; 
-        target=&#34;_blank&#34;&gt;&lt;img class=&#34;img&#34; src=&#34;https://guixcn.github.io/images/alipay.png&#34;/&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/td&gt;
-&lt;td&gt;&lt;span class=&#34;image-container&#34;&gt;&lt;span class=&#34;link&#34; &gt;&lt;a href=&#34;https://guixcn.github.io/images/wechat-pay.png&#34; 
-        target=&#34;_blank&#34;&gt;&lt;img class=&#34;img&#34; src=&#34;https://guixcn.github.io/images/wechat-pay.png&#34;/&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img  src=&#34;https://guixcn.github.io/images/alipay.png&#34;
+        alt/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img  src=&#34;https://guixcn.github.io/images/wechat-pay.png&#34;
+        alt/&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -114,11 +112,11 @@ GNU项目。万一GNU项目也倒闭了，我们会按照&lt;a href=&#34;https:/
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;支出总额&lt;/td&gt;
-&lt;td&gt;1224&lt;/td&gt;
+&lt;td&gt;1259&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;余额&lt;/td&gt;
-&lt;td&gt;352.8&lt;/td&gt;
+&lt;td&gt;317.8&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -232,7 +230,7 @@ GNU项目。万一GNU项目也倒闭了，我们会按照&lt;a href=&#34;https:/
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;支出总额&lt;/td&gt;
-&lt;td&gt;1224&lt;/td&gt;
+&lt;td&gt;1259&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -247,6 +245,12 @@ GNU项目。万一GNU项目也倒闭了，我们会按照&lt;a href=&#34;https:/
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2022-04-20 Wed&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;td&gt;guix.org.cn域名续费一年&lt;/td&gt;
+&lt;td&gt;35&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2020-11-12 Thu&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
 &lt;td&gt;guix.org.cn域名迁入DNSPod并续费一年&lt;/td&gt;
@@ -314,39 +318,39 @@ Guix镜像服务，原先用于镜像服务的资源闲置。镜像服务器的�
 &lt;h2 id=&#34;现有的用户&#34;&gt;现有的用户&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/guixcn/maintenance/blob/master/shanghai/monkeys.scm&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/guixcn/maintenance/blob/master/shanghai/monkeys.scm&lt;/a&gt;
 &lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;define &lt;/span&gt;%monkeys
-  (list (&lt;span style=&#34;color:#a6e22e&#34;&gt;monkey&lt;/span&gt;
-	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;meiyu&amp;#34;&lt;/span&gt;)
-	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;comment&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Peng Mei Yu&amp;#34;&lt;/span&gt;)
-	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;shell&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;file-append&lt;/span&gt; zsh &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/bin/zsh&amp;#34;&lt;/span&gt;))
-	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;ssh-public-key&lt;/span&gt;
-	  (&lt;span style=&#34;color:#a6e22e&#34;&gt;plain-file&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;meiyu.pub&amp;#34;&lt;/span&gt;
-		      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICGixg7L7vRFgmxBS2GmI4/UqPw7pERi3qbKFUPaEZIF&amp;#34;&lt;/span&gt;)))
-	(&lt;span style=&#34;color:#a6e22e&#34;&gt;monkey&lt;/span&gt;
-	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;qblade&amp;#34;&lt;/span&gt;)
-	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;comment&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;luhux&amp;#34;&lt;/span&gt;)
-	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;ssh-public-key&lt;/span&gt;
-	  (&lt;span style=&#34;color:#a6e22e&#34;&gt;plain-file&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;luhux.pub&amp;#34;&lt;/span&gt;
-		      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIbLzIHSgPsTHirnDDVteW8gcumLnzizb05syPgLiDve&amp;#34;&lt;/span&gt;)))
-	(&lt;span style=&#34;color:#a6e22e&#34;&gt;monkey&lt;/span&gt;
-	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pandagix&amp;#34;&lt;/span&gt;)
-	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;comment&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;PandaGix&amp;#34;&lt;/span&gt;)
-	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;ssh-public-key&lt;/span&gt;
-	  (&lt;span style=&#34;color:#a6e22e&#34;&gt;plain-file&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pandagix.pub&amp;#34;&lt;/span&gt;
-		      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPZ3/HBVQ+t8mtGuYXJUbbKR8yynheYl3RpbIs82ANv2&amp;#34;&lt;/span&gt;)))
-	(&lt;span style=&#34;color:#a6e22e&#34;&gt;monkey&lt;/span&gt;
-	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;c4droid&amp;#34;&lt;/span&gt;)
-	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;comment&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;c4droid&amp;#34;&lt;/span&gt;)
-	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;ssh-public-key&lt;/span&gt;
-	  (&lt;span style=&#34;color:#a6e22e&#34;&gt;plain-file&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;c4droid.pub&amp;#34;&lt;/span&gt;
-		      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKlfAalEYpKNamHSye6fdiQXziKPhh8JI/jgt/ItI8eo&amp;#34;&lt;/span&gt;)))
-	(&lt;span style=&#34;color:#a6e22e&#34;&gt;monkey&lt;/span&gt;
-	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Z572&amp;#34;&lt;/span&gt;)
-	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;comment&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Z572&amp;#34;&lt;/span&gt;)
-	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;ssh-public-key&lt;/span&gt;
-	  (&lt;span style=&#34;color:#a6e22e&#34;&gt;plain-file&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;z572.pub&amp;#34;&lt;/span&gt;
-		      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKGGhcSQkHGf5XMWt5iRlrpHvrViHuZ7ApnU88IRETbF&amp;#34;&lt;/span&gt;)))))
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;define &lt;/span&gt;%monkeys
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (list (&lt;span style=&#34;color:#a6e22e&#34;&gt;monkey&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;meiyu&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;comment&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Peng Mei Yu&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;shell&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;file-append&lt;/span&gt; zsh &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/bin/zsh&amp;#34;&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;ssh-public-key&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  (&lt;span style=&#34;color:#a6e22e&#34;&gt;plain-file&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;meiyu.pub&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICGixg7L7vRFgmxBS2GmI4/UqPw7pERi3qbKFUPaEZIF&amp;#34;&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	(&lt;span style=&#34;color:#a6e22e&#34;&gt;monkey&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;qblade&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;comment&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;luhux&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;ssh-public-key&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  (&lt;span style=&#34;color:#a6e22e&#34;&gt;plain-file&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;luhux.pub&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIbLzIHSgPsTHirnDDVteW8gcumLnzizb05syPgLiDve&amp;#34;&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	(&lt;span style=&#34;color:#a6e22e&#34;&gt;monkey&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pandagix&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;comment&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;PandaGix&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;ssh-public-key&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  (&lt;span style=&#34;color:#a6e22e&#34;&gt;plain-file&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pandagix.pub&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPZ3/HBVQ+t8mtGuYXJUbbKR8yynheYl3RpbIs82ANv2&amp;#34;&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	(&lt;span style=&#34;color:#a6e22e&#34;&gt;monkey&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;c4droid&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;comment&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;c4droid&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;ssh-public-key&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  (&lt;span style=&#34;color:#a6e22e&#34;&gt;plain-file&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;c4droid.pub&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKlfAalEYpKNamHSye6fdiQXziKPhh8JI/jgt/ItI8eo&amp;#34;&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	(&lt;span style=&#34;color:#a6e22e&#34;&gt;monkey&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Z572&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;comment&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Z572&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	 (&lt;span style=&#34;color:#a6e22e&#34;&gt;ssh-public-key&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  (&lt;span style=&#34;color:#a6e22e&#34;&gt;plain-file&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;z572.pub&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKGGhcSQkHGf5XMWt5iRlrpHvrViHuZ7ApnU88IRETbF&amp;#34;&lt;/span&gt;)))))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -473,11 +477,11 @@ bug多，对初学者不友好，同时为了庆祝Guix中文用户即将从一�
 并提供了开包即用的体验。&lt;/p&gt;
 &lt;h2 id=&#34;运行&#34;&gt;运行&lt;/h2&gt;
 &lt;p&gt;可以选择不安装它，它可以随时随地在拥有Guix的环境运行:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --ad-hoc emacs-no-x guile-studio -- guile-studio
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;也可以安装然后使用它:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix package -i guile-studio emacs-no-x
-guile-studio
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;guix environment --ad-hoc emacs-no-x guile-studio -- guile-studio
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;也可以安装然后使用它:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;guix package -i guile-studio emacs-no-x
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;guile-studio
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
 &lt;p&gt;可以使用方向键来移动光标进行编辑&lt;/p&gt;
 &lt;p&gt;以下是一些经常会用到的快捷键:&lt;/p&gt;
 &lt;p&gt;概念:&lt;/p&gt;
@@ -531,7 +535,7 @@ guile-studio
     </item>
     
     <item>
-      <title>Guix中使用 guix environment –ontainer 容器化应用程序会遇到的问题</title>
+      <title>Guix中使用 guix environment –container 容器化应用程序会遇到的问题</title>
       <link>https://guixcn.github.io/wiki/guix-environment-container-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -543,25 +547,25 @@ guile-studio
 &lt;li&gt;
 &lt;p&gt;在~guix environment &amp;ndash;container~ 中加入以下选项:&lt;/p&gt;
 &lt;p&gt;例：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
-     -E^LANG$&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     -E^GUIX_LOCPATH$&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc glibc-utf8-locales&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     -E^LANG$&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     -E^GUIX_LOCPATH$&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc glibc-utf8-locales&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;容器内-tls-的证书问题&#34;&gt;容器内 &lt;code&gt;tls&lt;/code&gt; 的证书问题&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;在 &lt;code&gt;guix environment --container&lt;/code&gt; 中加入以下选项:&lt;/p&gt;
 &lt;p&gt;例：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
-     --expose&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/etc/ssl &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc nss-certs curl&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     --expose&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/etc/ssl &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc nss-certs curl&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;提示：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -572,27 +576,27 @@ guile-studio
 &lt;li&gt;
 &lt;p&gt;在 &lt;code&gt;guix environment --container&lt;/code&gt; 中加入以下选项:&lt;/p&gt;
 &lt;p&gt;例：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
-     -E^XDG_RUNTIME_DIR$&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     -E^WAYLAND_DISPLAY$&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --share&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;XDG_RUNTIME_DIR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;WAYLAND_DISPLAY&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     -E^XDG_RUNTIME_DIR$&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     -E^WAYLAND_DISPLAY$&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --share&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;XDG_RUNTIME_DIR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;WAYLAND_DISPLAY&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;容器内的字体问题&#34;&gt;容器内的字体问题&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;在~guix environment &amp;ndash;container~ 中加入以下选项:&lt;/p&gt;
 &lt;p&gt;例：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
-     --link-profile
-     --ad-hoc fontconfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc font1&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc font2&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     --link-profile
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     --ad-hoc fontconfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc font1&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc font2&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;警告：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -603,17 +607,17 @@ guile-studio
 &lt;li&gt;
 &lt;p&gt;在~guix environment &amp;ndash;container~ 中加入以下选项:&lt;/p&gt;
 &lt;p&gt;例：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
-     --expose&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;HOME&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/.gtkrc-2.0&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --expose&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;HOME&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/.config/gtk-3.0/settings.ini&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc gtk-theme1&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc gtk-theme2&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
-     --ad-hoc icon-theme1&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc icon-theme2&lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;guix environment --container&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     --expose&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;HOME&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/.gtkrc-2.0&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --expose&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;HOME&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/.config/gtk-3.0/settings.ini&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc gtk-theme1&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc gtk-theme2&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     --ad-hoc icon-theme1&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     --ad-hoc icon-theme2&lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;     ...
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
     </item>

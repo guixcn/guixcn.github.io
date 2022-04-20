@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.92.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.96.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <meta name="supported-color-schemes" content="light dark"><title>Guix中使用纯 wayland 环境的时候需要设置的&nbsp;&ndash;&nbsp;Guix中文社区</title><link rel="stylesheet" href="/css/core.min.57e7589b93576dc645a743adf94441c77a52821272d21d638fbc98343c73c04651a1cd03f70eac2089abd6dc4ce693ff.css" integrity="sha384-V&#43;dYm5NXbcZFp0Ot&#43;URBx3pSghJy0h1jj7yYNDxzwEZRoc0D9w6sIImr1txM5pP/"><meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Guix中使用纯 wayland 环境的时候需要设置的" /><body><section id="header">
@@ -9,21 +9,21 @@
 <ol>
 <li>
 <p>需要在环境变量中加入以下内容:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">export GDK_BACKEND<span style="color:#f92672">=</span>wayland
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>export GDK_BACKEND<span style="color:#f92672">=</span>wayland
+</span></span></code></pre></div></li>
 </ol>
 <h2 id="qt-在纯-wayland-环境中运行"><code>qt</code> 在纯 <code>wayland</code> 环境中运行</h2>
 <ol>
 <li>
 <p>需要在环境变量中加入以下内容:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">export QT_QPA_PLATFORM<span style="color:#f92672">=</span>wayland
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>export QT_QPA_PLATFORM<span style="color:#f92672">=</span>wayland
+</span></span></code></pre></div></li>
 <li>
 <p>同时需要在qt软件的profile中安装 <code>qtwayland</code> 拓展
 以下是启动 <code>fcitx5-configtool</code> 中的 <code>fcitx5-config-qt</code> 的示例</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">export QT_QPA_PLATFORM<span style="color:#f92672">=</span>wayland
-guix environment --ad-hoc fcitx5-configtool qtwayland -- fcitx5-config-qt
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>export QT_QPA_PLATFORM<span style="color:#f92672">=</span>wayland
+</span></span><span style="display:flex;"><span>guix environment --ad-hoc fcitx5-configtool qtwayland -- fcitx5-config-qt
+</span></span></code></pre></div></li>
 </ol>
 </article>
 </div>
@@ -34,6 +34,6 @@ guix environment --ad-hoc fcitx5-configtool qtwayland -- fcitx5-config-qt
     <span>Powered by </span><a href="https://gohugo.io" target="_blank">Hugo</a>
   </p>
 </div>
-</section><script src="/js/prism.min.442843b7ea6eef5105ab77a4c16488edbd8210fcd77efef362770e1bf0c3a47130e20e0553ae0388b6a50e4cd49a315e.js" integrity="sha384-RChDt&#43;pu71EFq3ekwWSI7b2CEPzXfv7zYncOG/DDpHEw4g4FU64DiLalDkzUmjFe"></script></body>
+</section><script src="/js/prism.min.0c38bcfc1858cf605bc0d983550d20e0ce6e36d54ac10e9795e8c5b4f1b6df3b8612b3362a97e0904bc45456ef5ae060.js" integrity="sha384-DDi8/BhYz2BbwNmDVQ0g4M5uNtVKwQ6XlejFtPG23zuGErM2KpfgkEvEVFbvWuBg"></script></body>
 
 </html>

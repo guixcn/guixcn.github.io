@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.92.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.96.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <meta name="supported-color-schemes" content="light dark"><title>设置输入法&nbsp;&ndash;&nbsp;Guix中文社区</title><link rel="stylesheet" href="/css/core.min.57e7589b93576dc645a743adf94441c77a52821272d21d638fbc98343c73c04651a1cd03f70eac2089abd6dc4ce693ff.css" integrity="sha384-V&#43;dYm5NXbcZFp0Ot&#43;URBx3pSghJy0h1jj7yYNDxzwEZRoc0D9w6sIImr1txM5pP/"><meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="设置输入法" /><body><section id="header">
@@ -12,28 +12,28 @@
 <p>安装 <code>ibus</code> 和 <code>ibus-libpinyin</code> （或 <code>ibus-rime</code> ）。 由于 <code>ibus-setup</code> 在运
 行时依赖 <code>dconf</code> ，所以你需要同时安装 <code>dconf</code> 。</p>
 <p>例： /etc/config.scm</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scheme" data-lang="scheme">(<span style="color:#a6e22e">operating-system</span>
-  (<span style="color:#a6e22e">packages</span> (<span style="color:#a6e22e">cons*</span> ibus ibus-libpinyin dconf
-		   %base-packages))
-  <span style="color:#f92672">...</span>
-  )
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span>(<span style="color:#a6e22e">operating-system</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">packages</span> (<span style="color:#a6e22e">cons*</span> ibus ibus-libpinyin dconf
+</span></span><span style="display:flex;"><span>		   %base-packages))
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>  )
+</span></span></code></pre></div></li>
 <li>
 <p>设置环境变量。</p>
 <p>如果你使用GDM、SDDM等登录管理器（Login Manager/Display Manager），建议通过
 <code>~/.pam_environment</code> 文件设置用户的环境变量。</p>
 <p>例： <code>~/.pam_environment</code></p>
-<pre tabindex="0"><code class="language-conf" data-lang="conf">GTK_IM_MODULE DEFAULT=ibus
-QT_IM_MODULE DEFAULT=ibus
-XMODIFIERS DEFAULT=@im=ibus
-
-GUIX_GTK2_IM_MODULE_FILE DEFAULT=/run/current-system/profile/lib/gtk-2.0/2.10.0/immodules-gtk2.cache
-GUIX_GTK3_IM_MODULE_FILE DEFAULT=/run/current-system/profile/lib/gtk-3.0/3.0.0/immodules-gtk3.cache
-</code></pre><p>如果把 <code>ibus</code> 安装到user profile里，与上面类似，请替换这两个环境变量（但是作
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cfg" data-lang="cfg"><span style="display:flex;"><span><span style="color:#a6e22e">GTK_IM_MODULE DEFAULT</span><span style="color:#f92672">=</span><span style="color:#e6db74">ibus</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">QT_IM_MODULE DEFAULT</span><span style="color:#f92672">=</span><span style="color:#e6db74">ibus</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">XMODIFIERS DEFAULT</span><span style="color:#f92672">=</span><span style="color:#e6db74">@im=ibus</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">GUIX_GTK2_IM_MODULE_FILE DEFAULT</span><span style="color:#f92672">=</span><span style="color:#e6db74">/run/current-system/profile/lib/gtk-2.0/2.10.0/immodules-gtk2.cache</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">GUIX_GTK3_IM_MODULE_FILE DEFAULT</span><span style="color:#f92672">=</span><span style="color:#e6db74">/run/current-system/profile/lib/gtk-3.0/3.0.0/immodules-gtk3.cache</span>
+</span></span></code></pre></div><p>如果把 <code>ibus</code> 安装到user profile里，与上面类似，请替换这两个环境变量（但是作
 者没验证过是否可行）：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">GUIX_GTK2_IM_MODULE_FILE DEFAULT<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span>/.guix-profile/lib/gtk-2.0/2.10.0/immodules-gtk2.cache
-GUIX_GTK3_IM_MODULE_FILE DEFAULT<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span>/.guix-profile/lib/gtk-3.0/3.0.0/immodules-gtk3.cache
-</code></pre></div><p>如果你想使用传统的login shell配置文件方式设置环境变量，请修改对应login shell
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>GUIX_GTK2_IM_MODULE_FILE DEFAULT<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span>/.guix-profile/lib/gtk-2.0/2.10.0/immodules-gtk2.cache
+</span></span><span style="display:flex;"><span>GUIX_GTK3_IM_MODULE_FILE DEFAULT<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span>/.guix-profile/lib/gtk-3.0/3.0.0/immodules-gtk3.cache
+</span></span></code></pre></div><p>如果你想使用传统的login shell配置文件方式设置环境变量，请修改对应login shell
 的配置文件。bash用户修改 <code>~/.profile</code> 文件，zsh用户修改 <code>~/.zprofile</code> 文件。</p>
 <p>注意：</p>
 <blockquote>
@@ -41,26 +41,26 @@ GUIX_GTK3_IM_MODULE_FILE DEFAULT<span style="color:#f92672">=</span><span style=
 量在登录之后不会生效。推荐使用SDDM。</p>
 </blockquote>
 <p>例：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">export GTK_IM_MODULE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ibus&#34;</span>
-export QT_IM_MODULE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ibus&#34;</span>
-export XMODIFIERS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;@im=ibus&#34;</span>
-
-export GUIX_GTK2_IM_MODULE_FILE<span style="color:#f92672">=</span>/run/current-system/profile/lib/gtk-2.0/2.10.0/immodules-gtk2.cache
-export GUIX_GTK3_IM_MODULE_FILE<span style="color:#f92672">=</span>/run/current-system/profile/lib/gtk-3.0/3.0.0/immodules-gtk3.cache
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>export GTK_IM_MODULE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ibus&#34;</span>
+</span></span><span style="display:flex;"><span>export QT_IM_MODULE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ibus&#34;</span>
+</span></span><span style="display:flex;"><span>export XMODIFIERS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;@im=ibus&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export GUIX_GTK2_IM_MODULE_FILE<span style="color:#f92672">=</span>/run/current-system/profile/lib/gtk-2.0/2.10.0/immodules-gtk2.cache
+</span></span><span style="display:flex;"><span>export GUIX_GTK3_IM_MODULE_FILE<span style="color:#f92672">=</span>/run/current-system/profile/lib/gtk-3.0/3.0.0/immodules-gtk3.cache
+</span></span></code></pre></div></li>
 <li>
 <p>如果你曾经安装过 <code>ibus</code> ，请删除 <code>~/.cache/ibus</code> 这个文件夹。不匹配的
 <code>~/.cache/ibus</code> 可能导致 <code>ibus</code> 无法启动。这是一个已知的bug。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">rm -r ~/.cache/ibus
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>rm -r ~/.cache/ibus
+</span></span></code></pre></div></li>
 <li>
 <p>运行 <code>ibus-daemon --xim --replace --daemonize</code> 以启动 <code>ibus-daemon</code> 。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ibus-daemon --xim --replace --daemonize
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ibus-daemon --xim --replace --daemonize
+</span></span></code></pre></div></li>
 <li>
 <p>运行 <code>ibus-setup</code> 进入设置界面，添加和设置输入法。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ibus-setup
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ibus-setup
+</span></span></code></pre></div></li>
 <li>
 <p>好了，你可以使用 <code>ibus</code> 来输入中文了。</p>
 </li>
@@ -81,6 +81,6 @@ export GUIX_GTK3_IM_MODULE_FILE<span style="color:#f92672">=</span>/run/current-
     <span>Powered by </span><a href="https://gohugo.io" target="_blank">Hugo</a>
   </p>
 </div>
-</section><script src="/js/prism.min.442843b7ea6eef5105ab77a4c16488edbd8210fcd77efef362770e1bf0c3a47130e20e0553ae0388b6a50e4cd49a315e.js" integrity="sha384-RChDt&#43;pu71EFq3ekwWSI7b2CEPzXfv7zYncOG/DDpHEw4g4FU64DiLalDkzUmjFe"></script></body>
+</section><script src="/js/prism.min.0c38bcfc1858cf605bc0d983550d20e0ce6e36d54ac10e9795e8c5b4f1b6df3b8612b3362a97e0904bc45456ef5ae060.js" integrity="sha384-DDi8/BhYz2BbwNmDVQ0g4M5uNtVKwQ6XlejFtPG23zuGErM2KpfgkEvEVFbvWuBg"></script></body>
 
 </html>

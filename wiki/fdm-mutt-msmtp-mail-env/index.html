@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.92.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.96.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <meta name="supported-color-schemes" content="light dark"><title>使用 fdm mutt msmtp 设置简易的邮件环境&nbsp;&ndash;&nbsp;Guix中文社区</title><link rel="stylesheet" href="/css/core.min.57e7589b93576dc645a743adf94441c77a52821272d21d638fbc98343c73c04651a1cd03f70eac2089abd6dc4ce693ff.css" integrity="sha384-V&#43;dYm5NXbcZFp0Ot&#43;URBx3pSghJy0h1jj7yYNDxzwEZRoc0D9w6sIImr1txM5pP/"><meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="使用 fdm mutt msmtp 设置简易的邮件环境" /><body><section id="header">
@@ -40,78 +40,78 @@
 可以自由选择自己喜欢的编辑器或阅读器。</p>
 <h2 id="安装">安装</h2>
 <p>安装软件包:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix package -i fdm mutt msmtp
-</code></pre></div><p>安装需要的编辑器和阅读器，这个示例使用 <code>emacs</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">guix package -i emacs-no-x
-</code></pre></div><h2 id="配置">配置</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>guix package -i fdm mutt msmtp
+</span></span></code></pre></div><p>安装需要的编辑器和阅读器，这个示例使用 <code>emacs</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>guix package -i emacs-no-x
+</span></span></code></pre></div><h2 id="配置">配置</h2>
 <p>这里的例子有一个约定:</p>
 <p><code>${HOME}/Mail</code> 作为本地邮件的存放位置，从远程服务器下载的邮件都会存放在这里。</p>
 <ol>
 <li>
 <p>fdm
 创建一个配置文件:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">umask <span style="color:#ae81ff">077</span> <span style="color:#75715e"># 更严格安全的权限</span>
-touch ~/.fdm.conf
-</code></pre></div><p>并写入:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">## .fdm.conf
-# 默认收件箱
-action &#34;inbox&#34; maildir &#34;%h/Mail/inbox&#34;
-# guix相关邮件收件箱
-action &#34;guix&#34; maildir &#34;%h/Mail/guix&#34;
-
-# 请取消注释并修改需要的内容
-# 账户设置 POP3
-#account &#34;账户名&#34; pop3s server &#34;POP3服务器&#34;
-# 账户设置 IMAP
-#account &#34;账户名&#34; imaps server &#34;IMAP服务器&#34;
-# 登录需要的
-#user &#34;用户名&#34; pass &#34;密码&#34;
-
-# 将带有 guix 内容的邮件放至guix收件箱
-match &#34;guix&#34; in headers action &#34;guix&#34;
-match &#34;guix&#34; in body action &#34;guix&#34;
-
-# 将其他邮件放至inbox
-match all action &#34;inbox&#34;
-</code></pre></div><ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>umask <span style="color:#ae81ff">077</span> <span style="color:#75715e"># 更严格安全的权限</span>
+</span></span><span style="display:flex;"><span>touch ~/.fdm.conf
+</span></span></code></pre></div><p>并写入:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>## .fdm.conf
+</span></span><span style="display:flex;"><span># 默认收件箱
+</span></span><span style="display:flex;"><span>action &#34;inbox&#34; maildir &#34;%h/Mail/inbox&#34;
+</span></span><span style="display:flex;"><span># guix相关邮件收件箱
+</span></span><span style="display:flex;"><span>action &#34;guix&#34; maildir &#34;%h/Mail/guix&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># 请取消注释并修改需要的内容
+</span></span><span style="display:flex;"><span># 账户设置 POP3
+</span></span><span style="display:flex;"><span>#account &#34;账户名&#34; pop3s server &#34;POP3服务器&#34;
+</span></span><span style="display:flex;"><span># 账户设置 IMAP
+</span></span><span style="display:flex;"><span>#account &#34;账户名&#34; imaps server &#34;IMAP服务器&#34;
+</span></span><span style="display:flex;"><span># 登录需要的
+</span></span><span style="display:flex;"><span>#user &#34;用户名&#34; pass &#34;密码&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># 将带有 guix 内容的邮件放至guix收件箱
+</span></span><span style="display:flex;"><span>match &#34;guix&#34; in headers action &#34;guix&#34;
+</span></span><span style="display:flex;"><span>match &#34;guix&#34; in body action &#34;guix&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># 将其他邮件放至inbox
+</span></span><span style="display:flex;"><span>match all action &#34;inbox&#34;
+</span></span></code></pre></div><ol>
 <li>
 <p>msmtp
 创建一个配置文件:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">umask <span style="color:#ae81ff">077</span> <span style="color:#75715e"># 更严格安全的权限</span>
-touch ~/.msmtprc
-</code></pre></div><p>并写入:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">account default
-host SMTP服务器
-protocol smtp
-auth on
-from 邮箱地址
-user 登录所需用户名，通常和邮箱地址相同
-password 密码
-tls on
-tls_starttls on
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>umask <span style="color:#ae81ff">077</span> <span style="color:#75715e"># 更严格安全的权限</span>
+</span></span><span style="display:flex;"><span>touch ~/.msmtprc
+</span></span></code></pre></div><p>并写入:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>account default
+</span></span><span style="display:flex;"><span>host SMTP服务器
+</span></span><span style="display:flex;"><span>protocol smtp
+</span></span><span style="display:flex;"><span>auth on
+</span></span><span style="display:flex;"><span>from 邮箱地址
+</span></span><span style="display:flex;"><span>user 登录所需用户名，通常和邮箱地址相同
+</span></span><span style="display:flex;"><span>password 密码
+</span></span><span style="display:flex;"><span>tls on
+</span></span><span style="display:flex;"><span>tls_starttls on
+</span></span></code></pre></div></li>
 <li>
 <p>mutt</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">umask <span style="color:#ae81ff">077</span> <span style="color:#75715e"># 更严格安全的权限</span>
-touch ~/.muttrc
-</code></pre></div><p>并写入:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text"># 本地邮箱的设置
-set folder=~/Mail
-set mbox=+mbox
-set spoolfile=+inbox
-set record=+sent
-set sort=threads # 邮件列表建议的显示方式
-set postponed=+drafts
-set mbox_type=Maildir
-mailboxes +inbox
-
-# 这里示例使用Emacs作为阅读器和编辑器
-set editor=&#39;emacsclient -nw&#39;
-set pager=&#39;emacsclient -nw&#39;
-
-# 发送邮件的命令
-set sendmail=&#34;msmtp&#34;
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>umask <span style="color:#ae81ff">077</span> <span style="color:#75715e"># 更严格安全的权限</span>
+</span></span><span style="display:flex;"><span>touch ~/.muttrc
+</span></span></code></pre></div><p>并写入:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span># 本地邮箱的设置
+</span></span><span style="display:flex;"><span>set folder=~/Mail
+</span></span><span style="display:flex;"><span>set mbox=+mbox
+</span></span><span style="display:flex;"><span>set spoolfile=+inbox
+</span></span><span style="display:flex;"><span>set record=+sent
+</span></span><span style="display:flex;"><span>set sort=threads # 邮件列表建议的显示方式
+</span></span><span style="display:flex;"><span>set postponed=+drafts
+</span></span><span style="display:flex;"><span>set mbox_type=Maildir
+</span></span><span style="display:flex;"><span>mailboxes +inbox
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># 这里示例使用Emacs作为阅读器和编辑器
+</span></span><span style="display:flex;"><span>set editor=&#39;emacsclient -nw&#39;
+</span></span><span style="display:flex;"><span>set pager=&#39;emacsclient -nw&#39;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># 发送邮件的命令
+</span></span><span style="display:flex;"><span>set sendmail=&#34;msmtp&#34;
+</span></span></code></pre></div></li>
 </ol>
 </li>
 </ol>
@@ -120,12 +120,12 @@ set sendmail=&#34;msmtp&#34;
 <ol>
 <li>
 <p>收邮件</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">fdm -v fetch
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>fdm -v fetch
+</span></span></code></pre></div></li>
 <li>
 <p>看邮件</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mutt
-</code></pre></div><p>使用快捷键 <code>c</code> 切换邮件的分类。
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mutt
+</span></span></code></pre></div><p>使用快捷键 <code>c</code> 切换邮件的分类。
 使用 j/k 或者方向键移动光标。
 使用回车查看邮件邮件编辑器退出后会询问下一步的命令，
 一般输入 <code>q</code> 来回到列表，或者 <code>j/k</code> 来看上一个/下一个邮件。
@@ -133,8 +133,8 @@ set sendmail=&#34;msmtp&#34;
 </li>
 <li>
 <p>发邮件</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mutt
-</code></pre></div><p>进入 <code>mutt</code> 之后使用快捷键 <code>m</code> 按照提示填写信息，之后会调用编辑器打开，
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mutt
+</span></span></code></pre></div><p>进入 <code>mutt</code> 之后使用快捷键 <code>m</code> 按照提示填写信息，之后会调用编辑器打开，
 保存关闭之后按照提示信息发送</p>
 <p>回复一个邮件时需要移动光标到这个邮件上使用快捷键 <code>r</code> 进行回复</p>
 </li>
@@ -150,6 +150,6 @@ set sendmail=&#34;msmtp&#34;
     <span>Powered by </span><a href="https://gohugo.io" target="_blank">Hugo</a>
   </p>
 </div>
-</section><script src="/js/prism.min.442843b7ea6eef5105ab77a4c16488edbd8210fcd77efef362770e1bf0c3a47130e20e0553ae0388b6a50e4cd49a315e.js" integrity="sha384-RChDt&#43;pu71EFq3ekwWSI7b2CEPzXfv7zYncOG/DDpHEw4g4FU64DiLalDkzUmjFe"></script></body>
+</section><script src="/js/prism.min.0c38bcfc1858cf605bc0d983550d20e0ce6e36d54ac10e9795e8c5b4f1b6df3b8612b3362a97e0904bc45456ef5ae060.js" integrity="sha384-DDi8/BhYz2BbwNmDVQ0g4M5uNtVKwQ6XlejFtPG23zuGErM2KpfgkEvEVFbvWuBg"></script></body>
 
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.92.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.96.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <meta name="supported-color-schemes" content="light dark"><title>在GuixSystem使用 kmscon 显示中文内容&nbsp;&ndash;&nbsp;Guix中文社区</title><link rel="stylesheet" href="/css/core.min.57e7589b93576dc645a743adf94441c77a52821272d21d638fbc98343c73c04651a1cd03f70eac2089abd6dc4ce693ff.css" integrity="sha384-V&#43;dYm5NXbcZFp0Ot&#43;URBx3pSghJy0h1jj7yYNDxzwEZRoc0D9w6sIImr1txM5pP/"><meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="在GuixSystem使用 kmscon 显示中文内容" /><body><section id="header">
@@ -9,32 +9,32 @@
 <ol>
 <li>
 <p>在系统配置文件中添加以下内容:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scheme" data-lang="scheme">(<span style="color:#a6e22e">operating-system</span>
- (<span style="color:#a6e22e">services</span> (<span style="color:#a6e22e">append</span>
-	    (<span style="color:#a6e22e">list</span>
-	     (<span style="color:#a6e22e">service</span> kmscon-service-type
-	      (<span style="color:#a6e22e">kmscon-configuration</span>
-	       (<span style="color:#a6e22e">virtual-terminal</span> <span style="color:#e6db74">&#34;tty5&#34;</span>))))  <span style="color:#75715e">; 这里更换为需要的tty</span>
-	    %base-services))
- <span style="color:#f92672">...</span>
- )
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span>(<span style="color:#a6e22e">operating-system</span>
+</span></span><span style="display:flex;"><span> (<span style="color:#a6e22e">services</span> (<span style="color:#a6e22e">append</span>
+</span></span><span style="display:flex;"><span>	    (<span style="color:#a6e22e">list</span>
+</span></span><span style="display:flex;"><span>	     (<span style="color:#a6e22e">service</span> kmscon-service-type
+</span></span><span style="display:flex;"><span>	      (<span style="color:#a6e22e">kmscon-configuration</span>
+</span></span><span style="display:flex;"><span>	       (<span style="color:#a6e22e">virtual-terminal</span> <span style="color:#e6db74">&#34;tty5&#34;</span>))))  <span style="color:#75715e">; 这里更换为需要的tty</span>
+</span></span><span style="display:flex;"><span>	    %base-services))
+</span></span><span style="display:flex;"><span> <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span> )
+</span></span></code></pre></div></li>
 </ol>
 <h2 id="更多的字符显示支持">更多的字符显示支持</h2>
 <p>写此博客的时候 <code>kmscon</code> 服务并未加入pango的字体选择功能，
 但是可以使用 <code>unifont</code> 字体引擎来获得更多字符显示的支持，</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scheme" data-lang="scheme">(<span style="color:#a6e22e">operating-system</span>
- (<span style="color:#a6e22e">services</span> (<span style="color:#a6e22e">append</span>
-	    (<span style="color:#a6e22e">list</span>
-	     (<span style="color:#a6e22e">service</span> kmscon-service-type
-		      (<span style="color:#a6e22e">kmscon-configuration</span>
-		       <span style="color:#f92672">...</span>
-		       (<span style="color:#a6e22e">virtual-terminal</span> <span style="color:#e6db74">&#34;tty5&#34;</span>)
-		       (<span style="color:#a6e22e">font-engine</span> <span style="color:#e6db74">&#34;unifont&#34;</span>)))) <span style="color:#75715e">; 使用unifont</span>
-		      %base-services))
-	    <span style="color:#f92672">...</span>
-	    )
-</code></pre></div></article>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span>(<span style="color:#a6e22e">operating-system</span>
+</span></span><span style="display:flex;"><span> (<span style="color:#a6e22e">services</span> (<span style="color:#a6e22e">append</span>
+</span></span><span style="display:flex;"><span>	    (<span style="color:#a6e22e">list</span>
+</span></span><span style="display:flex;"><span>	     (<span style="color:#a6e22e">service</span> kmscon-service-type
+</span></span><span style="display:flex;"><span>		      (<span style="color:#a6e22e">kmscon-configuration</span>
+</span></span><span style="display:flex;"><span>		       <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>		       (<span style="color:#a6e22e">virtual-terminal</span> <span style="color:#e6db74">&#34;tty5&#34;</span>)
+</span></span><span style="display:flex;"><span>		       (<span style="color:#a6e22e">font-engine</span> <span style="color:#e6db74">&#34;unifont&#34;</span>)))) <span style="color:#75715e">; 使用unifont</span>
+</span></span><span style="display:flex;"><span>		      %base-services))
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>	    )
+</span></span></code></pre></div></article>
 </div>
 <div class="article bottom"><section class="article navigation"><p><a class="link" href="/wiki/guix-system-gnome-ibus/"><span class="iconfont icon-article"></span>在GuixSystem中设置Gnome桌面和ibus输入法</a></p><p><a class="link" href="/wiki/wayland-without-login-manager/"><span class="iconfont icon-article"></span>在不带有登录管理器的Guix System启动wayland会话</a></p></section></div></section><section id="footer"><div class="footer-wrap">
   <p class="copyright">© 2019-2021 Guix China Community</p><p>
@@ -43,6 +43,6 @@
     <span>Powered by </span><a href="https://gohugo.io" target="_blank">Hugo</a>
   </p>
 </div>
-</section><script src="/js/prism.min.442843b7ea6eef5105ab77a4c16488edbd8210fcd77efef362770e1bf0c3a47130e20e0553ae0388b6a50e4cd49a315e.js" integrity="sha384-RChDt&#43;pu71EFq3ekwWSI7b2CEPzXfv7zYncOG/DDpHEw4g4FU64DiLalDkzUmjFe"></script></body>
+</section><script src="/js/prism.min.0c38bcfc1858cf605bc0d983550d20e0ce6e36d54ac10e9795e8c5b4f1b6df3b8612b3362a97e0904bc45456ef5ae060.js" integrity="sha384-DDi8/BhYz2BbwNmDVQ0g4M5uNtVKwQ6XlejFtPG23zuGErM2KpfgkEvEVFbvWuBg"></script></body>
 
 </html>
