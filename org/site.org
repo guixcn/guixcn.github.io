@@ -35,7 +35,7 @@
    - IRC
      - irc.libera.chat #guixcn
      - irc.libera.chat #guixcn-offtopic 「水群」
-   - Matrix: #guixcn:matrix.org
+   - Matrix: [[https://matrix.to/#/#guixcn:matrix.org][#guixcn:matrix.org]]
    - Telegram: 【人多，活跃。】
      - [[https://t.me/guixcn][https://t.me/guixcn]]
      - https://t.me/nix_lifestyle 「水群」
