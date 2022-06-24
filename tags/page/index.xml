@@ -37,7 +37,8 @@
 &lt;li&gt;irc.libera.chat #guixcn-offtopic 「水群」&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Matrix: #guixcn:matrix.org&lt;/li&gt;
+&lt;li&gt;Matrix: &lt;a href=&#34;https://matrix.to/#/%23guixcn:matrix.org&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;#guixcn:matrix.org&lt;/a&gt;
+&lt;/li&gt;
 &lt;li&gt;Telegram: 【人多，活跃。】
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://t.me/guixcn&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://t.me/guixcn&lt;/a&gt;
@@ -363,15 +364,15 @@ Guix镜像服务，原先用于镜像服务的资源闲置。镜像服务器的�
 像于2020年12月21日正式上线
 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。欢迎大家前去
 测试。感谢SJTUG对Guix社区的大力支持。&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;&lt;a href=&#34;https://sjtug.org/post/mirror-news/2020-12-21-release-guix/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://sjtug.org/post/mirror-news/2020-12-21-release-guix/&lt;/a&gt;
 &amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -417,14 +418,14 @@ Guix镜像服务，原先用于镜像服务的资源闲置。镜像服务器的�
 以充分利用新服务器的大硬盘和旧服务器的大带宽。&lt;/p&gt;
 &lt;p&gt;最后，感谢众多支持者在过去的半年内参与到社区的建设，并为我们捐赠资金。我们将在未
 来的时间里尽自己的能力继续为大家提供稳定可靠的服务。&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;十几个&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
