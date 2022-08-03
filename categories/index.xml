@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Guix中文社区</title>
+    <title>Categories on Guix</title>
     <link>https://guixcn.github.io/categories/</link>
-    <description>Recent content in Categories on Guix中文社区</description>
+    <description>Recent content in Categories on Guix</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2019-2021 Guix China Community</copyright>

@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Guix中文社区</title>
+    <title>Guix</title>
     <link>https://guixcn.github.io/</link>
-    <description>Recent content on Guix中文社区</description>
+    <description>Recent content on Guix</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2019-2021 Guix China Community</copyright>
