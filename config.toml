@@ -1,5 +1,5 @@
 baseURL = "https://guixcn.github.io/"
-title = "Guix中文社区"
+title = "Guix"
 theme = "hugo-notepadium"
 copyright = "© 2019-2021 Guix China Community"
 
@@ -36,7 +36,7 @@ hasCJKLanguage = true
 [params]
     style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
     logo = "/images/guix-logo.svg"
-    slogan = "Guix China Community"
+    slogan = "自由而不是白嫖"
     beian = "鄂ICP备20009141号-1"
 
 [params.syntax]
