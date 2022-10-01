@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.101.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.104.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <meta name="supported-color-schemes" content="light dark"><title>设置输入法&nbsp;&ndash;&nbsp;Guix</title><link rel="stylesheet" href="/css/core.min.57e7589b93576dc645a743adf94441c77a52821272d21d638fbc98343c73c04651a1cd03f70eac2089abd6dc4ce693ff.css" integrity="sha384-V&#43;dYm5NXbcZFp0Ot&#43;URBx3pSghJy0h1jj7yYNDxzwEZRoc0D9w6sIImr1txM5pP/"><meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="设置输入法" /><body><section id="header">
@@ -26,6 +26,8 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cfg" data-lang="cfg"><span style="display:flex;"><span><span style="color:#a6e22e">GTK_IM_MODULE DEFAULT</span><span style="color:#f92672">=</span><span style="color:#e6db74">ibus</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">QT_IM_MODULE DEFAULT</span><span style="color:#f92672">=</span><span style="color:#e6db74">ibus</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">XMODIFIERS DEFAULT</span><span style="color:#f92672">=</span><span style="color:#e6db74">@im=ibus</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 如果使用非Gnome的桌面可能会导致dconf不可用，需要加上这行</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">GSETTINGS_BACKEND DEFAULT</span><span style="color:#f92672">=</span><span style="color:#e6db74">keyfile</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">GUIX_GTK2_IM_MODULE_FILE DEFAULT</span><span style="color:#f92672">=</span><span style="color:#e6db74">/run/current-system/profile/lib/gtk-2.0/2.10.0/immodules-gtk2.cache</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">GUIX_GTK3_IM_MODULE_FILE DEFAULT</span><span style="color:#f92672">=</span><span style="color:#e6db74">/run/current-system/profile/lib/gtk-3.0/3.0.0/immodules-gtk3.cache</span>
@@ -44,6 +46,8 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>export GTK_IM_MODULE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ibus&#34;</span>
 </span></span><span style="display:flex;"><span>export QT_IM_MODULE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ibus&#34;</span>
 </span></span><span style="display:flex;"><span>export XMODIFIERS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;@im=ibus&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 如果使用非Gnome的桌面可能会导致dconf不可用，需要加上这行</span>
+</span></span><span style="display:flex;"><span>export GSETTINGS_BACKEND<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;keyfile&#34;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>export GUIX_GTK2_IM_MODULE_FILE<span style="color:#f92672">=</span>/run/current-system/profile/lib/gtk-2.0/2.10.0/immodules-gtk2.cache
 </span></span><span style="display:flex;"><span>export GUIX_GTK3_IM_MODULE_FILE<span style="color:#f92672">=</span>/run/current-system/profile/lib/gtk-3.0/3.0.0/immodules-gtk3.cache
