@@ -2,7 +2,7 @@
 
 pkgs.mkShell {
   buildInputs = with pkgs;[
-    (emacsWithPackages (epkgs:
+    (emacs.pkgs.withPackages (epkgs:
       (with epkgs.melpaStablePackages; [
         ox-hugo
       ])))
